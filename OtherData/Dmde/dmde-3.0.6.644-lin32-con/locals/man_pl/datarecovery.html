@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - Odzyskiwanie danych</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">Spis treści</a> &middot; <a href="howto.html">Praca</a> &middot; 
+<a href="menu.html">Menu</a> &middot; <a href="menu_tools.html">Narzędzia</a>
+<hr />
+<h2>Odzyskiwanie danych</h2>
+<p>
+<span style="color:#ff0000; font-weight: bold;">Uwaga!</span>
+Eżeli pliki zostaną odzyskane nieprawidłowo lub występują inne problemy, 
+upewnij się, że korzystasz z <a href="about.html">najnowszej wersji oprogramowania</a> z zaufanego źródła.
+</p>
+<p>
+<span style="color:#ff0000; font-weight: bold;">Uwaga!</span>
+Nie pisz nic na źródłowego dysku/partycji. Należy odzyskać dane tylko na inny dysku.
+Zalecane jest, aby odzyskać dane na inne urządzenie fizyczne.
+Możesz odzyskać do innej partycji tego samego urządzenia tylko jeśli jesteś pewien, 
+że partycje źródłowy i docelowy nie pokrywają się, a urządzenie nie ma problemów fizycznych.
+Nie należy ładować system lub uruchamiać oprogramowanie z partycji gdzie dane do odzyskania znajduje.
+</p>
+<p>
+Przed odzyskiwania danych należy <a href="openvolume.html">znajdowanie i otwieranie woluminu</a>. 
+W wyniku odzyskiwania zależy od wyników poprzednich operacji wyszukiwania i co tom jest otwarty.
+</p>
+<p>
+Aby odzyskać wszystkie znalezione pliki (w tym utracony i usunięte pliki i alt.strumieni NTFS) 
+należy otworzyć katalog wirtualny <a href="scanvolume.html"><span class="tt">[Wszystkie znalezione + rekonstrukcja]</span></a> 
+w <a href="filepanel.html">panelu plików</a>. 
+Jest to również wymagane dla właściwej odznaczania podczas odzyskiwania grupy.
+</p>            
+<p>
+<a href="editions.html">Free Edition</a> obsługuje odzyskiwanie maksymalnie 4000 plików z bieżącego panelu tylko.
+</p>
+
+<div class="l">
+<h3>Okno dialogowe "Odzyskaj"</h3>
+<h4>Przycisk "Rozmiar"</h4>
+<p>
+Oblicz rozmiar danych do odzyskania. 
+Globalny wskaźnik procesie odzysku jest roboczych, jeśli rozmiar jest obliczana. 
+Nie należy obliczyć rozmiar uniknąć niepotrzebnego obciążenia urządzenie na urządzeniach z uszkodzonych sektorów.
+</p>
+<h4>Przycisk "Lista"</h4>
+<p>
+Zapisz listę wybranych plików dla odzysku do pliku.
+</p>
+<h4>"Usunięte" pliki</h4>
+<p>
+Odzyskaj pliki oznaczone jako "usunięte" (patrz <a href="filepanel.html">panelu plików</a>). 
+Jeśli opcja nie jest zaznaczona, "usunięte" pliki nie zostaną odzyskane bez względu na stan wyboru.
+</p>
+<h4>Pole wyboru "Uwzględnij znalezione"</h4>
+<p>
+Odzyskaj pliki oznaczone jako "znalezione" (patrz <a href="filepanel.html">panelu plików</a>). 
+Jeśli opcja nie jest zaznaczona "znaleziono" pliki nie zostaną odzyskane bez względu na stan wyboru.
+</p>
+<h4>Pole wyboru "Uwzględnij alt.strumieni NTFS" (<a href="editions.html">Professional Edition</a> tylko)</h4>
+<p>
+Odzyskiwanie NTFS alternatywne strumienie danych (nazwa strumienia i nazwa pliku są oddzielone dwukropkiem, 
+np. <span class="tt">nazwa_pliku:streamName</span>).
+</p>
+<h4>Utwórz raport (<a href="editions.html">Professional Edition</a> tylko)</h4>
+<p>
+Zapisz raport odzyskiwania do pliku. Wszystkie pliki i katalogi, 
+dziennika błędów We/Wy, obliczenia sum kontrolnych CRC32, MD5, SHA1.
+</p>
+<h4>Filtr plików</h4>
+<p>
+Definiowanie maski nazwy (oddzielone średnikiem), aby odzyskać tylko pasujące pliki.
+Symbole wieloznaczne "<span class="tt">*</span>" i "<span class="tt">?</span>" mogą być użyte.
+Maski wykluczeń może być również określona przez poprzedzenie odwrotny ukośnik "<span class="tt">\</span>".
+Maski na początku mają pierwszeństwo.
+Na przykład nazwa <span class="tt">abc.tmp</span> pasuje do <span class="tt">a*;\*.tmp</span> i nie pasuje do <span class="tt">\*tmp;a*</span>.
+</p>
+<h4>Limity rozmiaru pliku</h4>
+<p>
+Filtrowania plików według wielkości.
+Użyj <span class="tt">0</span> (zero) jako drugą wartość, jeśli chcesz ustawić tylko dolną granicę.
+</p>
+</div>
+
+<h3>Dodatkowe problemy</h3>
+
+<h4>Unicode nazwy</h4>
+<p>
+Opcja jest zaznaczona, jeśli system operacyjny obsługuje standard Unicode,
+inaczej symbole poza wybranym kodzie strony należy transliteracji lub podstawione 
+(patrz <a href="locales.html">Lokalizacja</a>). Niedostępny w DOS.
+</p>
+
+<h4>Odzyskiwanie do woluminu FAT, pole "Podziel dużych plików"</h4>
+<p>
+Woluminy FAT nie obsługuje plików większych niż 4&nbsp;GB (lub czasem 2&nbsp;GB). 
+Większe pliki mogą być podzielony podczas odzyskiwania na żądanie, 
+jeśli OS prawidłowo informuje (które nie zawsze tak jest), 
+lub opcja <b>Podziel dużych plików</b> jest używany (zalecane). 
+Później można połączyć części plików na inny dysk za pomocą narzędzia systemowe 
+<span class="tt">copy / b part1 + part2 part3 + wynik</span>, na przykład.
+Czysta DOS obsługuje tylko woluminy FAT.
+</p>
+
+<h4>Długie i krajowych nazw plików w systemie DOS, pole "Zastępuj nazwy"</h4>
+<p>
+Bez specjalnych sterowników długich nazw plików nie są obsługiwane w systemie DOS. 
+Opcja <span class="ii">Zastępuj nazwy</span> umożliwia zastąpienie nazwy w okresie odzyskiwania. 
+Plik <span class="tt">LRENAME.BAT</span> jest tworzony w folderze docelowym dla wstecznej zmiany nazwy. 
+Aby przywrócić oryginalne nazwy załadować pliku system operacyjny Windows, przejdź do folderu docelowego 
+i uruchomić pliku <span class="tt">LRENAME.BAT</span>. 
+Odpowiednie <a href="locales.html">kodowej strony OEM</a> musi być wybrany 
+podczas pracy w DOS, aby przywrócić symbole narodowe poprawnie. 
+Unicode symboli poza wybraną kodowej stronę będzie transliteracji lub podstawiony.
+</p>
+<p>
+Możesz dodać <a href="inifile.html">parametr</a> <span class="tt">substnamesutf8=1</span>
+lub użyć opcji <b>utf-8</b> aby utworzyć <span class="tt">LRENAME.BAT</span> w formacie utf-8, 
+który obsługuje wszystkie symbole Unicode niezależnie wybrana strona kodowa. 
+Format utf-8 jest obsługiwany w systemie Windows&nbsp;7 i wyższych.
+</p>
+<h4>Ścieżki dłuższe niż 259 znaków w systemie Windows NT+</h4>
+<p>
+W celu odzyskania ścieżki, które są dłuższe niż 259 znaków 
+należy ręcznie dopisać nazwę katalogu docelowego z przedrostkiem <span class="tt">\\?\</span>, np.: <span class="tt">\\?\C:\</span>. 
+Takie długie trasy mogą być niedostępne dla standardowych programów, takich jak <b>Explorer (Mój komputer)</b>.
+</p>
+<h4>Obsługa duplikatów nazw</h4>
+<p>
+Podczas odzyskiwania mogą się powtarzać nazwę ze względu na znalezienie różnych wersji tego samego pliku, 
+różne linki do tego samego pliku, lub z powodu błędnego połączenia katalogów.
+</p>
+<p>
+Jeśli plik lub katalog z tej samej nazwie jest odzyskiwane jest kwerendę, z której można wybrać, 
+jak radzić sobie duplikatów. Jest możliwe zmienić nazwę obiektu ręcznie (wpisując nazwę) 
+lub wybrać zmianę nazwy auto lub pomijania wszystkich kolejnych obiektów. 
+Możliwe jest także do łączenia katalogów z tymi samymi nazwami.
+</p>
+<p>
+Istnieje próg zmiany nazwy dla pojedynczego obiektu, po którym drugie zapytanie zostanie
+do pożądanego działania w przypadku osiągnięcia progu. 
+Parametry <span class="tt">maxfilerenames</span> i <span class="tt">maxdirrenames</span> z <a href="inifile.html">pliku ini</a> 
+są wykorzystywane jako numery progu domyślnie.
+</p>
+<p>
+Określenie duplikatów nazw działa na bazie systemu plików docelowego. 
+Obsługa nazw nie działa w przypadku <span class="ii">zastąpienia nazw</span> jest używana w systemie DOS.
+</p>
+<p>
+<span class="ii">Obsługa zdarzeń...</span>
+zaprogramowane obchodzenia zdarzenia odzyskiwania (zbieżność nazw, I/O błędy, i inne).
+</p>
+</div></div>
+</body>
+</html>

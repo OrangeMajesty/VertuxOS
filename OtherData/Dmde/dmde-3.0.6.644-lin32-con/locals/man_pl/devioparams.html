@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - Parametry We/Wy dysku</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">Spis treści</a> &middot; <a href="howto.html">Praca</a> &middot; 
+<a href="menu.html">Menu</a> &middot; <a href="menu_disk.html">Dysk</a>
+&nbsp;
+&nbsp;
+<a href="deviodlg.html">Okno dialogowe We/Wy</a> 
+&nbsp;
+<a href="deviohsc.html">Skrypt obsługi We/Wy</a>
+<hr />
+<h2>Parametry We/Wy dysku</h2>
+
+<h3>Interfejs</h3>
+<p>Sposób dostępu do dysku/woluminu 
+(może być ustawiony przy <a href="devices.html">wyborze urządzenia</a>).</p>
+
+<h4>Windows OS</h4>
+<table>
+<tr><th>IO&nbsp;FILE</th><td>Użyj ReadFile/WriteFile funkcje dostępu do urządzenia</td></tr>
+<tr><th>IO&nbsp;SCSI</th><td>Użyj żądanie sterownika SCSI</td></tr>
+<tr><th>Overlapped</th><td>Zastosowanie Overlapped We/Wy (nie wpływa na We/Wy, nie zalecane).</td></tr>
+</table>
+
+<h4>DOS</h4>
+<ul style="list-style-position:outside"><li>
+ATA Interface (bezpośredni dostęp, korzystny sposób do uszkodzonych urządzeń)
+<table>
+<tr><th>ATA Interface</th><td>Dla HDD/SSD</td></tr>
+<tr><th>ATAPI Interface</th><td>Dla CD/DVD</td></tr>
+<tr><th>use DMA</th><td>Szybszy dostęp DMA dla ATA (<a href="editions.html">Professional Edition</a> tylko)</td></tr>
+<tr><th>use LBA48</th><td>Aby uzyskać dostęp do ponad 128&nbsp;GiB</td></tr>
+<tr><th>raw CD access</th><td>Aby uzyskać dostęp do nie-cyfrowych CD</td></tr>
+</table>
+</li>
+<li>
+BIOS Services
+<table>
+<tr><th>Old BIOS Service</th><td>CHS dostęp do 8.4GB</td></tr>
+<tr><th>Ext BIOS Service</th><td>LBA dostęp</td></tr>
+</table>
+</li>
+<li>
+DOS Services
+<table>
+<tr><th>DOS Int 25/26</th><td>DOS funkcje</td></tr>
+<tr><th>Win9x-FAT32 Calls</th><td>Nowe DOS funkcje</td></tr>
+<tr><th>MSCDEX Services</th><td>Dla CD/DVD</td></tr>
+</table>
+</li>
+</ul>
+
+<h3>Błędy We/Wy</h3>
+<p>Sposób obsługi błędów wejść/wyjść.</p>
+
+<p>
+<b>Pomiń błędy We/Wy.</b>
+Jeśli wystąpi błąd i opcja ta jest zaznaczona, to pracy We/Wy w dalszym ciągu po określonej ilośća ponowny prób. 
+W przeciwnym wypadku po szeregu prób operacja zostanie zawieszone do wyborza użytkownika w <a href="deviodlg.html">oknie dialogowym We/Wy</a>.</p>
+<p>
+<b>Nie czekaj, jeśli urządzenie nie jest gotowe.</b>
+Jeśli opcja jest zaznaczona, to operacja We/Wy trwa nawet wtedy, gdy urządzenie nie jest gotowe. 
+W przeciwnym wypadku reakcja użytkownika jest wymagane (<a href="deviodlg.html">okno dialogowe We/Wy</a>).
+</p>
+<p style="margin-left:5px;">
+<strong>zawsze:</strong> odnoszą się do przyszłych działań.<br />
+<strong>teraz:</strong> odnoszą się do bieżącej działalności.
+</p>
+<p>
+<b>Ilość ponowny prób przy błędzie CRC.</b>
+Ilość dodatkowych prób We/Wy przed przejściem w tryb gotowości do reakcji użytkownika lub kontynuowanie pracy.
+</p>
+<div class="spec">
+<p>
+Wartość zero (<span class="tt">0</span>) oznacza brak dodatkowych prób, 
+niniejszym reszty sektorów bloku po błędzie nie będą odczytywane do <b>bufora We/Wy</b>.
+</p>
+<p>
+Jeżeli wartość jest różna od zera to sektory są ponownie przeczytać jeden po drugim, aż do spotkania sektora błąd. 
+Sektor zawierające błąd jest odczytu do liczby prób lub sektor jest odczytywany pomyślnie.
+</p>
+<p>
+Zwiększenie liczby powtórzeń zwiększa się procent danych odczytanych ale zmniejsza żywotność 
+urządzenia ze względu na duże obciążenie.
+</p>
+</div>
+
+<p><b>Ilość ponowny prób przy błędzie Seek.</b>
+To samo dla błędow typu "sektor nie został znaleziony".
+</p>
+<p class="spec">
+Błędu wejścia zakłada się błędu poszukiwania, jeśli zawartość bufora We/Wy nie zmienił się 
+po We/Wy (lub jest wypełniony zerami). 
+Zazwyczaj błędy poszukiwania znacząco spowolnić We/Wy i nie podlegają odzyskiwalny po dodatkowych prób.
+</p>
+
+<p><b>Wypełnić uszkodzone sektory (hex).</b>
+4-bajtowa wartość szesnastkowa wypełnić sektora, jeżeli wykryty błąd (opcjonalnie).
+</p>
+
+<p><b>Skakać przez sektory po błędzie.</b>
+Liczbę sektorów, aby pomijać po nieodwracalne napotyka błąd.
+</p>
+<p class="spec">
+Pominięte sektory będą wypełnione wartości. 
+Jeśli istnieją obszary kolejnych uszkodzonych sektorów, to pomijanie znacznie skraca ładowanie urządzenia. 
+Niniejszym procent danych odczytanych zmniejszy się, jeżeli są indywidualne uszkodzonych sektorów.
+</p>
+
+<p><b>Czytać wstecz po skoku.</b>
+Czytaj pominięte sektory do tyłu, źle spotkania uszkodzonego sektora.
+</p>
+<p class="spec">
+Opcja jest niedostępna, jeśli liczba sektorów, aby przejść jest zbyt duży. 
+Funkcja poprawia jakość odtwarzania danych po sektorach pomijanie jest używany. 
+</p>
+
+<p><b>Filler pominiętych sektorów (hex).</b>
+4-bajtowe wartości szesnastkowej wypełnić sektory pomijanych podczas przeskoczyć.
+</p>
+
+<h3>Dodatkowe parametry</h3>
+
+<p><b>Ilość sektorów w buforze We/Wy.</b>
+Maksymalną liczbę sektorów przekazywane w formie jednego bloku We/Wy.
+</p>
+
+<p><b>Timeout, msec.</b>
+Czas (w milisekundach) oczekiwania na odpowiedź urządzenia
+(tylko DOS <span class="ii">ATA Interface</span>).
+</p>
+
+<p><b>SCSI timeout, s.</b>
+Limit czasu dla SCSI sterownik We/Wy.
+(tylko interfejs <span class="ii">IO&nbsp;SCSI</span>).
+</p>
+
+<p><b>ATA soft reset, jeśli zajęty.</b>
+Wykonaj ATA soft reset, jeśli urządzenie jest zajęte, po przekroczeniu tego limitu
+(tylko DOS <span class="ii">ATA Interface</span>).
+</p>
+
+<p><b>Timeout ATA soft reset, ms.</b> 
+Czas oczekiwania na gotowość urządzenia po ATA soft reset
+(tylko DOS <span class="ii">ATA Interface</span>).
+</p>
+
+<p><b>Skrypt...</b>
+<a href="deviohsc.html">Skrypt obsługi We/Wy</a>
+</p>
+&nbsp;
+</div></div>
+
+</body>
+</html>

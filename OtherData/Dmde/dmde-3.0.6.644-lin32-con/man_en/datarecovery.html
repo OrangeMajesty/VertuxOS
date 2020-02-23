@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - Data Recovery</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">TOC</a> &middot; <a href="howto.html">Work</a> &middot; <a href="menu.html">Menu</a> &middot; 
+<a href="menu_tools.html">Tools</a>
+<hr />
+<h2>Data Recovery</h2>
+<p>
+<span style="color:#ff0000; font-weight: bold;">Attention!</span>
+If files are recovered incorrectly or there are other problems 
+make sure you are using the <a href="about.html">most recent software versions</a> from a trusted source.
+</p>
+<p>
+<span style="color:#ff0000; font-weight: bold;">Attention!</span>
+Do not write anything to the source disk/partition. Recover data to another disk only.
+It is highly recommended to recover data to another physical device. 
+You may recover to another partition of the same device only 
+if you are sure that the source and destination partitions don't overlap and the device has no physical problems.
+Do not load system or run software from the partition where lost data is located.
+</p>
+<p>
+Before data recovery you should <a href="openvolume.html">find and open volume</a>.
+The recovery results depend on results of the volume search and which volume is opened. 
+</p>
+<p>
+To recover all found files (including lost and removed files and NTFS altstreams) 
+you should open virtual directory <a href="scanvolume.html"><span class="tt">[All Found + Reconstruction]</span></a> 
+in the <a href="filepanel.html">File Panel</a>. 
+This is also required for auto unmarking items during group recovery.
+</p>            
+<p>
+<a href="editions.html">Free Edition</a> supports recovery of up to 4000 files from the current panel only.
+</p>
+
+<div class="l">
+<h3>Dialog Box "Recover"</h3>
+<h4>Button "Size"</h4>
+<p>Calculate the size of the data to recover. 
+Global indicator of recovery process is working if the size is calculated.
+You should not calculate the size to avoid unnecessary device load on devices with bad sectors.
+</p>
+<h4>Button "List"</h4>
+<p>
+Save list of files selected for recovery to a file.
+</p>
+<h4>"Deleted" files</h4>
+<p>
+Recover files marked as "deleted" (see <a href="filepanel.html">File Panel</a>).
+If the option is not selected "deleted" files won't be recovered regardless the selection state.
+</p>
+<h4>Checkbox "Include Found"</h4>
+<p>
+Recover files marked as "found" (see <a href="filepanel.html">File Panel</a>).
+If the option is not checked "found" files won't be recovered regardless the selection state.
+</p>
+<h4>Checkbox "Include NTFS altstreams" (<a href="editions.html">Professional Edition</a> only)</h4>
+<p>
+Recover NTFS alternate data streams (Alt.&nbsp;stream name and file name are separated by a colon, 
+i.e. <span class="tt">FileName:StreamName</span>).
+</p>
+<h4>Create report (<a href="editions.html">Professional Edition</a> only)</h4>
+<p>
+Save recovery report to a file. List files and directories, 
+log file I/O errors, calculate checksums CRC32, MD5, SHA1.
+</p>
+<h4>File filter</h4>
+<p>
+Define name masks (semicolon separated) to recover matching files only.
+Wildcards "<span class="tt">*</span>" and "<span class="tt">?</span>" may be used.
+Exclusion masks may be also defined by prepending a backslash "<span class="tt">\</span>".
+Masks at the beginning have a priority. 
+E.g. the name <span class="tt">abc.tmp</span> matches <span class="tt">a*;\*.tmp</span> and does not match <span class="tt">\*.tmp;a*</span>.
+</p>
+<h4>File size limits</h4>
+<p>
+Filter files by size.
+Use <span class="tt">0</span> (zero) as a second value if you wish to set a lower limit only.
+</p>
+</div>
+
+<h3>Additional Issues</h3>
+<h4>Checkbox "Unicode names"</h4>
+<p>
+The option is set if there is Unicode support in OS,
+otherwise symbols outside the selected code page must be transliterated or substituted
+(see <a href="locales.html">Locales</a>). Unavailable in DOS.
+</p>
+<h4>Recover to a FAT formatted volume, checkbox "Split large files"</h4>
+<p>
+FAT volumes do not support files greater than 4GB (or sometimes 2GB).
+Larger files may be split during recovery upon a request if OS properly reports
+(which is not always the case) 
+or if the option <b>Split large files</b> is used (preferable).
+
+Later you may merge file parts on another disk by using the system utility 
+<span class="tt">copy /b part1 + part2 + part3 result</span>, for example.
+Pure DOS supports only FAT volumes.
+</p>
+
+<h4>File names in DOS, checkbox "Substitute names"</h4>
+<p>Without special drivers long files names are not supported under DOS. 
+Option <span class="ii">Substitute names</span> allows name substitution during recovery. 
+File <span class="tt">LRENAME.BAT</span> is being created in the destination folder for backward renaming.
+To restore original file names load OS Windows, go to the destination folder 
+and execute the file <span class="tt">LRENAME.BAT</span>. 
+An appropriate <a href="locales.html">OEM code page</a> must be selected 
+when working in DOS in order to restore national symbols correctly. 
+Unicode symbols outside the selected code page will be transliterated or substituted.
+</p>
+<p>
+You may <a href="inifile.html">add the parameter</a> <span class="tt">substnamesutf8=1</span> 
+or use the option <b>utf-8</b> to create <span class="tt">LRENAME.BAT</span> in the utf-8 format 
+fully supporting Unicode regardless the selected code page.
+Utf-8 format is supported in Windows&nbsp;7 and higher.
+</p>
+<h4>Paths longer than 259 symbols under Windows NT+</h4>
+<p>
+In order to recover paths which are longer than 259 symbols
+you should manually prepend the destination directory name with a prefix <span class="tt">\\?\</span>, e.g.: <span class="tt">\\?\D:\</span>. 
+Such long paths may be inaccessible using standard means such as Explorer ("My Computer").
+</p>
+<h4>Name Duplicate Handling</h4>
+<p>
+During recovery there may be name duplicates 
+if there different versions of the same file/directory are found, 
+if the destination file system doesn't distinguish between some names
+whilst the source FS distinguishes,
+if there are already files on the destination path before recovery.
+</p>
+<p>
+If the OS reports the file/directory exists already 
+you are prompted to choose how to handle the duplicate.
+You may rename/skip the object manually or 
+choose the "auto rename" or "skip all" options to automatically handle all subsequent objects too.
+It is also possible to merge directories with duplicated names.
+</p>
+<p>
+Additionally you are asked for a threshold (maximum duplicates for the same name).
+When the threshold is exceeded you are asked again for a desired action.
+<a href="inifile.html">Parameters</a> <span class="tt">maxfilerenames=</span> and <span class="tt">maxdirrenames=</span> 
+are used as default threshold numbers.
+</p>
+<p>
+The destination file system designates duplicates.
+Duplicates are not handled if <span class="ii">name substitution</span> is used under DOS.
+</p>
+<p>
+<span class="ii">Event Handler...</span>
+preset recovery events handling (the coincidence of names, I/O errors, and others).
+</p>
+
+</div></div>
+</body>
+</html>

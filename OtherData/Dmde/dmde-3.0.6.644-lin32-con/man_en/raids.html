@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - RAID Arrays</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">TOC</a> &middot; <a href="howto.html">Work</a> &middot; <a href="menu.html">Menu</a> &middot;
+<a href="menu_disk.html">Drive</a>
+<hr />
+<h2>RAID Arrays</h2>
+<h3>Dialog box "Construct RAID"</h3>
+<p>Use Menu - Drive - <b>Select Drive</b> - Construct RAID item</p>
+<p>
+A tool to construct virtual RAIDs using individual disks (or partitions and images) when 
+it is not possible to use standard tools of the controller (hardware RAID)
+or the operating system (software RAID). 
+</p>
+<p>
+If it is necessary disks must be detached from the RAID controller
+and attached to a computer as single disks.
+</p>
+<p>
+Incorrect selection of a RAID type or data rotation (striping) 
+leads to incorrect <a href="datarecovery.html">data recovery</a>
+(despite that the directory structure may be reconstucted correctly).
+</p>
+<h3>RAID types</h3>
+<p><b>RAID-0.</b>
+Usually contains two disks on which information is written alternately by blocks (stripes).
+If one disk is absent only small files which fit into single block may be recovered. 
+RAID-0 is supported in read/write mode.
+</p>
+<p><b>RAID-1.</b>
+Usually contains two disks, data is duplicated. Stripe size is not used.
+Supported in read-only mode.
+One healphy disk may be <a href="devices.html">opened</a> as a single device without loss of data.
+</p>
+<p><b>RAID-4.</b> 
+Usually contains three disks. One disk is for parity. 
+Data is alternated between the rest disks. 
+It is possible to recover all data without any one of the disks. 
+Use <span class="ii">NULL device</span> instead of the absent device. 
+Supported in read-only mode.
+</p>
+
+<p><b>RAID-5.</b> 
+Usually contains three disks (or more). 
+Data is alternated between all disks herewith one block of parity per the rest blocks of data. 
+There are four types of data rotation on a RAID-5. 
+Some RAIDs (usually hardware) may have delayed parity.
+It is possible to recover all data without any one of the disks
+(which should be replace with <span class="ii">NULL device</span>). 
+Supported in read-only mode.
+</p>
+
+<p><b>RAID-6.</b> 
+Usually contains four disks (or more). It is similar to <b>RAID-5</b> with exception that two blocks 
+of parity (different types) are used.
+Only type of parity is supported so only one disk may be replaced with <span class="ii">NULL device</span>. Read-only.
+</p>
+
+<p><b>RAID: Custom rotation.</b> 
+You may define your own <b>striping</b> (use <span class="ii">Menu</span> - <span class="ii">Striping...</span>).
+Use integer numbers from <span class="tt">0</span> to specify data blocks according to their order on disks, 
+<span class="tt">-1</span> to specify <b>XOR</b>-parity block, and
+<span class="tt">-2</span> to specify unused block.
+</p>
+<table><tr><td>E.g. for the diagram:
+<table>
+<tr>                    <td>Disk#0</td><td>Disk#1</td><td>Disk#2</td><td>Disk#3</td></tr>
+<tr style="color:red">  <td>A1</td><td>A2</td><td>Ap</td><td>Aq</td></tr>
+<tr style="color:green"><td>B1</td><td>Bp</td><td>Bq</td><td>B2</td></tr>
+<tr style="color:blue"> <td>Cp</td><td>Cq</td><td>C1</td><td>C2</td></tr>
+<tr>                    <td>Dq</td><td>D1</td><td>D2</td><td>Dp</td></tr>
+</table>
+</td><td>
+&nbsp;<br />
+=&gt;
+</td><td>
+&nbsp;striping must be specified in the following way:
+<table>
+<tr><td colspan="4">&nbsp;</td></tr>
+<tr style="color:red">  <td>&nbsp;0 &nbsp;1       -1      -2 </td></tr>
+<tr style="color:green"><td>&nbsp;2      -1       -2 &nbsp;3 </td></tr>
+<tr style="color:blue"> <td>     -1      -2  &nbsp;4 &nbsp;5 </td></tr>
+<tr>                    <td>-2 &nbsp;6  &nbsp;7      -1 </td></tr>
+</table>
+</td></tr>
+</table>
+
+<p><b>JBOD/Spanned.</b> 
+Just a bound of disks which are used as one continuous disk. 
+There is no data alternation, stripe size is not used. 
+Data located on any disk will be lost if the disk is absent.
+JBOD is supported in read/write mode.
+</p>
+
+<h3>RAID parameters</h3>
+<p><b>Stripe Size:</b> data rotation block size. Not used in <b>RAID-1</b>, <b>JBOD</b>
+<br />
+<b>Delay:</b> used in <b>RAID-5</b> and <b>RAID-6</b> with delayed parity only.
+<br />
+<b>Offset:</b> data start offset on disk (usually used on software RAIDs).
+<br />
+<b>Offset and Size:</b> partition offset and size for <b>JBOD/Spanned</b> disks.
+<br />
+<b>Null disk:</b> used instead of absent or damaged disk.
+<br />
+<b>Striping...:</b> manually specify striping for <b>Custom RAID</b>.
+<br />
+<b>Save/Load:</b> save/load RAID configuration.</p>
+
+</div></div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - Szukanie NTFS/FAT</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">Spis treści</a> &middot; <a href="howto.html">Praca</a> &middot; 
+<a href="menu.html">Menu</a> &middot; <a href="menu_tools.html">Narzędzia</a>
+<hr />
+<h2>Pełne skanowanie</h2>
+<p>
+Kompleksowe metody wyszukiwania umożliwia znajdowanie i odbudowy w pamięci strukturze katalogów uszkodzenia systemu plików
+lub znaleźć utraconych plików znanych typów przez podpisów, jeśli nie może być stosowany system plików.
+</p>
+<p>
+Jeśli system plików nie jest poważnie uszkodzony, to znaleźć wolumin mogą być otwarte 
+przed zakończeniem skanowania.
+W najbardziej skomplikowanych przypadkach różne warianty woluminów mogą być wymienione.
+Aby oszacować jakości wariantu należy wybrać i Otwórz wolumin, 
+<a href="scanvolume.html">zrekonstruować systemu plików</a> i 
+<a href="datarecovery.html">odzyskać</a> pliki.
+Jeśli wybrany wariant woluminu nie zawiera niezbędne pliki lub pliki zostaną odzyskane nieprawidłowo, 
+należy kontynuować poszukiwania lub spróbować innego wariantu. 
+Wskaźniki pozwalające wstępne oszacowanie jakości wariantu (szczegóły poniżej). 
+Jeśli dane zostały przeniesione (podczas przemieszczania, dzielenia, łączenie, zmiany rozmiaru partycji), 
+to następnie niektóre pliki mogą być odzyskane poprawnie z jednego wariantu woluminu 
+i inne z innego wariantu, mimo że pliki są widoczne na obu wariantach woluminu.
+</p>
+<p>
+Zaleca się, aby zeskanować zaznaczony obszar urządzenia fizycznego 
+(w tym starych i nowych lokalizacji woluminu, jeśli został przeniesiony), 
+a nie skanowanie dysku logicznego.
+Oprogramowanie może odczytywać poza zaznaczony obszar, jeżeli jest to konieczne.
+</p>
+
+<table><tr>
+<th>Otwórz&nbsp;wolumin</th><td>Otwórz woluminu wybranego z listy.</td></tr>
+<tr><th>Zapisz...</th><td>Zapisz dziennik skanowania do pliku.</td></tr>
+<tr><th>Otwórz...</th><td>Załaduj dziennik skanowania z pliku 
+(kontynuacja poprzednich skanowania lub wykorzystanie wcześniejszych wyników wyszukiwania).
+</td></tr>
+<tr><th>Start/Stop</th><td>Start/stop skanowania.
+Jeśli parametry skanowania nie zostaną zmienione skanowania będzie kontynuowana.
+</td></tr>
+<tr><th>Parametry</th><td>
+Obszar skanowania, FS, parametry do zbierania danych i obliczania woluminów.
+</td></tr>
+<tr><th>Menu</th><td>Poza tym, pozwala na zmianę kolejności sortowania głośności.</td></tr>
+</table>
+<p class="spec">
+Skanowania prowadzić selektywnie w całym dysku stopniowo pokrywającego cały obszar skanowania. 
+Pozwala to na znalezienie woluminów bez wcześniejszego pełnego skanowania. 
+Woluminy z dużej liczby plików znajdowane są w pierwszej kolejności.
+</p>
+
+<h3>NTFS, exFAT, ext2/3/4</h3>
+<p>
+Kolumny <b>%</b> i <b>Zgodne</b> pozwalają na oszacowanie jakości odzyskiwania danych z znalezionego 
+wariantu woluminu (procent i liczba udanych skojarzeń odniesienia).
+</p>
+<p>
+<b>Min. rozmiar</b>
+jest minimalny rozmiar woluminu, zawierający wszystkie pliki najlepszych blokach systemu plików woluminu.
+</p>
+
+<h3>FAT</h3>
+<p>
+Kolumna <b>Wskaźniki</b> pokazuje brak (uszkodzenia) ("<b>-</b>") lub obecność ("<b>+</b>") 
+odpowiedniej konstrukcji FS (<b>B</b> - sektor rozruchowy / kopia, 
+<b>F</b> - tablica FAT/kopia, <b>R</b> - katalog główny).
+</p>
+<p>
+Kolumna <b>Zgodne</b> pokazuje liczbę znalezionych katalogów 
+odpowiadające wariantu woluminu.
+</p>
+
+<h3>RAW File Search</h3>
+<p>
+Podpisy plików są używane, aby znaleźć utracone pliki, jeśli FS nie może być używany. 
+Dodatkowo podpisy plików są wykorzystywane jako punkty odniesienia do obliczenia woluminów NTFS i exFAT.
+</p>
+</div></div>
+</body>
+</html>

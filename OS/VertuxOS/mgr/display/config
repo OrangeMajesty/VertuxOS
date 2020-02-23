@@ -1,0 +1,5 @@
+	Screen '0' {
+		driver './Native/';
+		lib './Native/lib/';
+		Resolution: '320x200';
+	}

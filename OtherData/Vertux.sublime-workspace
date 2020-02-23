@@ -1,0 +1,2085 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"file",
+				"file_preloader"
+			],
+			[
+				"GS",
+				"GSbase"
+			],
+			[
+				"b",
+				"buffer_"
+			],
+			[
+				"B",
+				"Buffer"
+			],
+			[
+				"DS",
+				"DSlong"
+			],
+			[
+				"es",
+				"ESbase"
+			],
+			[
+				"Gs",
+				"GSlong"
+			],
+			[
+				"E",
+				"Elf32_Ehdr"
+			],
+			[
+				"St",
+				"StructFat32"
+			],
+			[
+				"0x2",
+				"0x2106"
+			],
+			[
+				"pr",
+				"file_preloader"
+			],
+			[
+				"El",
+				"Elf32_Shdr"
+			],
+			[
+				"e",
+				"e_phoff"
+			],
+			[
+				"for",
+				"for	For Loop"
+			],
+			[
+				"Re",
+				"ReadHDD"
+			],
+			[
+				"Ds",
+				"DSbase"
+			],
+			[
+				"fo",
+				"format"
+			],
+			[
+				"p",
+				"printf	printf …"
+			],
+			[
+				"add",
+				"addr"
+			],
+			[
+				"fil",
+				"file_preloader"
+			],
+			[
+				"pa",
+				"patch"
+			],
+			[
+				"N",
+				"NumberPorts"
+			],
+			[
+				"LD",
+				"loadscreen"
+			],
+			[
+				"Dir",
+				"DirAttr"
+			],
+			[
+				"ne",
+				"nesting"
+			],
+			[
+				"S",
+				"StructFat32Dir"
+			],
+			[
+				"H",
+				"HexInAsciiSz"
+			],
+			[
+				"PA",
+				"PANIC"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"P",
+				"PANIC"
+			],
+			[
+				"T",
+				"TLink"
+			],
+			[
+				"DirF",
+				"Dir_FstClusHI"
+			],
+			[
+				"n",
+				"NumHDD"
+			],
+			[
+				"R",
+				"ReadHDD"
+			],
+			[
+				"Fa",
+				"StructFat32"
+			],
+			[
+				"Hdd",
+				"Hdd"
+			],
+			[
+				"lb",
+				"LBA"
+			],
+			[
+				"cha",
+				"char"
+			],
+			[
+				"tru",
+				"trueVbuf"
+			],
+			[
+				"Ma",
+				"MaxHDDPartition"
+			],
+			[
+				"SI",
+				"size_block"
+			],
+			[
+				"Fi",
+				"FirstBit"
+			],
+			[
+				"F",
+				"FirstBlock"
+			],
+			[
+				"PD",
+				"PDBR"
+			],
+			[
+				"Fr",
+				"FreeBlocks"
+			],
+			[
+				"fi",
+				"FirstBit"
+			],
+			[
+				"si",
+				"size_block"
+			],
+			[
+				"En",
+				"EndBlocks"
+			],
+			[
+				"Mems",
+				"MemSet_Frame"
+			],
+			[
+				"Ba",
+				"Base_Memory"
+			],
+			[
+				"if",
+				"if	If Condition"
+			],
+			[
+				"free",
+				"FreeBlocks"
+			],
+			[
+				"Mem",
+				"MemorySize"
+			],
+			[
+				"0x",
+				"0x52"
+			],
+			[
+				"tr",
+				"trueVbuf"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"v",
+				"vbuf"
+			],
+			[
+				"bu",
+				"bufferpoint"
+			],
+			[
+				"ad",
+				"Adr"
+			],
+			[
+				"fat",
+				"FAT32"
+			],
+			[
+				"boots",
+				"fat32_bootsig"
+			],
+			[
+				"boot",
+				"fat32_BackBootSector"
+			],
+			[
+				"fat32fa",
+				"fat32_bigsektorpearlfat"
+			],
+			[
+				"bigtot",
+				"fat_bigtotalsektors"
+			],
+			[
+				"bigse",
+				"fat_bigtotalsektor"
+			],
+			[
+				"HDD",
+				"HDD_Partition"
+			],
+			[
+				"Pa",
+				"PATA_Status"
+			],
+			[
+				"PrI",
+				"processid"
+			],
+			[
+				"tss",
+				"tss_set_gate"
+			],
+			[
+				"_F",
+				"_FILE_STRUCT_"
+			],
+			[
+				"I",
+				"include"
+			],
+			[
+				"make",
+				"makefile"
+			],
+			[
+				"D",
+				"Driver"
+			],
+			[
+				"Lo",
+				"LoadProcces"
+			],
+			[
+				"LDTR",
+				"LDTR"
+			],
+			[
+				"SS",
+				"SS1"
+			],
+			[
+				"s",
+				"selector"
+			],
+			[
+				"Ta",
+				"TaskControl"
+			],
+			[
+				"no",
+				"nostdinc"
+			],
+			[
+				"nex",
+				"NextCallTask"
+			],
+			[
+				"Ne",
+				"NextCallTask"
+			],
+			[
+				"TSS",
+				"TssChange"
+			],
+			[
+				"L",
+				"LoadProcces"
+			],
+			[
+				"cr",
+				"clrscr"
+			],
+			[
+				"ta",
+				"Task"
+			],
+			[
+				"Core",
+				"CoreSpaces"
+			],
+			[
+				"ldt",
+				"ldt_set_gate"
+			],
+			[
+				"LDT",
+				"LDTR_ADR"
+			],
+			[
+				"LDTr",
+				"LDTR_ADR"
+			],
+			[
+				"Pr",
+				"PriorityNum"
+			],
+			[
+				"Num",
+				"PriorityNum"
+			],
+			[
+				"f",
+				"firtts"
+			],
+			[
+				"M",
+				"Max_Task"
+			],
+			[
+				"ol",
+				"oldflags"
+			],
+			[
+				"fa",
+				"FlagsTss"
+			],
+			[
+				"Tss",
+				"TssChange"
+			],
+			[
+				"cl",
+				"clrscr"
+			],
+			[
+				"fla",
+				"flags"
+			],
+			[
+				"w",
+				"WaitTick"
+			],
+			[
+				"un",
+				"unsigned"
+			],
+			[
+				"df",
+				"define"
+			],
+			[
+				"old",
+				"oldBP"
+			],
+			[
+				"G",
+				"GDT_FirstSelector_TSS"
+			],
+			[
+				"tA",
+				"TaskControl"
+			],
+			[
+				"Inc",
+				"Include"
+			],
+			[
+				"W",
+				"WaitTick"
+			],
+			[
+				"ld",
+				"ldtr32"
+			],
+			[
+				"Erro",
+				"errorcode"
+			],
+			[
+				"gdt",
+				"gdt_set_gate"
+			],
+			[
+				"a",
+				"adr"
+			],
+			[
+				"pi",
+				"ATA_CMD_READ_PIO"
+			],
+			[
+				"O",
+				"OutAl"
+			],
+			[
+				"In",
+				"InAl"
+			],
+			[
+				"0x1",
+				"0x1f0"
+			],
+			[
+				"reg",
+				"ATA_REG_COMMAND"
+			],
+			[
+				"IDE",
+				"IDE_Controller"
+			],
+			[
+				"pc",
+				"IDE_Controller__PrimaryChannel"
+			],
+			[
+				"cmd",
+				"ATA_CMD_IDENTIFY"
+			],
+			[
+				"PCI",
+				"PCI_Data"
+			],
+			[
+				"Ide",
+				"IDE_Controller"
+			],
+			[
+				"De",
+				"DeviceID"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"PC",
+				"PCI_Data"
+			],
+			[
+				"He",
+				"HexInAsciiSz"
+			],
+			[
+				"he",
+				"HexInAscii"
+			],
+			[
+				"Hex",
+				"HexInAscii"
+			],
+			[
+				"dev",
+				"device"
+			],
+			[
+				"ret",
+				"return"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "OS/VertuxOS/Include/x32/C/Arch/Control/CTask.h",
+			"settings":
+			{
+				"buffer_size": 3570,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/Include/x32/C/filemanager.h",
+			"settings":
+			{
+				"buffer_size": 9061,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/Include/x32/C/technologies/format/FUse.h",
+			"settings":
+			{
+				"buffer_size": 4537,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/Include/x32/C/technologies/format/ELF86.h",
+			"settings":
+			{
+				"buffer_size": 2296,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/mgr/display/make.ld",
+			"settings":
+			{
+				"buffer_size": 291,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/mgr/display/init.c",
+			"settings":
+			{
+				"buffer_size": 362,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/mgr/display/header.c",
+			"settings":
+			{
+				"buffer_size": 510,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/mgr/display/makefile",
+			"settings":
+			{
+				"buffer_size": 851,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/init.Debug",
+			"settings":
+			{
+				"buffer_size": 19276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/mgr/display/init.mgr",
+			"settings":
+			{
+				"buffer_size": 22360,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/Include/x32/C/Arch/TaskManager.h",
+			"settings":
+			{
+				"buffer_size": 6420,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/Include/x32/C/technologies/FAT32.h",
+			"settings":
+			{
+				"buffer_size": 4022,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "OS/VertuxOS/Include/x32/C/technologies/PATA.h",
+			"settings":
+			{
+				"buffer_size": 2670,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/Vertux.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				"Clean"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/Stalkos.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"All"
+				]
+			],
+			[
+				"Packages/User/Stalkos.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/Stalkos.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Boot"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Debug"
+				]
+			],
+			[
+				"Packages/User/Stalkos.sublime-build",
+				"Debug"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/Stalkos.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Boot"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Debug"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Format"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Compile Asm"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Compile C++"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Clear"
+				]
+			],
+			[
+				"Packages/User/Stalkos.sublime-build",
+				"Compile Asm"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/Stalkos.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Test"
+				]
+			],
+			[
+				"Packages/User/Stalkos.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/Stalkos.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Compile Asm"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Compile C++"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Debug"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Format"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Clear"
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Boot"
+				]
+			],
+			[
+				"Packages/User/Stalkos.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/Stalkos.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Stalkos.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/Stalkos.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/Vertux.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Vertux.sublime-build",
+					"Compile Asm"
+				],
+				[
+					"Packages/User/Vertux.sublime-build",
+					"Compile C++"
+				],
+				[
+					"Packages/User/Vertux.sublime-build",
+					"Debug"
+				],
+				[
+					"Packages/User/Vertux.sublime-build",
+					"Format"
+				],
+				[
+					"Packages/User/Vertux.sublime-build",
+					"Clear"
+				],
+				[
+					"Packages/User/Vertux.sublime-build",
+					"Boot"
+				]
+			],
+			[
+				"Packages/User/Vertux.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"About"
+			],
+			[
+				"!",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"prel",
+				"Project: Close"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Typedef"
+			]
+		],
+		"width": 404.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/dmitry-us/Project/OS",
+		"/home/dmitry-us/Project/OS/VertuxOS",
+		"/home/dmitry-us/Project/OS/VertuxOS/Boot",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x16",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Arch",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/technologies",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/technologies/format",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr/display",
+		"/home/dmitry-us/Project/OS/docs",
+		"/home/dmitry-us/Project/OS/docs/Template"
+	],
+	"file_history":
+	[
+		"/media/dmitry-us/Vertux/mgr/display/i",
+		"/home/dmitry-us/Project/OS/Makefile",
+		"/home/dmitry-us/Project/OS/docs/Function's",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/filemanager.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Arch/MMU.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr/display/init.c",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/Header/File_System/Fat32/fatRead",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x16/assembly/sysmacros",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Display.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr/display/make.ld",
+		"/home/dmitry-us/Project/OS/VertuxOS/source/mgr/display/init.mgr",
+		"/home/dmitry-us/Project/OS/VertuxOS/Boot/Boot.asm",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr/display/init.mgr",
+		"/home/dmitry-us/Project/OS/VertuxOS/kernel.c",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/IDT.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/CPU.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/PCI_Device.h",
+		"/home/dmitry-us/Project/OS/docs/Template/ModuleHeader",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr/display/header.c",
+		"/home/dmitry-us/Project/OS/docs/Template/DriverHeader",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr/display/makefile",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr/display/HexInitMgr.tmp",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr/display/config",
+		"/home/dmitry-us/Project/OS/docs/update",
+		"/home/dmitry-us/Project/OS/docs/in_developing",
+		"/home/dmitry-us/Project/OS/docs/function",
+		"/home/dmitry-us/Project/OS/VertuxOS/Boot/MBR.asm",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/technologies/FAT32.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Header.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/Header/File_System/Fat32/fatWrite",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/technologies/ATA.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/GDT.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/Header/Driver.h",
+		"/home/dmitry-us/Project/OS/Debug",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr/display/init",
+		"/home/dmitry-us/Project/OS/VertuxOS/mgr/display/make.sh",
+		"/opt/sublime_text/start.sh",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Device/HardDrive.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/IRQ.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/GnuAssembl.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/fopen.h",
+		"/home/dmitry-us/Project/Stalkos.sublime-project",
+		"/home/dmitry-us/Project/OS/VertuxOS/kernelasm.asm",
+		"/home/dmitry-us/Project/OS/VertuxOS/source/BOOT",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/PIC.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/IO.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Type.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Arch/TaskManager.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/MMU.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Arch/Control/CIntereptionDevice.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Arch/Control/CTask.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Arch/IPS.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Arch/IPC.h",
+		"/home/dmitry-us/Project/OS/docs/fix_a_bug",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/ш.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/multitasking.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/InterectionDevice.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/IPS.h",
+		"/home/dmitry-us/Project/OS/docs/template",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Memory.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/DMA.h",
+		"/home/dmitry-us/Project/OS/VertuxOS/Include/x32/C/Device/IDE.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/Memory.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/PIC.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/CPU.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/IO.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/Display.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/PCI_Device.h",
+		"/home/dmitry-us/Project/OS/Stalkos/kernel.c",
+		"/home/dmitry-us/Project/OS/Stalkos/kernelasm.asm",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/IRQ.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/GDT.h",
+		"/home/dmitry-us/Project/vortex.sublime-project",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/Device/Video.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/Device/ATA.h",
+		"/home/dmitry-us/Project/OS/log/kernel.log",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/multitasking.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Boot/Boot.asm",
+		"/home/dmitry-us/Project/OS/Stalkos/Boot/MBR.asm",
+		"/home/dmitry-us/Project/OS/Stalkos/kernel.log",
+		"/home/dmitry-us/Project/OS/LD.script",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/Header/INIT_c",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/APIC.h",
+		"/home/dmitry-us/Project/OS/DebugLD.script",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/Header/File_System/Fat32/fatRead",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x16/assembly/sysmacros",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/Type.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/Assembly/sysfunc",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/Header/INIT",
+		"/home/dmitry-us/Project/Stalkos.sublime-workspace",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/Header/IRQT",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/Header/GDT|IDT",
+		"/home/dmitry-us/Project/OS/docs/define",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/Display.c",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/Header/IDT",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/Assembly/sysfunc.data",
+		"/home/dmitry-us/.config/sublime-text-3/Packages/User/Stalkos.sublime-build",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/IRQ.c",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/PIC.c",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/APIC.c",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/IDT.c",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/IDT.h",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/IO.c",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/x32/C/Memory.c",
+		"/home/dmitry-us/Project/OS/Stalkos/Include/Header/GDT",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x32/C/GDT.h",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x32/Assembly/sysfunc",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x32/C/Display.c",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x32/C/Display.h",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x16/assembly/sysmacros",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x86/File_system/fatRead",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x32/Assembly/sysfunc.data",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x86/Assembly/sysfunc.data",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x86/Assembly/sysfunc",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x16/File_system/fatRead",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x86/Assembly/GDT",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/display.h",
+		"/home/dmitry-us/Project/OS/Stalkos/lib/x86/sdr/disk.sdr",
+		"/home/dmitry-us/Project/OS/Stalkos/kernelasm.o"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/dmitry-us/Project/OS/VertuxOS",
+			"/home/dmitry-us/Project/docs"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"buffer_",
+			"TLink",
+			"OLDpatch",
+			"Sl",
+			"Sb",
+			"DS",
+			"p_",
+			"p",
+			": ",
+			"uint32_t",
+			"  ",
+			"Elf32_Addr",
+			"uint32_t",
+			"uint16_t",
+			"u",
+			"EI_NIDENT",
+			"Elf32_Word",
+			"Elf32_Half",
+			"file_preloader",
+			"file_p",
+			"36",
+			"addr",
+			"Address",
+			"BPB_SecPerClus",
+			"Step",
+			");\n",
+			"o",
+			"signature",
+			"i",
+			"offset",
+			"nesting",
+			"patch",
+			"addr",
+			"patch",
+			"i",
+			"HddPoint",
+			"PortEX",
+			"BPB_RsvdSecCnt",
+			"StructFat32",
+			"BS_FilSysType",
+			"BPB_SecPerClus",
+			"UINT32",
+			"UINT8",
+			"UINT16",
+			"Kluster",
+			"MAP",
+			"First",
+			"unsigne",
+			"cha",
+			"unsigned",
+			"UINT32",
+			"UINT8",
+			"UINT16",
+			"To",
+			"//",
+			"FreeBlocks",
+			"PTE",
+			"virtual",
+			"NBlocks",
+			" \");",
+			"byte",
+			"i",
+			"[i",
+			"U",
+			"i++",
+			"[i]",
+			"i",
+			"if(это первый){\n			// 	FirstBlock = этот блок;\n			",
+			"0x10",
+			"FAT32",
+			"*",
+			"Buffer1",
+			"FAT32",
+			" *)",
+			"FAT32",
+			"buffer_",
+			"&buffer_",
+			"0x3F6",
+			"HDDinit(0x0",
+			"HddPoint",
+			"Struct",
+			"printf(\" | ",
+			"break;",
+			"HDD",
+			"Sector",
+			"ATA",
+			"_FILE_STRUCT_",
+			"next_pid*Max_LDTselector",
+			"O",
+			". = ALIGN(4096);",
+			"rm",
+			"mgr",
+			") ",
+			"rm",
+			"arhive",
+			".",
+			"arhive",
+			"//",
+			"unsigned short",
+			"0",
+			"num",
+			", Core, CoreSpaces",
+			"0x10",
+			"Max_TStackSize",
+			"unsigned char 	",
+			"Task[i]",
+			"Task[i].pid",
+			"next_pid",
+			"Max_LDTselector",
+			"next_pid",
+			"AdrLDT[num]",
+			" LDT_struct",
+			"//",
+			"Max_TStackSize",
+			"0x1",
+			"0x2",
+			"(int)",
+			"Normal",
+			"HexInAsciiSz(",
+			"printf(",
+			"NextCallTask",
+			"8",
+			"Max",
+			"eax",
+			"+",
+			"//",
+			"0x28",
+			"max_"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "OS/VertuxOS/Include/x32/C/Arch/Control/CTask.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3432,
+								3432
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1302.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "OS/VertuxOS/Include/x32/C/filemanager.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8068,
+								8068
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3807.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "OS/VertuxOS/Include/x32/C/technologies/format/FUse.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								793,
+								793
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "OS/VertuxOS/Include/x32/C/technologies/format/ELF86.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								612,
+								612
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "OS/VertuxOS/mgr/display/make.ld",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								89,
+								89
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "OS/VertuxOS/mgr/display/init.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "OS/VertuxOS/mgr/display/header.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								383,
+								383
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "OS/VertuxOS/mgr/display/makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "OS/init.Debug",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1483,
+								1483
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 633.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "OS/VertuxOS/mgr/display/init.mgr",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10324,
+								10324
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 7148.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "OS/VertuxOS/Include/x32/C/Arch/TaskManager.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2903,
+								2903
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1164.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "OS/VertuxOS/Include/x32/C/technologies/FAT32.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								402,
+								402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 84.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "OS/VertuxOS/Include/x32/C/technologies/PATA.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2670,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2336,
+								2336
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1039.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 146.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Packages/User/Vertux.sublime-build",
+	"project": "Vertux.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inid",
+				"init.Debug"
+			],
+			[
+				"ma",
+				"Makefile"
+			],
+			[
+				"docc",
+				"docs/Function's"
+			],
+			[
+				"fi",
+				"VertuxOS/Include/x32/C/filemanager.h"
+			],
+			[
+				"mm",
+				"VertuxOS/Include/x32/C/Arch/MMU.h"
+			],
+			[
+				"inic",
+				"VertuxOS/mgr/display/init.c"
+			],
+			[
+				"dis",
+				"VertuxOS/Include/x32/C/Display.h"
+			],
+			[
+				"hae",
+				"VertuxOS/mgr/display/header.c"
+			],
+			[
+				"ini",
+				"VertuxOS/mgr/display/init.mgr"
+			],
+			[
+				"make",
+				"VertuxOS/mgr/display/makefile"
+			],
+			[
+				"fatre",
+				"VertuxOS/Include/Header/File_System/Fat32/fatRead"
+			],
+			[
+				"boot",
+				"VertuxOS/Boot/Boot.asm"
+			],
+			[
+				"di",
+				"VertuxOS/Include/x32/C/Display.h"
+			],
+			[
+				"pata",
+				"VertuxOS/Include/x32/C/technologies/PATA.h"
+			],
+			[
+				"sy",
+				"VertuxOS/Include/x16/assembly/sysmacros"
+			],
+			[
+				"dh",
+				"docs/Template/DriverHeader"
+			],
+			[
+				"dhe",
+				"docs/Template/DriverHeader"
+			],
+			[
+				"he",
+				"VertuxOS/mgr/display/header.c"
+			],
+			[
+				"con",
+				"VertuxOS/mgr/display/config"
+			],
+			[
+				"tmp",
+				"VertuxOS/mgr/display/HexInitMgr.tmp"
+			],
+			[
+				"hea",
+				"VertuxOS/mgr/display/header.c"
+			],
+			[
+				"init",
+				"VertuxOS/mgr/display/init.c"
+			],
+			[
+				"cp",
+				"VertuxOS/Include/x32/C/CPU.h"
+			],
+			[
+				"sys",
+				"VertuxOS/Include/x16/assembly/sysmacros"
+			],
+			[
+				"mbr",
+				"VertuxOS/Boot/MBR.asm"
+			],
+			[
+				"ff",
+				"VertuxOS/Include/Header/File_System/Fat32/fatRead"
+			],
+			[
+				"d",
+				"VertuxOS/Include/x32/C/Display.h"
+			],
+			[
+				"",
+				"VertuxOS/Include/x32/C/filemanager.h"
+			],
+			[
+				"cpu",
+				"VertuxOS/Include/x32/C/CPU.h"
+			],
+			[
+				"file",
+				"VertuxOS/Include/x32/C/filemanager.h"
+			],
+			[
+				"ker",
+				"VertuxOS/kernel.c"
+			],
+			[
+				"idt",
+				"VertuxOS/Include/x32/C/IDT.h"
+			],
+			[
+				"fat",
+				"VertuxOS/Include/Header/File_System/Fat32/fatWrite"
+			],
+			[
+				"i",
+				"VertuxOS/Include/x32/C/IDT.h"
+			],
+			[
+				"sysm",
+				"VertuxOS/Include/x16/assembly/sysmacros"
+			],
+			[
+				"boota",
+				"VertuxOS/Boot/Boot.asm"
+			],
+			[
+				"kerc",
+				"VertuxOS/kernel.c"
+			],
+			[
+				"kec",
+				"VertuxOS/kernel.c"
+			],
+			[
+				"devi",
+				"VertuxOS/Include/x32/C/PCI_Device.h"
+			],
+			[
+				"ata",
+				"VertuxOS/Include/x32/C/technologies/ATA.h"
+			],
+			[
+				"mmu",
+				"VertuxOS/Include/x32/C/Arch/MMU.h"
+			],
+			[
+				"gdt",
+				"VertuxOS/Include/x32/C/GDT.h"
+			],
+			[
+				"mak",
+				"Makefile"
+			],
+			[
+				"dima",
+				"VertuxOS/mgr/display/makefile"
+			],
+			[
+				"init.c",
+				"VertuxOS/mgr/display/init.c"
+			],
+			[
+				"gd",
+				"VertuxOS/Include/x32/C/GDT.h"
+			],
+			[
+				"hed",
+				"VertuxOS/Include/Header/Driver.h"
+			],
+			[
+				"de",
+				"Debug"
+			],
+			[
+				"irq",
+				"VertuxOS/Include/x32/C/IRQ.h"
+			],
+			[
+				"as",
+				"VertuxOS/Include/x32/C/GnuAssembl.h"
+			],
+			[
+				"deb",
+				"Debug"
+			],
+			[
+				"debu",
+				"Debug"
+			],
+			[
+				"asm",
+				"VertuxOS/Boot/MBR.asm"
+			],
+			[
+				"pc",
+				"VertuxOS/Include/x32/C/PCI_Device.h"
+			],
+			[
+				"h",
+				"VertuxOS/Include/x32/C/Header.h"
+			],
+			[
+				"boot.a",
+				"VertuxOS/Boot/Boot.asm"
+			],
+			[
+				"fu",
+				"docs/Function's"
+			],
+			[
+				"irq.h",
+				"VertuxOS/Include/x32/C/IRQ.h"
+			],
+			[
+				"ass",
+				"VertuxOS/Include/x32/C/GnuAssembl.h"
+			],
+			[
+				"pic",
+				"VertuxOS/Include/x32/C/PIC.h"
+			],
+			[
+				"ga",
+				"VertuxOS/Include/x32/C/GnuAssembl.h"
+			],
+			[
+				"io",
+				"VertuxOS/Include/x32/C/IO.h"
+			],
+			[
+				"m",
+				"Makefile"
+			],
+			[
+				"pi",
+				"VertuxOS/Include/x32/C/PIC.h"
+			],
+			[
+				"f",
+				"docs/fix_a_bug"
+			],
+			[
+				"mem",
+				"VertuxOS/Include/x32/C/Memory.h"
+			],
+			[
+				"ty",
+				"VertuxOS/Include/x32/C/Type.h"
+			],
+			[
+				"mu",
+				"VertuxOS/Include/x32/C/multitasking.h"
+			],
+			[
+				"boo",
+				"VertuxOS/Boot/Boot.asm"
+			],
+			[
+				"me",
+				"Makefile"
+			],
+			[
+				"ir",
+				"Stalkos/Include/x32/C/IRQ.h"
+			],
+			[
+				"dev",
+				"docs/in_developing"
+			],
+			[
+				"pci",
+				"Stalkos/Include/x32/C/PIC.h"
+			],
+			[
+				"mb",
+				"Stalkos/Boot/MBR.asm"
+			],
+			[
+				"bo",
+				"Stalkos/Boot/Boot.asm"
+			],
+			[
+				"ke",
+				"log/kernel.log"
+			],
+			[
+				"l",
+				"LD.script"
+			],
+			[
+				"ap",
+				"Stalkos/Include/x32/C/APIC.h"
+			],
+			[
+				"p",
+				"DebugLD.script"
+			],
+			[
+				"fa",
+				"Stalkos/Include/Header/File_System/Fat32/fatRead"
+			],
+			[
+				"mt",
+				"Stalkos/Include/x32/C/multitasking.h"
+			],
+			[
+				"api",
+				"Stalkos/Include/x32/C/APIC.h"
+			],
+			[
+				"b",
+				"Stalkos/Boot/Boot.asm"
+			],
+			[
+				"picd",
+				"Stalkos/Include/x32/C/PCI_Device.h"
+			],
+			[
+				"boot.asm",
+				"Stalkos/Boot/Boot.asm"
+			],
+			[
+				"deih",
+				"Stalkos/Include/x32/C/PCI_Device.h"
+			],
+			[
+				"t",
+				"Stalkos/Include/x32/C/Type.h"
+			],
+			[
+				"dih",
+				"Stalkos/Include/x32/C/Display.h"
+			],
+			[
+				"keas",
+				"Stalkos/kernelasm.asm"
+			],
+			[
+				"typeh",
+				"OS/Stalkos/Include/x32/C/Type.h"
+			],
+			[
+				"type",
+				"OS/Stalkos/Include/x32/C/Type.h"
+			],
+			[
+				"a",
+				"OS/Stalkos/Include/x32/C/APIC.h"
+			],
+			[
+				"booas",
+				"OS/Stalkos/Boot/Boot.asm"
+			],
+			[
+				"idth",
+				"OS/Stalkos/Include/x32/C/IDT.h"
+			],
+			[
+				"disc",
+				"OS/Stalkos/Include/x32/C/Display.c"
+			],
+			[
+				"bootas",
+				"OS/Stalkos/Boot/Boot.asm"
+			],
+			[
+				"included",
+				"OS/Stalkos/Include/x32/C/Display.h"
+			],
+			[
+				"32sys",
+				"OS/Stalkos/lib/x32/Assembly/sysfunc"
+			],
+			[
+				"sysd",
+				"OS/Stalkos/lib/x32/Assembly/sysfunc.data"
+			],
+			[
+				"sysf",
+				"OS/Stalkos/lib/x32/Assembly/sysfunc"
+			],
+			[
+				"86sy",
+				"OS/Stalkos/lib/x86/Assembly/sysfunc"
+			],
+			[
+				"g",
+				"OS/Stalkos/lib/x32/C/GDT.h"
+			],
+			[
+				"gdt.h",
+				"Stalkos/lib/x32/C/GDT.h"
+			],
+			[
+				"pri",
+				"/home/dmitry-us/Project/OS/Stalkos/lib/x32/C/Display.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Project/Vertux.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 182.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

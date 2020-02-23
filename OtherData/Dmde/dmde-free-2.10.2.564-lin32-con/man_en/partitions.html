@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Partition Management</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">TOC</a> &middot; <a href="howto.html">Work</a> &middot; <a href="menu.html">Menu</a> &middot; 
+<a href="menu_disk.html">Drive</a>
+<hr />
+<h2>Partition Management</h2>
+<p>
+A tool to view, search, and <a href="openvolume.html">open volumes</a>, 
+as well as for simple <a href="#partman">partition management</a> on MBR and GPT-style disks.
+Be sure to read the <a href="#partman"><font color="red">warning</font></a> before operating.
+</p>
+<p>
+Partition management includes <a href="#addpartition">undeleting removed and lost partitions</a>, 
+<a href="#bootrestore">restoring boot sector from copy</a> and other tools.
+You may operate FAT (FAT12/16/32), NTFS, ExFAT, and ExtFS (Ext2/3/4) volumes. However, only FAT and NTFS volumes can be 
+<a href="openvolume.html">opened</a> and checked for consistency.
+MBR and GPT layouts are supported. Hybrid (GPT+MBR) partitioning is not properly supported.
+Other styles (such as Dynamic Disks) are unsupported and partitions on such disks may be shown as found.
+</p>
+<p>
+Mark the checkbox <span class="ii">found</span> to express search and dsiplay lost and removed partitions
+(FAT/NTFS/ExFAT/ExtFS volumes may be found).
+For more complex and deeper search use <a href="detectvolumes.html">NTFS or FAT search</a>.
+Volumes opened after NTFS or FAT search are added to the list of found partitions
+and become available for partition management (e.g. undeleting is possible if a valid boot sectors is found).
+</p>
+<div class="spec">
+<p>
+To prevent partition express search and displaying dialog box "Partitions" 
+unmark the box <span class="ii">Show partitions</span> 
+when <a href="devices.html">open a device</a> or <a href="raids.html">construct a RAID</a>.
+</p>
+<p>
+Info mode checkboxes:
+</p>
+<ul style="margin-top:0;margin-bottom:0">
+<li><span class="ii">found</span>: 
+display found partitions</li>
+<li><span class="ii">tables</span>:
+display AMBR and GPT partition tables</li>
+<li><span class="ii">detailed</span>: 
+display partition information from tables and boot sectors respectively in several lines per partition</li>
+</ul>
+<p>
+<b>(A)</b> - bootable (active) partition status (<b>Partition</b> column).
+</p>
+<p>
+<b>Indicators</b> - volume diagnostic indicators (indicate correspondent structure presence):
+</p>
+<ul style="margin-top:0;margin-bottom:0">
+<li><b>T</b> &#8211; partition table;</li>
+<li><b>E</b> &#8211; table entry;</li>
+<li><b>B</b> &#8211; volume boot sector;</li>
+<li><b>C</b> &#8211; boot sector copy;</li>
+<li><b>F</b> &#8211; MFT(0) for NTFS or Root for FAT (is tested when <a href="openvolume.html">open FAT volume</a>);</li>
+<li><b>f</b> &#8211; MFTMirr(0) for NTFS;</li>
+<li><b>x</b> &#8211; structure is absent or damaged;</li>
+<li><b>&nbsp;</b> (indicator is absent) &#8211; structure is not tested (however it may present on a disk).</li>
+</ul>
+<p>
+Red color indicates errors in the partitioning.
+</p>
+</div>
+
+<h3><a id="partman"></a>Dialog Box "Partitions" &middot; Commands</h3>
+<p>
+<b><font color="red">Attention!</font></b>
+Partitioning modification may cause impossibility to boot from the disk 
+or inaccessibility of some partitions after applying. 
+Never modify partitioning of your boot or system disk. 
+Use alternative boot disk or connect your disk as second to another computer. 
+Run the software from the device which won't be modified 
+and <a href="#partbkup">save current partitioning</a> to a file on a device which won't be modified.
+After applying restart the computer or reconnect pluggable device for changes to take effect.
+Cancel the <span class="tt">chkdsk</span> utility (by pressing any key) if it runs automatically at startup as it may cause 
+non-recoverable damage of the data.
+</p>
+
+<p>
+Use the <span class="ii">Menu</span> button to view the operations available for the selected partition.
+</p>
+<p>
+Partitioning changes are pending until you push the button <span class="ii">Apply</span> 
+or use menu command <a href="#partapply">Apply Partitioning</a>.
+See also <a href="changes.html">Applying Changes</a> for details.
+</p>
+
+<div class="l">
+<h4>Open Volume</h4>
+<p><a href="openvolume.html">Open volume</a> to view and <a href="datarecovery.html">recover files</a>.</p>
+
+<h4>Open Volume Parameters</h4>
+<p>View and manually edit volume parameters before actually <a href="openvolume.html">open volume</a>.</p>
+
+<h4>Show Volume Letters</h4>
+<p>Display volume letters assigned by OS.</p>
+<h4>FAT, NTFS Search within the Partition</h4>
+<p><a href="detectvolumes.html">FAT, NTFS Search</a></p>
+<h4>Create Image/Clone</h4>
+<p>Call the dialog box <a href="copysectors.html">Copy Sectors</a> to create partition image or clone the partition.</p>
+
+<h4><a id="addpartition"></a>Insert the Partition (Undelete)</h4>
+<p>Insert lost or removed volume into the partition table. 
+Invalid partitions may prevent insertion so they must be removed before insertion.
+Completely damaged partitioning may be resetted using the command 
+<a href="#togglembr">Toggle MBR Signature On/Off</a> applied to the topmost item. 
+You should add partitions from the beginning to the end of the disk. 
+</p>
+
+<h4>Remove the Partition</h4>
+<p>Remove the existing partition or a partition table. 
+Some partitioning errors may be fixed by removing and inserting the partition.</p>
+
+<h4>Create RAW Partition</h4>
+<p>Create unformatted (RAW) partition within the unallocated space. 
+If there are no partitioning errors it is highly recommended to use 
+only standard system tools for creating and removing partitions.</p>
+
+<h4><a id="bootrestore"></a>Restore Boot Sector from the Copy</h4>
+<p>Replace damaged boot sector with a backup copy.</p>
+
+<h4>Toggle Bootable (Active) Partition Status</h4>
+<p>Set or reset active <b>(A)</b> status of a bootable partition.</p>
+
+<h4><a id="togglembr"></a>Toggle MBR/Boot Signature On/Off (MBR On/Off)</h4>
+<p>Set or reset boot sector signature (<span class="tt">0xAA55</span>).</p>
+
+<h4>Reset GPT+MBR Signatures (GPT Off)</h4>
+<p>Reset boot sector signature (<span class="tt">0xAA55</span>) and signatures of GPT tables (<span class="tt">EFI PART</span>).</p>
+
+<h4>Set GPT+MBR Signatures (GPT On)</h4>
+<p>Set GPT and boot signatures. Available only on GPT disks after resetting.</p>
+
+<h4>Write Boot Sectors</h4>
+<p>Make <a href="setup.html#DOS">DOS bootable disk</a>.</p>
+
+<h4>Undo Action</h4>
+<p>Undo the last action.</p>
+
+<h4>Redo Action</h4>
+<p>Redo the last undone action.</p>
+
+<h4>Undo Partitioning Changes</h4>
+<p>Undo all partitioing changes.</p>
+
+<h4>Reset All Changes</h4>
+<p>Reset all unapplied changes.</p>
+
+<h4><a id="partbkupopen"></a>Load from File</h4>
+<p>Load disk partitioning or rollback data from a file.
+See <a href="changes.html">Changes</a> for details.
+</p>
+
+<h4><a id="partbkup"></a>Save Current Partitioning to File</h4>
+<p>Save current partitioning to a file for a backup purposes.
+Available only if the device is partitioned and there are no unapplied changes.
+</p>
+
+<h4><a id="partapply"></a>Apply Partitioning</h4>
+<p>Write changes to the disk. See <a href="changes.html">Applying Changes</a> for details.
+</p>
+</div>
+
+</div></div>
+</body>
+</html>

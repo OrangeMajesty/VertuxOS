@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - Device Selection</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">TOC</a> &middot; <a href="howto.html">Work</a> &middot; <a href="menu.html">Menu</a> &middot; <a href="menu_disk.html">Drive</a> &middot; Select drive
+<hr />
+<h2>Device Selection</h2>
+<p>Select disk for further <a href="howto.html">work</a>.
+</p>
+<p>
+<b>If device size is detected incorrectly,</b> refer to
+<a href="sysrequire.html#size">System Requirements</a> issues.
+</p>
+
+<h3>Options</h3>
+<h4>Physical Devices / Interfaces / Logical disks and DOS Services</h4>
+<p>
+Preferable access type depends on the problem 
+(e.g. for data recovery see <a href="openvolume.html">volume opening</a>).
+</p>
+<h4>DOS Options</h4>
+<table>
+<tr valign="top"><th>ATA Interface</th><td>Use direct device access 
+(for <a href="sysrequire.html#DOS">IDE and SATA</a> devices in IDE mode).<br />
+	The preferable way to access devices with bad sectors</td></tr>
+<tr><th>BIOS Services</th><td>Use BIOS functions to access devices</td></tr>
+<tr><th>DOS Services</th><td>Use DOS functions to access logical disks</td></tr>
+<tr><th>DOS ASPI</th><td>Access to SCSI, USB, and other devices via ASPI drivers (if any)</td></tr>
+</table>
+
+<h4>Other</h4>
+<p><b>Disk Images</b>: click or <span class="ii">Enter</span> the topmost list item to add new image for further work.</p>
+
+<p><b>RAID</b> option forwards to <a href="raids.html">RAID constructor</a>.</p>
+
+<p><b>Show partitions</b> option causes express searching and displaying 
+<a href="partitions.html">partitions</a> just after opening device.</p>
+
+<p><b>Parameters</b> button allows manually setting <a href="devioparams.html">device I/O parameters</a>.</p>
+
+<h3>Devices in Linux</h3>
+<p>
+If some specific devices are not listed you may use the option 
+<span class="ii">Disk Images</span> and manually enter required device path, e.g. <span class="tt">/dev/mmcblk0</span> or 
+<span class="tt">/dev/mapper/truecrypt1</span>.
+</p>
+
+</div></div>
+</body>
+</html>

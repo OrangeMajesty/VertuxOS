@@ -1,0 +1,92 @@
+;----- Библиотека x32 -------
+;----------------------------
+;--------- Ver. 0.1 ---------
+
+
+
+
+_gdt_flush:
+	lgdt fword[gdtr32]
+    mov ax, 0x10
+    mov ds, ax
+    mov es, ax
+    mov fs, ax
+    mov gs, ax
+    mov ss, ax
+    movzx esp, sp
+	jmp .end
+.end:
+ret
+_idt_flush:
+    ;sidt fword[idtr32]
+    lidt fword[idtr32]
+    jmp 0x8:.end
+    .end:
+ret
+_cpuid:
+    pushfd           ; размещение регистра EFLAGS в стеке
+    pop eax          ; извлечение значения EFLAGS в EAX
+    mov ebx, eax     ; сохранение значения в EBX
+    xor eax, 200000h ; изменение 21-го бита
+    push eax         ; размещение нового значения в стеке
+    popfd            ; сохранение нового значения в EFLAGS
+    pushfd           ; снова размещение EFLAGS в стеке
+    pop eax          ; значение EFLAGS теперь в EAX
+    xor eax, ebx     ; проверка 21-го бита
+    je .no_cpuid     ; если он не изменился, то CPUID не поддерживается
+    mov al, 0x1
+ret
+.no_cpuid:
+mov al, 0x0
+ret
+
+_gag:
+    in al, 021h
+    and al, 0FEh
+    out 0x21, al
+
+
+ret
+_idt_closed:
+    cli
+ret
+_idt_open:
+    sti
+
+ret
+_IRQ_Open: 
+    in   al, 70h
+    and  al, 7Fh
+    out  70h, al
+ret
+_IRQ_Closed:
+    in   al, 70h
+    or   al, 80h
+    out  70h, al
+ret
+_IRQ_Setup:
+mov    al, 11h       ; ICW1 - начало инициализации контроллеров
+out    20h, al
+out    0A0h, al        
+mov    al, 20h       ; ICW2 - базовые номера векторов
+out    21h, al      ;<
+mov    al, 28h
+out    0A1h, al
+mov    al, 04h       ; ICW3 для ведущего контроллера - битовая маска
+out    21h, al       ; линий, на которых "висят" ведомые контроллеры
+mov    al, 02h       ; ICW3 для ведомого контроллера - номер линии
+out    0A1h, al      ; ведущего, к которой подсоединён ведомый
+mov    al, 11h       ; ICW4 - режим специальной полной вложенности
+out    21h, al       ; для ведущего контроллера
+mov    al,01h        ; ICW4 - режим обычной полной вложенности для
+out    0A1h, al      ; ведомого контроллера
+mov    al, 0         ; Все запросы воспринимаются по фронту сигналов
+mov    dx, 04D0h
+out    dx, al
+inc    dx
+out    dx, al
+mov    al, 6Bh       ; Установка режимов чтения ISR и специального 
+out    20h, al       ; маскирования
+out    0A0h, al
+
+ret

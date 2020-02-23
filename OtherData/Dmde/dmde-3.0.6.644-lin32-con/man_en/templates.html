@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - Disk Editor Templates</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">TOC</a> &middot; <a href="howto.html">Work</a> &middot; <a href="menu.html">Menu</a>
+&middot; <a href="menu_viewas.html">Mode</a>
+<hr />
+<h2>Disk Editor Templates</h2>
+<p>
+Apart <a href="menu_viewas.html">built-in templates</a>, 
+<a href="diskeditor.html">Disk Editor</a> supports custom templates
+to view and edit different disk structures.
+Conditions, "goto" operators, simple arithmetics may be used 
+to parse complex disk structures, such as MFT records.
+</p>
+<p>By default templates are loaded from the file <span class="tt">template.txt</span>. 
+To use different files <a href="inifile.html">ini-parameter</a> <span class="tt">editortemplates=</span> may be used,
+wildcards are allowed (e.g., <span class="tt">editortemplates=template*</span>).
+</p>
+<p>
+See files <span class="tt">template.txt</span> and <span class="tt">template.tx_</span> for template samples.
+</p>
+
+<h3>Template File Structure</h3>
+<p>Each template begins with a name in square brackets <span class="tt">[Template Name]</span>
+followed by the template parameters and instructions (one per line).
+</p>
+
+<h3>Template Parameters</h3>
+<p>
+<span class="tt">flow:0</span> - display single record at a time. <span class="tt">flow:1</span> - display records in a flow.<br />
+<span class="tt">h:Header</span> - display static <span class="tt">Header</span> at the top.
+</p>
+
+<h3>Constants</h3>
+<p>Constants are specified as decimals and hexadecimals (with <span class="tt">0x</span> prefix).
+</p>
+
+<h3>Variables</h3>
+<p><span class="tt">$RECSIZE</span> - size of the record.<br/>
+<span class="tt">$OFFSET</span> - relative offset applied to <b>data blocks</b>.<br/>
+<span class="tt">$1</span> ... <span class="tt">$64</span> - custom variables (64-bit signed integers).<br />
+</p>
+
+<h3>Data Block</h3>
+<p><b>Data block</b> is usually a single byte/word/dword at a fixed position but
+it also may be a range or series of bytes/bits which are processed as a single variable.
+Data block is specified in braces <span class="tt">{...}</span>.
+</p>
+<p>
+<span class="tt">{X,Z}</span> defines range of <span class="tt">Z</span> bytes starting at offset <span class="tt">X</span>, <br />
+<span class="tt">{X:Y,Z}</span> defines range of <span class="tt">Z</span> bits starting at offset <span class="tt">X</span> byte and <span class="tt">Y</span> bits,<br />
+where <span class="tt">X</span>, <span class="tt">Y</span>, and <span class="tt">Z</span> may be any variables or constants,<br />
+several ranges may be separated by a semicolon, e.g. <span class="tt">{0x00,4;$1:$2,4}</span>.
+</p>
+
+<h3>Data Block Formats</h3>
+<p>Format defines how data block is represented and edited (e.g. as integer / char / string, etc.).</p>
+<p>The following formats are supported:<br />
+<span class="tt">%u</span> - unsigned integer (up to 32bit)<br/>
+<span class="tt">%D</span> - signed integer (32bit)<br/>
+<span class="tt">%I</span> - signed integer (64bit)<br/>
+<span class="tt">%X</span> - hexadecimal (up to 32bit)<br/>
+<span class="tt">%IX</span> - hexadecimal (up to 64bit)<br/>
+<span class="tt">%c</span> - ANSI character (8bit) <br/>
+<span class="tt">C</span> - array of ANSI characters <br/>
+<span class="tt">U</span> - array of Unicode characters (UTF-16) <br/>
+<span class="tt">T</span> - array of text characters (depending on <a href="menu_viewas.html">encoding table</a>) <br/>
+<span class="tt">UNIXDATE</span> - Unix date (seconds since epox) <br/>
+<span class="tt">FILETIME</span> - Windows file time (nanoseconds since 1601) <br/>
+<span class="tt">F:ABCD..</span> - Flags (where <span class="tt">A</span> is displayed if bit 0 is set, and <span class="tt">B</span> if bit 0 is clear, etc.)
+</p>
+
+<h3>Output</h3>
+<p>Output instruction defines the position on the screen and format for a data block or variable 
+or simply outputs text.</p>
+<p>
+<span class="tt">{...},x:X,w:W,c:C,f:Format</span> outputs data block <span class="tt">{...}</span> at column <span class="tt">X</span> 
+with the max. width&nbsp;<span class="tt">W</span>.
+<br />
+<span class="tt">x:X,w:W,c:C,f:Text</span> outputs <span class="tt">Text</span> at column <span class="tt">X</span> 
+with the maximum width <span class="tt">W</span> in color <span class="tt">C</span>.
+<br />
+Color <span class="tt">c:C,</span> is optional 
+(<span class="tt">0</span> - default, <span class="tt">1</span> - title, 
+<span class="tt">8</span> - red, <span class="tt">10</span> - grayed).
+<br />
+<span class="tt">=</span> (equal sign) specifies the end of line (line feed).
+</p>
+
+<h3>Operators and Expressions</h3>
+<p>
+Expression is a combination of variables, constants, data blocks, and operators
+(<span class="tt">~</span>,
+<span class="tt">NOT</span>;
+<span class="tt">*</span>,
+<span class="tt">/</span>,
+<span class="tt">%</span>;
+<span class="tt">+</span>, 
+<span class="tt">-</span>; 
+<span class="tt">&lt;&lt;</span>,
+<span class="tt">&gt;&gt;</span>;
+<span class="tt">&lt;</span>, 
+<span class="tt">&lt;=</span>,
+<span class="tt">&gt;</span>,
+<span class="tt">&gt;=</span>;
+<span class="tt">=</span>,
+<span class="tt">!=</span>; 
+<span class="tt">&</span>; 
+<span class="tt">^</span>;
+<span class="tt">|</span>;
+<span class="tt">AND</span>;
+<span class="tt">OR</span>), e.g. <br />
+<span class="tt">$2+{0x08:$1,5}</span>
+</p>
+<p>Assignment operator <span class="tt">:=</span> is used to copy the result of the expression to the variable, 
+e.g.<br/>
+<span class="tt">$1:=$2+{0x08:$1,5}</span><br/>
+<span class="tt">$2:=$OFFSET & 8</span>
+</p>
+
+<h3>Conditions</h3>
+<div>
+<span class="tt">IF Expression1</span><br />
+<span class="tt">&nbsp;&nbsp;</span>...
+  (instructions for performing if <span class="tt">Expression1</span> result is true/non-zero) <br />
+<span class="tt">ELSEIF Expression2</span><br />
+<span class="tt">&nbsp;&nbsp;</span>...
+  (else instructions for performing if <span class="tt">Expression2</span> result is true/non-zero, optional) <br />
+<span class="tt">ELSE</span><br />
+<span class="tt">&nbsp;&nbsp;</span>...
+  (else instructions for performing in other cases, optional)<br />
+<span class="tt">ENDIF</span>
+</div>
+Cycle:
+<div>
+<span class="tt">WHILE Expression3</span><br />
+<span class="tt">&nbsp;&nbsp;</span>... 
+  (instructions for performing while <span class="tt">Expression3</span> result is true/non-zero) <br />
+<span class="tt">&nbsp;&nbsp;</span>go to the start of cycle:<br />
+<span class="tt">&nbsp;&nbsp;CONTINUE</span><br />
+<span class="tt">&nbsp;&nbsp;</span>break loop:<br />
+<span class="tt">&nbsp;&nbsp;BREAK</span><br />
+<span class="tt">ENDWHILE</span>
+</div>
+
+<h3>Labels and Jumps</h3>
+<p>Line <span class="tt">LABEL:N</span> defines a label, 
+and instruction <span class="tt">GOTO:N</span> is a jump to line <span class="tt">LABEL:N</span>,
+where <span class="tt">N</span> is any constant. Inaccurate use of <span class="tt">GOTO</span> may cause infinite loop.
+</p>
+
+<h3>Switches</h3>
+<p>Switches may be used e.g. to hide/show some lines by clicking or pressing <span class="ii">Spacebar</span>. 
+E.g., instruction <span class="tt">$1:=TOGGLE:N,x:X</span> outputs button 
+<span class="tt">[+]</span> (<span class="tt">[-]</span>) at column <span class="tt">X</span>,
+where <span class="tt">N</span> is a unique switch number (variables and constants are allowed, 
+the best way is to use the next data offset);
+variable <span class="tt">$1</span> gets value <span class="tt">0</span> or <span class="tt">1</span> 
+depending on the switch state.
+</p>
+
+<h3>Additional Template Sections</h3>
+<p><b>Record size calculation</b>: instructions between lines <span class="tt">CALCSIZESTART</span> and <span class="tt">CALCSIZEEND</span>.
+It is used when record size may be greater than the sector size and may depend on disk data.
+Variable <span class="tt">$RECSIZE</span> may be assigned in this section only.
+</p>
+<p><b>Data preprocessing</b>: instructions between lines <span class="tt">LOADSTART</span> and <span class="tt">LOADEND</span>.
+It is used e.g. for MFT USN processing (restoration of last two bytes of each sector). 
+Data blocks may be assigned in this section: 
+e.g., use <span class="tt">{U,Y}:={X,Y}</span> to copy <span class="tt">Y</span> bytes at offset <span class="tt">X</span> to offset <span class="tt">U</span>.
+</p>
+<p><b>Data postprocessing</b>: instructions between lines <span class="tt">FLUSHSTART</span> and <span class="tt">FLUSHEND</span>.
+It is used for reverse operation when writing modified data to disk (data blocks may be assigned).
+</p>
+
+</div></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+   "shell": true,
+   "cmd": ["gnome-terminal -e '/bin/bash -c \"make -f ${project_path}/OS/Makefile;echo;echo;  echo Press ENTER to continue; read line;exit; exec bash\"'"],
+   "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+   "working_dir": "${project_path}/OS/",
+   "selector": "source.makefile",
+   "path": "/usr/bin/:/usr/local/texlive/2013/bin/i386-linux",
+
+    "variants":
+    [
+      {
+        "name": "Compile Asm",
+        "cmd": ["gnome-terminal -e '/bin/bash -c \"make fasm_c -f ${project_path}/OS/Makefile;echo;echo;echo;echo;echo;echo;echo;echo;  echo Press ENTER to continue; read line;exit; exec bash\"'"]
+      },
+      {
+        "name": "Compile C++",
+        "cmd": ["gnome-terminal -e '/bin/bash -c \"make gcc -f ${project_path}/OS/Makefile;echo;echo;echo;echo;echo;echo;echo;echo;  echo Press ENTER to continue; read line;exit; exec bash\"'"]
+      },
+      {
+        "name": "Debug",
+        "cmd": ["gnome-terminal -e '/bin/bash -c \"make debug_local -f ${project_path}/OS/Makefile;echo;echo;echo;echo;echo;echo;echo;echo;  echo Press ENTER to continue; read line;exit; exec bash\"'"]
+      },
+      {
+        "name": "Format",
+        "cmd": ["gnome-terminal -e '/bin/bash -c \"make format -f ${project_path}/OS/Makefile;echo;echo;echo;echo;echo;echo;echo;echo;  echo Press ENTER to continue; read line;exit; exec bash\"'"]
+      },
+      {
+        "name": "Clear",
+        "cmd": ["gnome-terminal -e '/bin/bash -c \"make clear -f ${project_path}/OS/Makefile;echo;echo;echo;echo;echo;echo;echo;echo;  echo Press ENTER to continue; read line;exit; exec bash\"'"]
+    },
+      {
+        "name": "Boot",
+        "cmd": ["gnome-terminal -e '/bin/bash -c \"make Boot -f ${project_path}/OS/Makefile;echo;echo;echo;echo;echo;echo;echo;echo;  echo Press ENTER to continue; read line;exit; exec bash\"'"]
+      }
+    ]
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>DMDE - Карта кластеров</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">Содержание</a> &middot; <a href="howto.html">Работа</a> &middot; 
+<a href="menu.html">Меню</a> &middot; <a href="menu_tools.html">Сервис</a>
+<hr />
+<h2>Карта кластеров</h2>
+<p>
+Карта кластеров тома позволяет найти файл, расположенный в данном кластере/секторе.
+Поддерживается для NTFS и FAT/exFAT.
+</p>
+Для работы с картой кластеров необходимо <a href="openvolume.html">открыть том</a> и 
+обновить карту кластеров (меню <span class="ii">Сервис</span>).
+<p>
+</p>
+<p>
+Для перехода к заданной позиции используются команды меню
+</p>
+<ul>
+<li><span class="ii">Редактор</span>-<span class="ii">Кластер</span> [<span class="ii">Alt+C</span>] - переход  к кластеру тома</li>
+<li><span class="ii">Редактор</span>-<span class="ii">Секторы тома</span> [<span class="ii">Alt+S</span>] - переход к сектору тома</li>
+<li><span class="ii">Редактор</span>-<span class="ii">Физические секторы</span> [<span class="ii">Alt+P</span>] - переход к сектору устройства</li>
+</ul>
+<p>
+Затем для определения файла используются команды 
+</p>
+<ul>
+<li><span class="ii">Редактор</span>-<span class="ii">Карта кластеров</span> [<span class="ii">Ctrl+M</span>]: открыть карту кластеров в заданой позиции.</li>
+<li><span class="ii">Редактор</span>-<span class="ii">Данные файла</span> [<span class="ii">Ctrl+F</span>]: открыть файл, расположенный в заданной позиции.</li>
+</ul>
+<p>
+Строка статуса карты содержит информацию о текущем кластере в формате:<br />
+<b>[текущий кластер/число кластеров тома] имя файла (потока) vcn: номер кластера в файле</b>
+</p>
+</div></div>
+</body>
+</html>

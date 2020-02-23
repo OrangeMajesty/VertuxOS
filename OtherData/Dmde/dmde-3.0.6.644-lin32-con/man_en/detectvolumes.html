@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - NTFS/FAT Search</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">TOC</a> &middot; <a href="howto.html">Work</a> &middot; <a href="menu.html">Menu</a> &middot; <a href="menu_tools.html">Tools</a>
+<hr />
+<h2>Full Scan</h2>
+<p>
+Comprehensive search method allows you to find and virtually rebuild the directory structure 
+of a damaged file system or to find lost files of known types by signatures if a file system can not be used.
+</p>
+<p>
+If a file system is not seriously damaged then volumes may be opened before the scan completes. 
+In the most complex cases different volume variants may be given.
+You should select and <span class="ii">Open volume</span>,
+<a href="scanvolume.html">reconstruct</a> file system 
+and <a href="datarecovery.html">recover</a> files 
+to estimate the quality of a variant.
+If the selected volume variant does not contain necessary files or files are recovered incorrectly 
+you should continue the search or try another variant.
+There are indicators which allow preliminary estimating the quality of a variant (details are below).
+If data was moved (due to partition move/split/merge/resize operation)
+then some files may be recovered correctly from one volume variant,
+and others from another one, despite that files are visible on both volume variants.
+</p>
+<p>
+It is recommended to scan selected area of a physical device 
+(including old and new location of the volume if it was moved) 
+rather than scanning a logical disk.
+The software may read beyond the selected area if it is necessary.
+</p>
+
+<table><tr>
+<th>Open&nbsp;volume</th><td>Open volume selected in the list.</td></tr>
+<tr><th>Save...</th><td>Save search log to a file.</td></tr>
+<tr><th>Load...</th><td>Load search log from a file
+(to continue previous search or to use previous search results).
+</td></tr>
+<tr><th>Start/Stop</th><td>Start/stop scan. 
+If scan parameters are not changed the scan will be continued.
+</td></tr>
+<tr><th>Parameters</th><td>
+Select scan area, FS, parameters to gather data and calculate volumes.
+</td></tr>
+<tr><th>Menu</th><td>Besides, allows changing volume sorting order.</td></tr>
+</table>
+<p class="spec">
+Scanning is carried out selectively over the entire disk
+gradually covering the entire scan area 
+that allows finding volumes without a full prior scan. 
+Volumes with the large number of files are being found first.
+</p>
+
+<h3>NTFS, exFAT, ext2/3/4</h3>
+<p>
+The columns <b>%</b> and <b>Check</b> allow estimating data recovery quality of a found volume variant
+(the percentage and number of successful reference matchings).
+</p>
+<p>
+<b>Min. Size</b> is the minimum size containing all files in the best volume FS blocks.
+</p>
+
+<h3>FAT</h3>
+<p>
+The column <b>Indicators</b>
+shows the absence (damage) ("<b>-</b>") or presence ("<b>+</b>") of the corresponding FS structures
+(<b>B</b> - boot sector/copy, <b>F</b> - FAT table/copy, <b>R</b> - root directory).
+</p>
+<p>
+The column <b>Check</b> shows the number of found directories 
+corresponding to the volume variant.
+</p>
+
+<h3>RAW File Search</h3>
+<p>
+File signatures are used to find lost files if FS cannot be used.
+Additionally file signatures are used as reference points to calculate NTFS and exFAT volumes.
+</p>
+</div></div>
+</body>
+</html>

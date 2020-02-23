@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - Installation and Run</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">Table of Contents</a>
+<hr />
+<h1>Installation and Run</h1>
+<p>
+<a href="sysrequire.html">System Requirements</a>
+&nbsp;
+<a href="activation.html">Activation</a>
+&nbsp;
+<a href="locales.html">Languages</a>
+&nbsp;
+<a href="inifile.html">Settings</a>
+&nbsp;
+<a href="issues.html">Limitations</a>
+&nbsp;
+<a href="updates.html">Updates</a>
+</p>
+<p>
+<span style="color:#ff0000; font-weight: bold;">Attention!</span>
+If in doubt about the physical health of the disc it is recommended to appeal to specialists. 
+Further work with the disk (including starting up) may worsen the problem 
+or cause complete inability to recover data.
+<a href="sysrequire.html#size">If device size is detected incorrectly</a>.
+</p>
+<p>
+<span style="color:#ff0000; font-weight: bold;">Attention!</span>
+Do not write anything to the source disk/partition where lost/removed/damaged data is located.
+Use another disk to load operating system, install or run the software, 
+and to recover data otherwise the data may be erased irrevocably.
+It is highly recommended to load a system from the removable media (LiveCD/USB, bootable DOS disk, etc.).
+</p>
+
+<p>
+<b>To install</b> and run the program just extract entire software package into a single directory
+(may be on removable media) and run <span class="tt">dmde.exe</span> or <span class="tt">dmde</span> 
+depending on a version. You need Administrator/Superuser priveleges to access devices in Windows NT+, Linux.
+To run the software without Administrator rights add the parameter 
+<span class="tt">notadmin=1</span> to the file <span class="tt">dmde.ini</span>.
+<b>To uninstall</b> the software just remove the extracted files and directories.
+</p>
+
+<h2>Operating Systems</h2>
+<h3><a id="Windows"></a><a id="Win98"></a>Windows 98/ME</h3>
+<p>
+<span style="color:#ff0000; font-weight: bold;">Attention!</span>
+Without special patches Windows 9x/ME handles 128GB and larger drives incorrectly.<br />
+To avoid the problem reload computer in MS-DOS mode and use DMDE for DOS  
+to access such drives via BIOS or ATA-interface or load another OS.
+</p>
+
+<h3><a id="WinXP"></a>Windows 2K/XP</h3>
+<p>
+To use the program you should login as Administrator. <br />
+<span style="color:#ff0000; font-weight: bold;">Attention!</span>
+To work with 128GB and larger drives you need Windows 2K SP4 with LBA48 support manually switched on 
+in the registers or Windows XP SP2 (LBA48 is switched on by default).
+</p>
+
+<h3><a id="Win7"></a>Windows Vista/7/higher</h3>
+<p>
+To run the program as Administrator right-click the program icon and use the corresponding
+command in the context menu or confirm UAC elevation request.<br />
+<span style="color:#ff0000; font-weight: bold;">Attention!</span>
+To work with drives larger than 2TB 
+the most recent versions of controller drivers must be installed.
+</p>
+
+<h3><a id="Linux"></a>Linux</h3>
+<p>
+At first go to the Root Terminal or run Terminal emulator (Konsole, Gnome-terminal, etc.). 
+Go to the software directory and type <span class="tt">./dmde</span>. 
+You should run the software as a superuser to access devices. 
+Please, refer to your operating system documentation for this information 
+(e.g., run <span class="tt">sudo ./dmde</span> in Ubuntu, go to root with <span class="tt">su</span> command in Debian at first, etc.). 
+You may also need to set execution permission for the file <span class="tt">dmde</span> (type <span class="tt">chmod 755 ./dmde</span>).
+To run 32-bit software versions on 64-bit operating systems 
+you may have to install additional 32-bit shared libraries 
+(e.g., run <span class="tt">sudo apt-get install libc6-i386</span> in Ubuntu to install <span class="tt">libc6-i386</span> package).
+</p>
+
+<h3><a id="DOS"></a>DOS</h3>
+<p>
+You may use DMDE on a regular partition supported by DOS or use DOS bootable disk.
+This may be helpful when there are problems using specific disk.
+SATA disks must be switched to IDE-compatible mode in BIOS settings for direct ATA-access.
+SCSI, USB, and other devices may be accessed via special DOS drivers or 
+using BIOS functions if they are supported.
+</p>
+<p>
+Some files for creating DOS boot disks are available on the <a href="about.html">software site</a>
+in the section <a href="http://dmde.com/moredownload.html" target="_blank">Additional Downloads</a>.
+</p>
+<h4>Bootable Floppy</h4>
+<p>
+To create bootable floppy download and unpack <b>FDD image</b>.
+You may use the function <a href="copysectors.html">Copy Sectors</a> 
+to write the image to a floppy disk. Use the image as a source file and fdd as a destination device.
+ISO images for bootable CD may also be created on the base of boot FDD images 
+with the help of different software.
+</p>
+<h4>DOS Bootable Disk</h4>
+<p>
+Loading from the specific disk must be supported by BIOS (see BIOS boot menu).
+To create bootable USB/HDD you need a freshly formatted primary FAT16/FAT32 partition on the disk.
+Non-standard disks/partitions are not supported (non-MBR, 3TB+, etc.).
+You may probably need to <a href="fillsectors.html">zero the disk</a> to properly create compatible primary FAT partition 
+using standard OS means.
+</p>
+<p>
+<b>1.</b>&nbsp;Download the <b>FreeDOS Package</b>
+and unpack files into the root of the FAT partition.
+<br />
+<b>2.</b>&nbsp;Open the disk as <a href="devices.html">physical device</a> in DMDE
+and use the command <span class="ii">Write Boot Sectors...</span> in the 
+<a href="partitions.html">Partitions</a> menu to make the device bootable
+(specify the location of unpacked files as a source of boot sectors).
+Apply changes and close DMDE.
+<br />
+<b>3.</b>&nbsp;
+&nbsp;Download DMDE for DOS and unpack into the FAT partition.
+</p>
+</div></div>
+</body>
+</html>

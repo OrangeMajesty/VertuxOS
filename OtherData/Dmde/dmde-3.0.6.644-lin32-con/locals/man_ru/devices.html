@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>DMDE - Выбор диска</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">Содержание</a> &middot; <a href="howto.html">Работа</a> &middot; 
+<a href="menu.html">Меню</a> &middot; <a href="menu_disk.html">Диск</a> &middot; Выбрать диск
+<hr />
+<h2>Выбор диска</h2>
+<p>Выбор диска для дальнейшей <a href="howto.html">работы</a>.</p>
+<p><b>Если размер устройства определяется неверно -</b> 
+см. <a href="sysrequire.html#size">системные требования</a>.
+</p>
+
+<h3>Опции</h3>
+
+<h4>Физ. устройства / Interface / Логические диски и DOS Services</h4>
+<p>
+Предпочтительный способ доступа зависит от задачи 
+(напр., при восстановлении данных - см. <a href="openvolume.html">открытие тома</a>).
+</p>
+
+<h4>Опции DOS</h4>
+<table>
+<tr valign="top"><th>ATA Interface</th><td>Прямой доступ
+(для <a href="sysrequire.html#DOS">IDE- и SATA-дисков</a> в режиме IDE).<br />
+Рекомендуемый способ для дисков с "бэдами"</td></tr>
+<tr><th>BIOS Services</th><td>Функции BIOS для доступа к дискам</td></tr>
+<tr><th>DOS Services</th><td>Функции DOS для доступа к логическим дискам</td></tr>
+<tr valign="top"><th>DOS ASPI</th><td>Доступ к SCSI-, USB- и другим устройствам <br />
+через драйверы ASPI (если загружены)</td></tr>
+</table>
+
+<h4>Другие</h4>
+<p><b>Образы дисков:</b> 
+клик или клавиша <span class="ii">Enter</span> на верхнем элементе позволяет добавить новый файл в список.
+</p>
+
+<p><b>RAID</b> - переход в <a href="raids.html">конструктор RAID-массивов</a>.
+</p>
+
+<p><b>Показать разделы</b> - экспресс-поиск разделов 
+и отображение окна <a href="partitions.html">Разделы</a> сразу после открытия диска.</p>
+
+<p><b>Параметры</b> - определение <a href="devioparams.html">параметров ввода-вывода</a>.</p>
+
+<h3>Устройства в Linux</h3>
+<p>Если некоторые устройства не отображаются в списке устройств,
+можно открыть их как файлы, используя опцию <span class="ii">Образы дисков</span>, и вручную указать
+путь к устройству, например, <span class="tt">/dev/mmcblk0</span> или <span class="tt">/dev/mapper/truecrypt1</span>.
+</p>
+
+</div></div>
+</body>
+</html>

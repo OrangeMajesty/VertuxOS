@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - File Panel</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">Table of contents</a> &middot; <a href="howto.html">Work with program</a>
+<hr />
+<h2>File Panel</h2>
+<p>
+File panel displays virtual directory structure 
+and allows browsing through directories and selecting items to
+<a href="datarecovery.html">recover</a>
+or to open them in the <a href="diskeditor.html">Disk Editor</a>.
+You should <a href="openvolume.html">open a volume</a> to access the file panel.
+</p>
+<p>
+Open virtual directory <span class="tt">[All Found + Reconstruction]</span> 
+to <a href="scanvolume.html">virtually reconstruct file system</a> 
+and display all found and removed files and directories.
+The results of <a href="detectvolumes.html">NTFS/FAT Search</a> are used 
+for reconstruction.
+</p>
+<p>
+To recover files marked as "found" or "deleted" (see icon description below)
+the corresponding options must be selected
+in the <a href="datarecovery.html">data recovery</a> dialog box.
+</p>
+<p class="spec">
+Directory structure is virtual and may differ from 
+the one that can be found directly on the disk or in the standard browser.
+Virtual names are enclosed in square brackets or begin with the sign <b>$</b>
+and are usually placed in the topmost level of the directory structure.
+Virtual directory <b>$Root</b> generally corresponds 
+to a root directory of a volume in the standard browser.
+</p>
+<table>
+<tr><td>Press <span class="ii">Enter</span> key or double click 
+to open the directory, or open the file in the <a href="diskeditor.html">Disk Editor</a>.</td></tr>
+<tr><td>Press <span class="ii">Ctrl+Enter</span> to open the item in the <a href="diskeditor.html">Disk Editor</a>.</td></tr>
+<tr><td>Press <span class="ii">Insert</span> key or <span class="ii">Space Bar</span> or click the checkbox 
+to toggle marking the item for recovery.</td></tr>
+<tr><td>Press <span class="ii">Shift+F9</span>/<span class="ii">Shift+F10</span> or right click the item
+for a context menu.</td></tr>
+</table>
+<p></p>
+<table class="pics">
+<tr><th>&nbsp;GUI</th><th>Console&nbsp;</th><th>Icon Description</th></tr>
+<tr><td width="32" valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 31px 16px 16px);left:-8px;" /></div></td>
+<td valign="top"><b>[.]</b> </td>
+<td>general directory containing files</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 63px 16px 48px);left:-40px;" /></div></td>
+<td valign="top"><b>[&nbsp;]</b> </td>
+<td>directory not containing files</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 159px 16px 144px);left:-136px;" /></div></td>
+<td valign="top"><b>[x]</b> </td>
+<td>directory containing deleted files</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 175px 16px 160px);left:-152px;" /></div></td>
+<td valign="top"><b>[f]</b> </td>
+<td>directory containing "found" files</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 191px 16px 176px);left:-168px;" /></div></td>
+<td valign="top"><b>[x}</b> </td>
+<td>directory containing deleted and "found" files</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 95px 16px 80px);left:-72px;" /></div></td>
+<td valign="top"><b>(x)</b> </td>
+<td>deleted directory</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 111px 16px 96px);left:-88px;" /></div></td>
+<td valign="top"><b>(.)</b> </td>
+<td>deleted directory containing not deleted files (some kind of file system error)</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 367px 16px 352px);left:-344px;" /></div></td>
+<td valign="top"><b>(f)</b> </td>
+<td>deleted directory containing "found" files</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 303px 16px 288px);left:-280px;" /></div></td>
+<td valign="top"><b>(x}</b> </td>
+<td>"found" deleted directory</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 383px 16px 368px);left:-360px;" /></div></td>
+<td valign="top"><b>(.}</b> </td>
+<td>"found" deleted directory containing general files</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 47px 16px 32px);left:-24px;" /></div></td>
+<td valign="top"><b>{f}</b> </td>
+<td>"found" directory (name is followed by MFT fragment number in square brackets)</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 335px 16px 320px);left:-312px;" /></div></td>
+<td valign="top"><b>{.}</b> </td>
+<td>"found" directory containing general files</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 351px 16px 336px);left:-328px;" /></div></td>
+<td valign="top"><b>{.)</b> </td>
+<td>"found" directory containing general and deleted files</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 399px 16px 384px);left:-376px;" /></div></td>
+<td valign="top"><b>&nbsp;.&nbsp;</b> </td>
+<td>general file</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 415px 16px 400px);left:-392px;" /></div></td>
+<td valign="top"><b>&nbsp;f&nbsp;</b> </td>
+<td>"found" file (name is followed by MFT fragment number in square brackets)</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 431px 16px 416px);left:-408px;" /></div></td>
+<td valign="top"><b>&nbsp;x&nbsp;</b> </td>
+<td>deleted file</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 447px 16px 432px);left:-424px;" /></div></td>
+<td valign="top"><b>&nbsp;xf</b> </td>
+<td>"found" deleted file</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="blue folder" title="blue folder" style="clip:rect(0 287px 16px 272px);left:-264px;" /></div></td>
+<td valign="top"><b>[.]</b> </td>
+<td><span class="tt">[MetaData]</span> - virtual directory containing special file system files</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="blue folder" title="blue folder" style="clip:rect(0 287px 16px 272px);left:-264px;" /></div></td>
+<td valign="top"><b>[.]</b> </td>
+<td><span class="tt">[NonameData]</span> - virtual directory containing MFT files without names</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 223px 16px 208px);left:-200px;" /></div></td>
+<td valign="top"><b>[&gt;]</b> </td>
+<td>directory is not completely investigated</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 479px 16px 464px);left:-456px;" /></div></td>
+<td valign="top"><b>|.|</b> </td>
+<td>virtual directory containing fragments of a file occupying several MFT files
+</td></tr>
+<tr><td valign="top"><div style="position:relative">
+<img src="1006.gif" alt="204 green star" title="green star" style="clip:rect(0 399px 16px 384px);left:-376px;" /></div></td>
+<td valign="top"><b>&nbsp;.&nbsp;</b></td>
+<td><span class="tt">FileName:StreamName</span> -
+NTFS alternate data stream <span class="tt">StreamName</span> of a file <span class="tt">FileName</span>
+</td></tr>
+</table>
+
+</div></div>
+</body>
+</html>

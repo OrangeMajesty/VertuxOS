@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - Issues and Limitations</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">TOC</a> &middot; <a href="setup.html">Installation and Run</a>
+<hr />
+<h2>Known Issues and Other Limitations</h2>
+
+<h3>Data Recovery</h3>
+<ul>
+<li>Data recovery destination is paritions/volumes supported by OS (in particular, DOS and Win9x/ME support only FAT as a destination)</li>
+<li>DOS, Win9x/ME: unicode symbols in file names outside the selected code page are replaced with "_" or transliterated according to the loaded translit tables</li>
+<li>DOS, Win9x/ME or FAT: unable to recover file greater than 4GB as a single file due to a FAT limitation</li>
+<li>Hard links are recovered as different files</li>
+<li>Symbolic links are not supported</li>
+<li>NTFS alternate streams can be recovered to NTFS volumes only</li>
+<li>NTFS alt. stream is recovered for one hard link only</li>
+<li>NTFS encrypted files are not supported</li>
+<li>NTFS permissions and owners are not supported</li>
+<li>Ext2/Ext3/Ext4 permissions and owners are not supported</li>
+<li>Win9x/ME: drives greater then 128GB are not handled correctly without special patches applied to Windows drivers</li>
+<li>Maximum path length supported: 259 characters for DOS, 4096 for Windows, Linux</li>
+<li>Maximum path length supported by DOS: 79 or 127 characters (for DOS-names) depending on DOS version.</li>
+<li>Subdirectory depth is up to 1024 (can be increased using <span class="tt">maxrecoverdepth=</span> <a href="inifile.html">parameter</a>)</li>
+<li>If name substitution is used under DOS then name handling 
+  (such as auto renaming) is not supported</li>
+</ul>
+
+<h3>NTFS write support</h3>
+<ul>
+<li>Journal is not supported</li>
+<li>SECURITY INFORMATION is not supported on creation 
+  (to access files and directories it is necessary to set permissions using OS features)</li>
+<li>OBJECTID is not supported</li>
+<li>Additional creation of DOS-compatible names is not supported</li>
+<li>Compressed files are not supported</li>
+<li>Alternate data streams are not supported</li>
+<li>To allocate/append a file a contiguous free space is required</li>
+</ul>
+
+<h3>Other</h3>
+<ul>
+<li>The software may work within the available RAM.
+32-bit versions may use up to 3GB of RAM only (up to ~10 million files on a typical volume)
+</li>
+<li>Up to 2K items in the list of <a href="devices.html">Devices</a></li>
+<li>Up to 400 volumes in the window <a href="partitions.html">Partitions</a></li>
+<li>Up to 16K custom data rotation items (<b>striping</b>) when constructing <a href="raids.html">Custom RAID</a></li>
+<li>Up to 2K visible items per section for <a href="detectvolumes.html">Full Scan</a>
+(<span class="tt">showvolumesnum=</span> <a href="inifile.html">parameter</a>)</li>
+<li>Up to 16 million MFT fragments of NTFS for <a href="detectvolumes.html">Full Scan</a>
+(<span class="tt">ntfsmaxmftruns=</span> <a href="inifile.html">parameter</a>)</li>
+<li>Maximum search depth for <a href="menu_volume.html">File Panel Search</a> is up to 1K directories</li>
+<li>Keyboard and mouse input is limited in Linux (keyboard shortcuts and national input may not be supported)</li>
+</ul>
+</div></div>
+</body>
+</html>

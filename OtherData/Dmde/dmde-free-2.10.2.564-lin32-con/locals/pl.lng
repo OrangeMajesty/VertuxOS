@@ -1,0 +1,1701 @@
+; DMDE language file version 2.10.2
+;
+; Partially translated to Polish by gsm_virus gsm_virus_dmde@wp.eu
+; CzÍúciowe t≥umaczenie na jÍzyk polski: gsm_virus gsm_virus_dmde@wp.eu
+;
+;
+; If you find any mistake or wish to make another translation
+; you may contact at http://dmde.com/contact.html
+;
+
+098=0      ;=1:load language file in debug mode  =0:silent mode
+099=02050000
+100=02100200
+101=pl
+102=Windows-1250  ;the file charset
+103=Polish (Polski) 
+104=21     ;Windows LANGID
+105=238    ;Windows FONT CHARSET: 0=ANSI_CHARSET 238=EASTEUROPE_CHARSET ? 1=DEFAULT_CHARSET
+107=1250   ;ANSI Code Page
+108=852    ;OEM Code page  
+
+112=Windows-1250 (Central European)\n\x01\
+\x20AC\x0000\x201A\x0000\x201E\x2026\x2020\x2021\x0000\x2030\x0160\x2039\x015A\x0164\x017D\x0179\
+\x0000\x2018\x2019\x201C\x201D\x2022\x2013\x2014\x0000\x2122\x0161\x203A\x015B\x0165\x017E\x017A\
+\x00A0\x02C7\x02D8\x0141\x00A4\x0104\x00A6\x00A7\x00A8\x00A9\x015E\x00AB\x00AC\x00AD\x00AE\x017B\
+\x00B0\x00B1\x02DB\x0142\x00B4\x00B5\x00B6\x00B7\x00B8\x0105\x015F\x00BB\x013D\x02DD\x013E\x017C\
+\x0154\x00C1\x00C2\x0102\x00C4\x0139\x0106\x00C7\x010C\x00C9\x0118\x00CB\x011A\x00CD\x00CE\x010E\
+\x0110\x0143\x0147\x00D3\x00D4\x0150\x00D6\x00D7\x0158\x016E\x00DA\x0170\x00DC\x00DD\x0162\x00DF\
+\x0155\x00E1\x00E2\x0103\x00E4\x013A\x0107\x00E7\x010D\x00E9\x0119\x00EB\x011B\x00ED\x00EE\x010F\
+\x0111\x0144\x0148\x00F3\x00F4\x0151\x00F6\x00F7\x0159\x016F\x00FA\x0171\x00FC\x00FD\x0163\x02D9               
+114=Windows-1250 (Central European) -> Translit\n\x00\
+\x45\x00\x2C\x00\x00\x2E\x2B\x2B\x00\x00\x53\x3C\x53\x54\x5A\x5A\
+\x00\x27\x27\x22\x22\x2D\x2D\x2D\x00\x00\x73\x3E\x73\x74\x7A\x7A\
+\x20\x00\x00\x4C\x6F\x41\x7C\x73\x22\x63\x53\x3C\x2D\x00\x72\x5A\
+\x2D\x00\x00\x6C\x27\x6D\x00\x2D\x2C\x61\x73\x3E\x4C\x22\x6C\x7A\
+\x52\x41\x41\x41\x41\x4C\x43\x43\x43\x45\x45\x45\x45\x49\x49\x44\
+\x44\x4E\x4E\x4F\x4F\x4F\x4F\x78\x52\x55\x55\x55\x55\x59\x54\x62\
+\x72\x61\x61\x61\x61\x6C\x63\x63\x63\x65\x65\x65\x65\x69\x69\x64\
+\x64\x6E\x6E\x6F\x6F\x6F\x6F\x3A\x72\x75\x75\x75\x75\x79\x74\x27
+115=CP852 (DOS Central European)\n\x01\
+\x00C7\x00FC\x00E9\x00E2\x00E4\x016F\x0107\x00E7\x0142\x00EB\x0150\x0151\x00EE\x0179\x00C4\x0106\
+\x00C9\x0139\x013A\x00F4\x00F6\x013D\x013E\x015A\x015B\x00D6\x00DC\x0164\x0165\x0141\x00D7\x010D\
+\x00E1\x00ED\x00F3\x00FA\x0104\x0105\x017D\x017E\x0118\x0119\xFFFF\x017A\x010C\x015F\x00AB\x00BB\
+\x2591\x2592\x2593\x2502\x2524\x00C1\x00C2\x011A\x015E\x2563\x2551\x2557\x255D\x017B\x017C\x2510\
+\x2514\x2534\x252C\x251C\x2500\x253C\x0102\x0103\x255A\x2554\x2569\x2566\x2560\x2550\x256C\x00A4\
+\x0111\x0110\x010E\x00CB\x010F\x0147\x00CD\x00CE\x011B\x2518\x250C\x2588\x2584\x0162\x016E\x2580\
+\x00D3\x00DF\x00D4\x0143\x0144\x0148\x0160\x0161\x0154\x00DA\x0155\x0170\x00FD\x00DD\x0163\x00B4\
+\x00AD\x02DD\x02DB\x02C7\x02D8\x00A7\x00F7\x00B8\x00B0\x00A8\x02D9\x0171\x0158\x0159\x25A0\x00A0
+                    
+;128=\0     ;VGA font file (DOS only)
+129=dmde_pl.chm
+;130=\0
+131=man_pl
+
+202=\
+\xbc\xe1\xaf\x0b\x98\xf8\xab\x0e\xeb\xcc\x38\xbf\x0f\x8d\x49\x53\
+\x89\x18\xc6\x13\x7e\xd7\xc4\x81\xdf\xcc\x6a\xa3\x46\x01\x05\x21\
+\x45\xcb\xbd\x14\x92\xac\x85\x98\xa8\xa7\xfa\xbd\x86\x67\xd8\xff\
+\x7f\x69\x5c\xd7\xe6\x0b\xf7\x8d\x88\xf2\x74\xfe\x97\x12\xb7\xac\
+\x83\x9b\xe8\x1a\x69\x30\x0c\xb3\x43\xe4\x4d\x5d\x41\x2f\xcf\x8c\
+\x52\x08\xad\xae\xf6\xab\xd8\x7b\x32\x24\x26\x3c\x20\x17\x24\xe7\
+\xe2\xb8\x3a\xc6\xe1\x13\x3a\xcb\x99\x59\x64\x75\x98\xf8\xbe\x59\
+\x00\xaf\x93\xff\x51\x4d\xfe\x99\x64\xa7\xbf\xca\x78\x60\x3d\x2c
+
+205=\xE9\xA3\x8B\x1D ;\xEF\x80\x45\x23
+
+256=CzÍúciowe t≥umaczenie na jÍzyk polski:\n\
+	gsm_virus (gsm_virus_dmde@wp.eu)
+
+0998=&KontynuowaÊ
+0999=&Stop ;&Halt  ;CORRECTME
+1000=Krytyczny wyjπtek %s w 0x%08p.\n\
+	%s\n\n\
+	Upewnij siÍ, øe jest uøywana legalna kopia oprogramowania.\n\
+	ProszÍ poinformowaÊ dewelopera, do≥πczajaÊ zrzut ca≥ego ekranu \n\
+	i opis dzia≥ania prowadzπce do b≥Ídu.\n\
+	Zapisz niezbÍdne dane i zamknij program.
+
+1001=^Funkcja nie jest jeszcze obs≥ugiwana.\n\
+	Sprawdü, czy istnieje aktualizacja na stronie programu.
+
+1002=OtwÛrz obraz dysku
+
+1003=^Nie znaleziono dyskÛw.\n\n\                                  ;CORRECTME
+	Moøliwe, øe jest uøywana niew≥aúciwa wersja programu. \
+	ProszÍ zapoznaÊ siÍ z wymaganiami systemowymi jak rÛwnieø z kwestiπ instalacji i uruchamiania.
+;CHANGED:CORRECTME:
+1004=PojemnoúÊ urzπdzenia poczπtkowa: \t%~I~LBA x %l Bpb (%IV)\n\        ;initial
+     PojemnoúÊ urzπdzenia dostÍpna:~~ \t%~I~LBA x %l Bpb (%IV)\n\        ;available
+     PojemnoúÊ urzπdzenia wybrana:~~~ \t%~I~LBA x %l Bpb (%IV)\n\n%s%s%s ;selected 
+
+1005=^Ostrzeøenie!\n\
+	Bezpoúredni dostÍp za pomocπ interfejsu ATA, moøe kolidowaÊ \
+	z programem pamiÍci podrÍcznej dysku, systemu operacyjnego.\n\
+	^Mimo to, kontynuowaÊ?
+
+1006=Aby uzyskaÊ dostÍp, uruchom komputer w trybie MS-DOS.\n\
+	^Mimo to, kontynuowaÊ w Windows?
+1007=^Ostrzeøenie!\n\
+	DostÍp do dyskÛw logicznych w systemie Windows 9x/ME \
+	moøe powodowaÊ zawieszenie siÍ komputera.\n\
+	^Uruchom komputer w trybie MS-DOS i uruchom program.\n\
+	^Mimo to, kontynuowaÊ w Windows?
+
+1008=Czekaj... DostÍp do urzπdzenia %s
+
+;******************** diskdlg **************************
+1010=Wybierz urzπdzenie/dysk
+1011=PojemnoúÊ:~
+
+1012=Interfejs ATA\0\           ;&ATA Interface\0\
+	Serwis BIOS\0\              ;&BIOS Services\0\
+	Serwis DOS\0\               ;&DOS Services\0\
+	DOS ASPI
+1016=Urzπdzenia fizyczne\0\
+	Dyski logiczne\0\
+	Obrazy dyskÛw
+1019=Urzπdzenie\0\
+	Obrazy dyskÛw
+1021=Plik &Obrazu..
+1022=Pa&rametry dysku
+1023=ATA interfejs\0\          ;ATA interface\0\
+	ATA&PI interfejs             ;ATA&PI interface
+1025=O&ld BIOS Serwis\0\       ;O&ld BIOS Service\0\
+	E&xt BIOS Serwis             ;E&xt BIOS Service
+1027=DOS Int &25/26\0\         ;DOS &Int 25/26\0\
+	Odwo≥anie do Win&9x-FAT32\0\ ;&Win9x-FAT32 Calls\0\
+	&MSCDEX Serwis               ;&MSCDEX Services
+1030=&Uøyj DMA\0\              ;&use DMA\0\
+	Uøyj LBA&48\0\               ;use LBA&48\0\
+	&dostÍp w trybie raw CD      ;&raw CD access
+
+1033=Modyfikuj:
+1034=Po&kaø partycje
+
+1035=Urzπdzenie\0\
+	Offset\0\
+	Rozmiar
+1038=Konstruuj RAID
+1039=Rozmiar stripe:
+1040=Dodaj co najmniej 2~dyski.
+1041=Dodaj dysk...\0\
+	Dodaj PUSTY dysk\0\
+	UsuÒ dysk\0\
+	PrzesuÒ w gÛrÍ\0\
+	PrzesuÒ w dÛ≥\0\
+	Ustaw rozmiar Offset
+1047=Nieprawid≥owa wielkoúÊ paska (stripe) dla tego rozmiaru sektora.
+1048=Dla RAID-5 dodaj co najmniej 3~dyski.
+1049=Dodaj co najmniej 2~dyski.
+1050=Czy na pewno masz RAID-0 lub RAID-1 z wiÍcej niø dwoma dyskami?
+1051=Ca≥kowity rozmiar: %~I~LBA (%IV)
+1052=Nie moøna dodaÊ urzπdzenia o rÛønych rozmiarach sektora.
+1053=Ustaw offset
+1054=LBA offset dla LUN#%l:~
+
+1055=Nieprawid≥owe parametry
+1056=Nieprawid≥owa wartoúÊ bajtÛw na sektor.
+
+1057=^Rozmiar LBA nie moøe byÊ mniejszy niø produkt\n\
+	^(Cylinders~number * Heads~Number * Sectors~per~Trask).\n\
+	^ZwiÍkszyÊ rozmiar LBA?
+1058=^Liczba cylindrÛw powinna byÊ rÛwna \n\
+	^LBA~Size / (Heads~Number * Sectors~per~Trask).\n\
+	^ZwiÍkszyÊ liczbÍ cylindrÛw?
+
+1059=DostÍp do dysku...
+
+;CHANGED:
+1061=Partycja zajmuje do %~I~LBA (%IV).\n\
+	Bieøπcy rozmiar dysku: %~I~LBA (%IV).\n\n\
+	Moøliwe iø to b≥πd partycjonowania, b≥ad sterownika (brak wspacia >2TiB/LBA48), \
+	lub problemy z adapterem (translacja), ograniczenie pojemnoúci (HPA, zworka, roz≥πczony RAID)...
+
+1065=ZakoÒczyÊ pracÍ z obecnym urzπdzeniem?
+
+;CORRECTME:
+1066=Musisz mieÊ uprawnienia administratora/superusera aby uzyskaÊ dostÍp do urzπdzenia.\n\
+	Zaloguj siÍ jako administrator oraz uruchom program jako administrator \
+	(przeczytaj dokumentacjÍ oprogramowania).
+
+1067=Nieprawid≥owy rozmiar sektora (Bps).\n\  ;CORRECTME
+	Mimo to kontynuowaÊ?
+
+;********************** DiskI/O ************************
+1068=&PonÛw
+1069=&Ignoruj
+1070=Ignoruj wszystkie
+1071=&Przerwij
+1072=&Modyfikuj
+1073=Za&stosuj
+
+1074=PomiÒ b≥Ídy We/Wy
+1075=Nie czekaj, nawet gdy urzπdzenie nie jest gotowe
+1076=zawsze
+1077=teraz
+
+1078=IloúÊ prÛb ponowieÒ przy b≥Ídzie CRC
+1079=IloúÊ prÛb ponowieÒ przy b≥Ídzie Seek
+
+;CHANGED:
+1080=LBA: %~I (prÛb %l): %s
+;CHANGED:
+1081=LBA: %~I - %~I (prÛb %l): %s
+1082=Oczekiwanie na odpowiedü urzπdzenia
+1083=Sukces
+
+1084=Parametry We/Wy
+;CHANGED:
+1085=Przeskok przez sektory po b≥Ídzie
+;CHANGED:
+1086=Odczyt wsteczny po skoku
+1087=IloúÊ sektorÛw w buforze We/Wy
+1088=Limit czasu, msec
+1089=Limit czasu SCSI, s
+1090=Skrypt...
+1091=Potwierdü
+
+1092=&Parametry
+1093=Zapisz b≥πd skryptu obs≥ugi We/Wy
+1094=Zobacz b≥πd skryptu obs≥ugi We/Wy
+1095=Obs≥uga We/Wy
+;CHANGED
+1096=Wype≥nienie pominiÍtych sektorÛw (hex)
+1097=&Zresetuj
+;CHANGED:
+1098=&Skrypt...
+;NEW:CORRECTME:
+1099=Wype≥niaj uszkodzone sektory (hex)
+
+1100=LBA Rozmiar
+1101=Cylindry
+1102=G≥owice
+1103=Sek.
+1104=Bps
+
+;****************** mainmenu ************************
+1110=Dys&k
+1111=Wybierz &dysk...
+1112=OtwÛrz &obraz...
+1113=Konstruuj &RAID...
+1114=&Partycje...
+;CHANGED:
+1115=&Blokuj woluminy...
+1116=Wyjú&cie
+1117=Parametry We/Wy... ;CORRECTME
+1118=Szukaj &NTFS...
+1119=Szukaj &FAT...
+
+1120=&Okna ;&Widok
+1121=Drzewo &katalogÛw ;fold&erÛw
+1122=&Panel plikÛw
+1123=Panel &szukania
+1124=Edytor
+1125=Rozlokowanie okien
+1126=bez ustalania
+1127=Wszystkie zmaksymalizowane
+1128=Wszystkie pionowo
+1129=Wszystkie poziomo
+1130=Drzewo w pe≥nej wysokoúci
+1131=Edytor w pe≥nej szerokoúci
+1132=Edytor w pe≥nej wysokoúci
+
+1133=Ed&ycja
+1134=&Tryb ;&Widok
+;CHANGED:
+1135=&Heksadecymalny/Tekst
+1137=&Katalog FAT
+1138=FA&T12/FAT16/FAT32
+1139=Tablica p&artycji MBR/GPT
+1140=FAT/FAT32/NTFS &Boot record
+1141=Katalog &NTFS
+1142=&MFT record
+1143=RAW sectory pliku NTFS
+1144=&Kodowanie...
+;NEW: ;CHECKME: Custom Tem&plates...
+1145=W≥asne &szablony...
+;NEW:
+1146=Aktualizuj szablony
+
+1147=Wype≥nij &zerami
+1148=&Kopiuj
+1149=&Wklej
+1150=Wklej &plik...
+1151=Wybierz &blok
+1152=Wybierz &wszystkie
+;NEW:
+1153=Eksport do pliku &tekstowego...
+;CHANGED:
+1154=Ponownie p&rzeczytaj blok
+1155=Tryb &edycji
+
+1156=&Edytor ;&Obiekt
+1157=Tablica p&artycji
+1158=&Boot Sektor
+1159=Kopia Boot Sektora
+1160=&Root katalog ;Folder
+
+1161=FA&T/MFT
+1162=FAT Copy/MFT Mirror
+
+1163=M&FT Record...
+1164=&Klaster woluminu...
+1165=&Sektor woluminu...
+1166=Sektor &fizyczny...
+
+1167=&Mapa klastrÛw
+
+1168=&Idü do
+1169=Dane &pliku
+1170=Wpis &katalogu
+1171=Klaster FA&T/MFT record
+
+1172=Mapa klastrÛw
+1173=Idü do &Offset...
+
+1174=&NarzÍdzia
+1175=Odzyskaj...
+1176=Szukaj w znalezionych (po nazwie)... ;CORRECTME
+;CHANGED:
+1177=Rekonstruuj system plikÛw...
+1178=Aktualizuj mapÍ klastrÛw
+1179=WyczyúÊ drzewo katalogÛw ;folderÛw
+
+1180=&NarzÍdzia
+1181=&Wyszukaj ciπg znakÛw w obiekcie...
+;CHANGED:
+1182=Szukaj szczegÛlnego sektora...
+1191=Szukaj po&nownie
+;=&Edytuj/tryb tylko do odczytu
+1192=Wype≥nij sektory...
+1193=&Kopiuj sektory...
+
+1194=NarzÍdzia NTFS
+1195=Kopiuj plik...
+1196=UtwÛrz katalog...
+1197=UsuÒ plik/pusty katalog...
+1198=Napraw INDX-records katalogu...
+
+1199=JÍzyk/&Language...
+1200=Po&moc
+1201=O prog. &DMDE...
+1202=&Aktywacja...
+1204=&Aktywacja (demo)...
+
+;NEW::CORRECTME:
+1210=Za≥aduj dane wycofania/zrzutu z pliku...
+1211=ZrzuÊ zmiany do pliku...
+1212=Cofnij zmiany
+1213=PonÛw zmiany
+1214=PrzywrÛÊ wszystkie zmiany...
+1215=Zastosuj zmiany...
+
+1220=Tworzenie listy atrybutÛw
+
+1230=Ukryj/pokaø zmiany
+1231=Cofnij
+1232=PonÛw
+
+1240=Zapis opÛøniony (%l)
+1241=Partycjonowanie (%l)
+1242=Edytor (%l)
+1243=Dane wycofania/zrzut z pliku (%l)
+1244=Obiekt~#%l (%l)
+1245=Edycja %l (%l)
+;::NEW
+
+;******************** common *************************
+1280=ZakoÒczenie bieøπcej operacji...
+1281=PrzerwaÊ operacjÍ?
+1282=P&rzerwij
+1283=&Kontynuuj
+
+;NEW::CORRECTME:
+1284=&OtwÛrz       ;Old:1534=
+1285=&Przeglπdaj.. ;Old:1535=
+1286=Wybierz       ;Old:1536=
+1287=&PonÛw
+1288=Po&mijaj
+1289=Wszystkie pliki (%s)
+;::NEW
+
+;******************************************************
+1290=Line  ;CORRECTME
+1291=Komenda
+1292=Komentarz
+1293=£aduj...
+1294=Zapisz...
+1295=Dodaj
+1296=UsuÒ
+1297=Edytuj
+;******************************************************
+
+1298=&Zamknij
+1299=Po&moc
+1300=Pomoc
+
+1301=Jeøeli pliki pomocy nie jest obs≥ugiwany lub nieobecny \
+	moøesz pobraÊ plik pomocy ze strony twÛrcy programu.
+
+1302=DMDE nie moøe zakoÒczyÊ, dopÛki sπ niezamkniÍte okna dialogowe programu.
+1303=[Esc]: wyjdü z menu
+
+1304=&Ok\0\
+	&Anuluj\0\
+	&Tak\0\
+	&Nie\0\
+	&Anuluj
+1309=Idü do skrÛtu adresu\0\
+	Skopiuj skrÛt do schowka\0\
+	Kopiuj adres do schowka
+1312=Nazwa pliku:\0\
+	Typ pliku:\0\
+	&OtwÛrz\0\
+	&Zapisz\0\
+	&Anuluj\0\
+	Pliku nie znaleziono.\0\
+	Plik juø istnieje.\nNadpisaÊ?
+1319=Wybierz katalog ;Przeglπdaj foldery
+1320=Aby wybraÊ naciúnij Ctrl+Enter lub Ok
+
+1321=ProszÍ czekaÊ...
+
+1322=[Alt+D]: wybierz urzπdzenie  [F10]: menu
+1323=[Ctrl+F1]: panel plikÛw  [F10]: menu
+1324=[Ctrl+P]: partycje  [F10]: menu
+1325=[Alt+B]: boot sektor  [F10]: menu
+
+;*********************** NTLockVolumes *********************
+;CHANGED:
+1326=Blokuj wolumin do bezpoúredniego dostÍpu
+;CHANGED:
+1327=System plikÛw musi byÊ zablokowany przed zapisem bezpoúrednim do sektorÛw woluminu. \  
+	Zaznaczone woluminy sπ zablokowane i dla nich bezpoúredniegi zapis jest dozwolony.
+;CHANGED:
+1328=Nie moøna zablokowaÊ nieoznaczonych woluminÛw.\n\ 
+	Ostrzeøenie! Ignorowanie moøe prowadziÊ do uszkodzenia systemu plikÛw \
+	lub moøliwoúÊ zapisu zostanie odrzucona. Wymuszone odmontowanie \
+	spowoduje øe wszelkie uøyte deskryptory woluminu bÍdπ b≥Ídne.
+
+1329=Nie moøna zablokowaÊ. Wolumin moøe byÊ w≥aúnie wykorzystywany, lub dostÍp jest zabroniony.\n\ 
+	Wymuszone odmontowanie spowoduje øe wszelkie uøyte deskryptory woluminu bÍdπ b≥Ídne.
+
+1330=Bieøπcy wolumin nie moøe byÊ odblokowany.
+1332=&PonÛw\0\
+	&Anuluj\0\
+	&Wymuszaj\0\
+	&Ignoruj\0\
+	&Anuluj
+
+;********************** PartView ***************************
+;********************** PartMan ****************************
+;NEW:CORRECTME:
+1337=Wybrany zakres wykracza poza granice urzπdzenia.\n\
+	Prawid≥owe sektory urzπdzenia: %~I - %~I.\n\
+	Mimo to kontynuowaÊ?
+;CHANGED:
+1338=Offset:
+;CHANGED:
+1339=Aktualna pozycja
+1340=Wybierz sektory
+1341=Cylinder
+1342=G≥o
+1343=Sek
+1344=Skupienie na Sector:  ;Focus Sector:  ;CORRECTME
+1345=Pierwszy sector:
+1346=Ostatni sektor:
+1347=Liczba sektorÛw:
+1348=&Dec\0He&x
+;CHANGED:
+1350=Sektory urzπdzenia:~
+
+1351=Skanowanie w poszukiwaniu partycji...  #%l  LBA: %~I
+
+1352=Wolumin lub kopia sektora rozruchowego nie znaleziona.
+1353=Sektor jest uøywany przez inny wolumin lub tablicy.
+;CHANGED:1338=>1354
+1354=System plikÛw nie jest obs≥ugiwany i nie moøe byÊ zweryfikowany.\n\  
+	Mimo to kontynuowaÊ?
+;CHANGED:CORRECTME:
+1355=Partycja jest przesuniÍta w stosunku do sektorÛw urzπdzenia.
+;CHANGED:CORRECTME:
+1356=System plikÛw nie zosta≥ zweryfikowany.\n\
+	Zaleca siÍ, aby otworzyÊ wolumin i go zweryfikowaÊ.\n\
+	KontynuowaÊ bez weryfikacji?
+1357=System plikÛw jest uszkodzony.\n\
+	Mimo to kontynuowaÊ?
+1358=Prawid≥owy sektor rozruchowy jest juø obecny.\n\
+	Mimo to kontynuowaÊ?
+1359=PrzywrÛciÊ sektor rozruchowy z kopii?
+
+1360=WykryÊ literÍ woluminu?\n\
+	Czasami moøe to spowodowaÊ zawieszenie siÍ programu.
+1361=Dysk
+1362=tablica
+1363=Rozszerzona
+1364=Rozszerz.   ;console 
+1365=znajdü
+1366=znajd.      ;console 
+1367=Znaleziony tablica
+1368=Znal. tabl. ;console 
+1369=Nieprzydzielone
+1370=sektory nadmiarowe
+1371=Nieznana
+1372=Podstawowa
+1373=Podst.      ;console 
+1374=Dysk logicz.
+1375=Log.        ;console 
+1376=Partycje
+;CHANGED:
+1377=\tWolumin\tPart.\tSys.plik.\tRozmiar\tWsk.\tPierw.~LBA\tOstatni~LBA
+1378=Wolumin\0\
+	Partycja\0\
+	Sys.plik.\0\
+	Rozmiar\0\
+	Wskaüniki\0\
+	Pierwszy sektor\0\
+	Ostatni sektor
+;CHANGED:
+1386=Aktualne partycjonowanie\0\
+	Zmodyfikowane
+;NEW:
+1388=Oczekujπce zmiany
+1389=&tablice
+1390=zna&jdü
+1391=szcze&gÛ≥y
+1392=&Wstaw
+1393=U&suÒ
+1394=Szukaj &FAT
+1395=Szukaj &NTFS
+1396=Obraz/Klon
+1397=&OtwÛrz wolumin
+1398=&Menu
+1399=Pokaø litery woluninÛw
+1400=OdrzuÊ zmiany partycjonowania ;Pokaø aktualne partycjonowanie dysku
+1401=&Za≥adowaÊ z pliku...
+1402=Za&pisz bieøπce partycjonowanie do pliku...
+1403=Za&stosuj partycjonowanie...
+1404=Wybierz ca≥y dysk 
+1405=&Wstaw partycje (Undelete)... ;CORRECTME, but keep "Undelete"
+1406=U&suÒ partycje...
+1407=Szukaj &FAT w partycji
+1408=Szukaj &NTFS w partycji
+1409=UtwÛrz Obraz/Klonuj... 
+;CHANGED:
+1410=Nie naleøy modyfikowaÊ partycji, ktÛra jest na bieøπcym dysku systemowym lub startowym.\n\ 
+	Zapisz dane wycofywania na innym urzπdzeniu.\n\
+	Anuluj automatyczne sprawdzanie dysku przy starcie.
+1416=OtwÛrz zapisane partycjonowanie dysku
+
+;CHANGED:
+1417=UsuniÍty
+;CHANGED:
+1418=Usun.
+;CHANGED:
+1419=MBR obs≥uguje do 2TiB i do 4 partycji podstawowych lub \n\  
+	3~partycje podstawowe i pozosta≥e dyski logiczne w 1 partycji rozszerzonej.
+;CHANGED:
+1420=Wybierz typ partycji.
+1422=Partycja rozszerzona zostanie utworzona.\n\
+	Dysk logiczny moøna dodaÊ tylko wtedy gdy rozpoczyna siÍ\
+	w sektorze dalszym niø sektor poczπtkowy partycji rozszerzonej. \n\
+	^KontynuowaÊ?
+;CHANGED:CORRECTME:
+1423=Boot sektor nie zosta≥ znaleziony lub jest niew≥aúciwy/niezgodny.\n\
+	Partycja zostanie wykryta jako niesformatowana.\n\
+	Mimo to kontynuowaÊ?
+1424=System plikÛw jest nieznany.\n\
+	Mimo to kontynuowaÊ?
+;CHANGED:CORRECTME:
+1425=Istnieje juø partycja z tym samym sektorem startowym.\n\
+	ZastπpiÊ istniejπcπ partycjÍ?
+;CHANGED:
+1426=Partycja rozszerzona zostanie usuniÍta wraz z dyskami logicznymi.\n\
+	^KontynuowaÊ?
+;CHANGED:
+1427=UsunπÊ partycjÍ?
+;CHANGED:
+1430=Za ma≥o miejsca, aby wstawiÊ partycji.
+;CHANGED:
+1431=Partycje nak≥adajπ siÍ na siebie.\n\
+	Naleøy usunπÊ pokrywajπcπ siÍ partycje i sprÛbowaÊ ponownie.
+1432=Partycja i partycja rozszerzona nachodzπ na siebie.
+1433=B≥πd odczytu sektora %~I.
+1434=Brak wolnych wpisÛw w tablicy partycji.
+1435=B≥πd podczas zapisywania sektora %~I.
+1436=Nie moøna spasowaÊ partycji rozszerzonej.
+1437=Brak miejsca dla tablicy.
+1438=Znaleziono b≥πd partycjonowania.
+;CHANGED:CORRECTME:
+1439=Nie moøna wstawiÊ tÍ partycjÍ.
+1440=System plikÛw nie jest obs≥ugiwany.
+1441=Nie moøna usunπÊ tej partycji.
+1442=Uwaga! Niestandardowa tablica partycji.
+1443=Tworzenie partycji RAW...   ;CORRECTME
+;CHANGED:
+1444=PrzywrÛcenie sektora rozruchowego z kopii...
+1445=Aktywuj/dezaktywuj partycje jako startowπ...
+1446=Wstaw/usuÒ sygnaturÍ MBR/Boot...
+1447=Pomoc instrukcje
+
+1448=Two&rzenie
+;CHANGED:CORRECTME:
+1449=&Przywracaj ;ZamieniaÊ 
+1450=M&BR On/Off
+
+1452=Wykryto b≥Ídy w modyfikowanym partycjonowaniu.\n\
+	Mimo to kontynuowaÊ?
+1453=Jest zbyt ma≥y odstÍp przed partycjπ. \n\
+	Moøe to pÛüniej powodowaÊ problemy po zmianie partycji przy uøyciu innych narzÍdzi.\n\
+	Mimo to kontynuowaÊ?
+1454=Partycja jest zbyt duøa.
+1458=UtwÛrz partycjÍ niesformatowanπ (RAW).
+1459=Nieoczekiwane partycjonowanie.
+
+;******************** FillSectors ************************
+1460=Sektor: %~I (%l%%)
+;CHANGED:CORRECTME:
+1464=%IV bÍdπ wype≥nione wzorem.\n\
+	Wszystkie dane zostanπ zastπpione nieodwo≥alnie.\n\
+	Czy na pewno chcesz kontynuowaÊ?
+
+;******************* SearchSector ************************
+1465=Wyszukiwanie...
+1466=Sektora nieznaleziono.
+
+;******************** CopySectors ************************
+1467=Sektor poczπtkowy:
+1468=Sektor koÒcowy:
+1469=Liczba sektorÛw:
+1470=Nieprawid≥owe dane.
+1471=^Nieprawid≥owe dane.\n\
+	^Prawid≥owe sektory dysku: %~I - %~I.
+;CHANGED:
+1472=èrÛd≥o nie pasuje do miejsca docelowego.\n\
+	SkopiowaÊ tylko czÍúÊ danych?
+1473=Wype≥nij sektory
+
+1474=Wzorzec
+1475=&Hex:\0\
+	&Plik
+1477=Wype≥nij sektory:
+
+1478=WyrÛwnaÊ do sektora ;Dostosuj &sektory
+1479=Plik jest pusty.
+1480=Plik jest za duøy. Uøyj funkcji "kopiuj sektory" do zapisywania duøych plikÛw.
+1481=Nie moøna ukoÒczyÊ. B≥πd zapisu.
+1482=B≥πd odczytu pliku.
+1483=Wype≥nione LBA: %~I (%IV) %l%%
+
+1484=Kopiuj sektory
+1485=èrÛd≥owy
+1486=Docelowy
+
+1487=Urzπdzenie...
+1488=Plik...
+1489=Edytor
+;CHANGED:CORRECTME
+1490=Zaznaczone
+1496=Wybierz docelowy.
+
+1497=Zapis do pliku
+1499=Rozmiar pliku docelowego jest wiÍkszy od rozmiaru ürÛd≥a.\n\   
+	Czy chcesz obciπÊ plik docelowy?
+;CHANGED:
+1502=Aktualna pozycja LBA: %~I (%IV) %l%% / %l%%
+1503=Poczπtkowy bajt:  
+1504=KoÒcowy bajt:     
+1505=Rozmiar w bajtach:
+;CHANGED:
+1506=~na disku~
+
+;NEW:CORRECTME:
+1519=Zapisz zrzut zmian do pliku
+
+;********************* EditorCommands *********************
+1520=Klaster: [0..%I]:
+1521=Idü do klastra
+1522=Sektor woluminu [0..%I]:
+1523=Idü do sektora woluminu
+1524=Idü do offsetu obiektu 
+;CHANGED:
+1525=Sektor [%s .. %s]:
+1526=Sektor Offsetu [0..%s]:
+;CHANGED:
+1527=Offset [%s .. %s]:
+
+1528=^Dane alokacji plikÛw nie zosta≥y za≥adowane.\n\
+	^Za≥adowaÊ dane alokacji plikÛw?
+1529=OtwÛrz wolumin FAT
+1530=OtwÛrz wolumin NTFS
+
+;CHANGED:CORRECTME:
+1531=Od &poczπtku/koÒca\0Od ak&tualnej pozycji
+
+1537=OtwÛrz plik
+1538=Szukaj ciπg znakÛw
+1539=Ciπg znakÛw:
+1540=WielkoúÊ &liter
+1541=O&ffset sektora:
+1542=&Unicode  ;CORRECTME
+1543=&do przodu\0\
+	&wstecz    ;CORRECTME
+1545=od &pozycji kursora\0\
+	ca≥y &obiekt
+
+;*********************** devobj **********************************
+;NEW::CORRECTME:
+1547=Zbyt wiele zakresÛw.
+1548=Zapisz dane do wycofania
+1549=B≥πd odczytu sektora %~I.\nMimo to kontynuowaÊ?
+1550=Ignoruj wszystkie
+1551=ZawartoúÊ urzπdzenia zosta≥a zmieniona z zewnπtrz.
+1552=Zapis nie jest obs≥ugiwane dla tego typu RAID.
+
+1553=Potwierdü zapisu bezpoúrednio na dysku 
+1554=Przed rozpoczÍciem nagrywania, zapisywanie danych do pliku w celu wycofania
+1555=Zapisz
+1556=OdrzuÊ
+1557=Cofnij  ;CORRECTME Undo: odwiπzaÊ  odrobiÊ
+1558=Wstrzymaj
+1559=Scal    
+;::NEW
+;CHANGED:
+1560=ZapisaÊ zmiany na dysku?
+;CHANGED:
+1561=Istniejπ niezaakceptowane zmiany.\n\           
+	ZapisaÊ lub odrzuciÊ niezaakceptowane zmiany?
+1562=Zapisz na dysku lub odrzuÊ poprzednie zmiany.
+1563=Blok wykracza poza koniec obiektu edytowanego.
+1564=Blok jest za duøy. Uøyj funkcji "Kopiuj sektory" lub "Wype≥nij sektory" dla duøych blokÛw.
+;CHANGED:
+1565=Bufor jest pe≥ny.
+;NEW:CORRECTME:
+1566=Istniejπ niezaakceptowane zmiany.\n\
+	ZapisaÊ lub odrzuciÊ niezaakceptowane zmiany?\n\
+	RÛwnieø moøna wstrzymaÊ zmiany i napisaÊ pÛüniej.
+1567=Istniejπ niestosowania poprzednie zmiany.\n\
+	ZapisaÊ lub odrzuciÊ poprzednie zmiany?
+1568=Istniejπ niestosowania poprzednie zmiany.\n\
+	ZapisaÊ lub odrzuciÊ poprzednie zmiany?\n\
+	RÛwnieø moøna scaliÊ wszystkie zmiany na pÛüniej stosowanie.
+1569=ZresetowaÊ wszystkie zmiany?
+;::NEW
+
+;********************** MountFAT *********************************
+1570=\n^Mimo to kontynuowaÊ?
+1571=Auto wykrywanie parametrÛw FAT\0\
+	KontynuowaÊ z tym parametrem
+1573=Wolumin nie pasuje do urzπdzenia.
+1574=uøyj tego wirtualnego rozmiaru woluminu\0\
+	uøyÊ zmniejszonego rozmiaru woluminu
+1576=Nieprawid≥owa wartoúÊ Bps nie bÍdzie uøyta.
+1577=Nieprawid≥owa iloúÊ FATs wartoúÊ nie bÍdzie uøyta.
+1578=WartoúÊ Root Cluster nie jest uøywana w FAT12/FAT16.
+1579=Wpisy Root Dir nie sπ uøywane w FAT32.
+1580=IloúÊ wpisÛw Root Dir nie moøe wynosiÊ zero dla FAT12/FAT16.
+1581=Nieoczekiwana iloúÊ wpisÛw Root Dir, wartoúÊ zwiÍkszona.
+1582=Prawid≥owa wartoúÊ sektorÛw na klaster: 1,2,4,8,16,32,64,128.
+1583=Sektor poczπtkowy musi mieúciÊ siÍ w zakresie 0..%~I.
+1584=(res.secs+fatsnum*fatsize+entriesnum*32/512) jest za duøy.
+1585=£πczna iloúÊ sektorÛw jest zbyt duøa lub parametry sπ nieprawid≥owe.
+1586=£πczna iloúÊ sektorÛw jest zbyt ma≥a lub parametry sπ nieprawid≥owe.
+1587=Nieprawid≥owy root klaster, zastπpiono wartoúciπ domyúlnπ.
+1588=Istnieje tylko jeden FAT.
+1589=Podczas otwierania katalogu g≥Ûwnego (Root) wystπpi≥ b≥πd.
+1590=%-.64s
+
+1591=System plikÛw:
+1592=Tablice FAT:
+;CHANGED:
+1593=uøyj FAT1\0\
+	uøyj FAT2\0\
+	nie uøywaj\0\
+	test i wybÛr\0\
+	auto wybÛr
+
+1598=TestujÍ tablice FAT %l%%
+1599=Uøyj ustawieÒ tabeli FAT
+1600=Rozmiar tabeli FAT w bajtach: %l
+1601=FAT%l: %l-%l sπ %l%% prawid≥owe; %l dobre, %l z≥e, %l nieznane
+1602=nie uøywaj tabele FAT
+1603=sprawdü (nie uøywaj bad sektorÛw)
+1604=%l%%  klaster %l;  znaleziony %l fragment folderu
+
+;********************** MountNTFS ********************************
+1620=\n^KontynuowaÊ mimo to?
+1621=Auto wykrywanie parametrÛw NTFS\0\
+	KontynuowaÊ z tym parametrem
+1623=Nieprawid≥owy rozmiar klastra.
+1624=Nieprawid≥owy bajt w rekordzie MFT, ustawiono wartoúÊ domyúlnπ.
+1625=Nieprawid≥owy bajt w rekordzie Indeksu, ustawiono wartoúÊ domyúlnπ.
+1626=£πcznπ iloúÊ sektorÛw ustawiono zgodnie z wielkoúciπ urzπdzenia.
+1627=WartoúÊ klastra MFT jest zbyt duøa.
+1628=WartoúÊ klastra MFTMirr jest zbyt duøa.
+1629=Nie ma øadnych prawid≥owych klastrÛw poczπtkowych MFT.
+1630=B≥πd MFT. Uøyty bÍdzie MFTMirr .
+1631=B≥πd MFT.
+
+;NEW:
+1649=&Parametry
+;********************** comerrmsg ****************************
+1650=Brak pamiÍci
+1651=Nie moøna utworzyÊ
+1652=Nie moøna zapisaÊ
+1653=B≥πd odczytu pliku
+
+;********************** volserv ******************************
+1670=Szukaj plikÛw
+1671=Panel szukania
+1672=Drzewo katalogÛw  ;folderÛw
+1673=Szukanie...(%l) %s
+1674=Szukanie ukoÒczone (%l)
+1675=Index record: %l (%l%%)  ;CORRECTME
+1676=MFT record: %l (%l%%)    ;CORRECTME
+;NEW:CORRECTME:
+1677=Przerwane (%l)
+;NEW:CORRECTME:
+1678=ZatrzymaÊ szukanie?
+
+;********************** Recovery *****************************
+;NEW::CORRECTME:
+1693=Fizyczna lokalizacja katalogu docelowego jest nieznana.\n\
+	Czy jesteú pewien, øe docelowy nie zastÍpi ürÛd≥owy?
+1694=Nie moøesz odzyskiwaÊ do miejsca, z ktÛrego brane jest ürÛd≥o odzysku.\n\
+	W przeciwnym razie pliki ürÛd≥owe zostanπ nadpisane.
+1695=Czy na pewno chcesz, aby pominπÊ sprawdzenie docelowego?
+1696=B≥πd otwierania
+;::NEW
+1697=uwzglÍdnij alter. strumienie NTFS
+1698=Wybierz czynnoúÊ. 
+1699=Zmiana nazwy prÛg              ;rename prog  ;CORRECTME
+1700=Odzyskiwanie
+1701=Wybierz pliki
+1702=filtr plikÛw:
+;CHANGED:CORRECTME:
+1703=ca≥kowicie\0\
+	podúwietlony obiekt\0\
+	pliki w aktualnym panelu\0
+;NEW:
+1706=Opcje
+;NEW:
+1707=Podziel duøych plikÛw na bloki rozmiaru:
+;NEW:
+1708=utf-8
+1709=uwzglÍdnij &znalezione
+1710=tylko zaznaczone
+1711=wyklucz usuniÍte\0\
+	tylko &usuniÍte\0\
+	uwzglÍdnij usuniÍte
+1714=Nazwy w &Unicode
+1715=ZastÍpuj &nazwy
+1716=Rozmiar
+1717=Odzyskaj do:
+1718=Skanowanie...  pliki: %l (%IV).\n%.64s
+1719=%~l%c OdczytujÍ %.60s
+;NEW:
+1720=limity rozmiaru pliku:
+1721=Odzyskaj
+
+1722=Wolumin
+1723=Katalog
+;CHANGED:
+1724=~(zaznaczone tylko)
+;CHANGED:
+1725=Wszystkie zaznaczone z
+;CHANGED:CORRECTME:
+1726=Pliki z bieøπcego panelu
+1727=Plik
+;CHANGED:CORRECTME:
+1728=Wszystkie z
+
+1730=D≥ugie nazwy nie sπ obs≥ugiwane pod DOS-em bez specjalnych sterownikÛw. \
+	Zaleca siÍ, aby zastπpiÊ d≥ugie nazwy pod DOS-em (by przywrÛciÊ \
+	nazwy w systemie Windows, wykonaj "lrename.bat" w katalogu docelowym).\n\
+	^Czy na pewno chcesz kontynuowaÊ bez zastÍpowania nazw?
+
+;CHANGED:
+1731=%~l%c OdczytujÍ %.30s%-.30s %l%%\nZapis do %.30s%-.30s
+;CHANGED:
+1732=%~l%c OdczytujÍ %.60s\nUtworzony %.30s%-.30s
+
+1733=Kontynuuj odzyskiwanie do innego miejsca docelowego\0\
+	Podziel plik\0\
+	Podziel wszystkie pliki\0\
+	ZmieÒ nazwÍ\0\
+	ZmieÒ wszystkie nazwy automat.\0\
+	PomiÒ\0\
+	PomiÒ wszystkie
+1740=PonÛw\0\
+	Ignoruj b≥Ídy pliku\0\   ;CORRECTME
+	Ignoruj wszystkie b≥Ídy\0\
+	Ignoruj wszystkie, ustaw atryb. "ukryty"\0\
+	PomiÒ\0\
+	PomiÒ wszystkie
+1746=Maksymalna dopuszczalna liczba katalogÛw  automat. zmiany nazwy
+1747=Maksymalna dopuszczalna liczba plikÛw  automat. zmiany nazwy 
+
+;CHANGED:
+1748=Nie moøna utworzyÊ katalogu
+;CHANGED:
+1749=Przemianuj katalog ;CHECKME
+;CHANGED:
+1750=Przemianuj plik ;CHECKME
+1751=^Nie moøna kontynuowaÊ zapisu\n^Nie ma wystarczajπco duøo miejsca na dysku.
+
+;CHANGED:
+1752=Kontynuuj odzyskiwanie do:
+1753=Nie moøna zapisaÊ wiÍcej. Kontynuuj zapis do nastÍpnego pliku:
+1754=Anulowano
+;CHANGED:
+1755=Plik juø istnieje
+;CHANGED:
+1756=Nie moøna utworzyÊ
+;CHANGED:
+1757=Nie moøna zapisaÊ wiÍcej
+;CHANGED:
+1758=Nie moøna zapisaÊ
+;CHANGED:
+1759=B≥πd odczytu
+;CHANGED:
+1760=Katalog juø istnieje 
+1761=Zmiana miejsca docelowego\0\
+	Scal\0\
+	Scal wszystkie\0\
+	ZmieÒ nazwÍ\0\
+	ZmieÒ wszystkie nazwy automat.\0\
+	PomiÒ\0\
+	PomiÒ wszystkie
+1768=Zapisz plik listy               ;Save file list ;CORRECTME
+1769=ParametrÛw raportu odzysku      ;Recovery report parameters      ;CORRECTME
+1770=Napisz sprawozdanie odzyskiwania do pliku  ;Write recovery report to file:  ;CORRECTME
+1771=Zapisz raport odzysku do pliku  
+1772=Pozycje b≥πd &We/Wy             ;&I/O error positions            ;CORRECTME
+1773=KalkulowaÊ C&RC32               ;Calculate C&RC32                ;CORRECTME
+1774=UtwÛrz raport                   ;Create &report                  ;CORRECTME
+1775=Lista...                        ;List                            ;CORRECTME
+1776=PrzerwaÊ odzyskiwanie\0\
+	PrzerwaÊ odzyskiwanie katalogu\0\                             
+	PomiÒ tylko pliki\0\
+	Ustaw We/Wy parametrÛw urzπdzenia
+
+;***************** NTFSWrite ***********************
+1780=^Wersja NTFS moøe byÊ nie kontatybilna.\n\
+	^ZezwoliÊ na operacje zapisu gdziekolwiek?
+1781=^B≥πd odczytu katalogu. B≥πd 0x%04hx.
+1782=Operacja nie wspierana dla tego katalogu.
+1783=^Wersja katalogu NTFS moøe byÊ nie kontatybilna.\n\
+	^Mimo to kontynuowaÊ?
+1784=^Czy jesteú pewien, øe chcesz utworzyÊ w specjalnym katalogu systemowym?
+1785=OtwÛrz plik ürÛd≥owy
+1786=Kopiuj plik
+1787=Odczytaj dane z pliku:
+1788=Nie moøna otworzyÊ
+
+1789=Kopiowanie "%.65s" do katalogu "%.65s" z otwartego woluminu.\n\
+	UtwÛrz/nadpisz nastÍpujπce nazyw plikÛw:
+
+1790=Przeczytaj dokumentacjÍ przed dalszym kontynuowaniem!
+1791=Zbyt d≥uga úcieøka do pliku.
+1792=Nie moøna inicjalizowaÊ.
+
+1793=B≥πd inicjalizacji katalogu 0x%lx.
+1794=Nie moøna skanowaÊ katalogu. B≥πd 0x%04hx.
+1795=^Plik juø istnieje.\n^Czy chcesz go nadpisaÊ?
+1796=Do≥πczyÊ nowe dane do koÒca pliku?
+;CHANGED:
+1797=Nie moøna otworzyÊ pliku. B≥πd 0x%04hx. ;CORRECTME
+1798=Nie moøna alokowaÊ pliku. B≥πd 0x%04hx.
+1799=Nie moøna zaktualizowaÊ/zapisaÊ informacji. B≥πd 0x%04hx.
+1800=Nie moøna aktualizowaÊ INDX po utworzeniu pliku. B≥πd 0x%04hx.
+1801=Atrybut danych pliku nie odnaleziono. B≥πd 0x%04hx.
+1802=Nie moøna zmieniÊ rozmiaru pliku. B≥πd 0x%04hx.
+1803=Nie moøna aktualizowaÊ pliku po zmianie rozmiaru. B≥πd 0x%04hx.
+1804=Nie moøna aktualizowaÊ INDX. B≥πd 0x%04hx.
+1805=B≥πd odczytu pliku. B≥πd 0x%04hx.
+1806=B≥πd zapisu pliku. B≥πd 0x%04hx.
+1807=^Nie moøna aktualizowaÊ pliku po zapisaniu danych. B≥πd 0x%04hx.
+1808=B≥πd nazwy tworzonego katalogu w katalogu\n"%.65s"
+1809=UtwÛrz katalog
+1810=Nazwa juø istnieje.\n
+1811=Nie moøna utworzyÊ katalogu. B≥πd 0x%04hx.
+;CHANGED:
+1812=NaprawiÊ katalog?\nWczeúniej przeczytaj dokumentacjÍ!
+1813=B≥πd 0x%hx
+1814=Nie uda≥o siÍ odnowiÊ.
+1815=Czy jesteú pewien, øe chcesz usunπÊ ze specjalnego systemu katalogu?
+1816=^Czy jesteú pewien usuniÍcia systemowego pliku?\n\
+	^To moøe uszkodziÊ system plikÛw.\n\
+	^KontynuowaÊ?
+1817=Niemoøliwe usuniecie $MFT.
+;CHANGED:
+1818=UsunaÊ plik or katalog?\nWczeúniej przeczytaj dokumentacjÍ programu! ;CORRECTME
+1819=^Uwaga: b≥Ídne dane mft.\n^Mimo to kontynuowaÊ?
+1820=Nie moøna usunπÊ. Katalog nie jest pusty.
+1821=^B≥πd %04hx. Katalog moøe nie byÊ pusty.\n^Mimo to kontynuowaÊ?
+1822=B≥πd %04hx
+1823=^Nie moøna wstawiÊ nazwy pliku do katalogu (INDX).\n\
+	^Mimo to kontynuowaÊ? 
+1824=Rekord MFT: %l %l%%
+
+;************* EditorStatuses *************************
+1840=[Esc]: powrÛt~~
+1841=[Enter]: otwÛrz plik danych~~~
+1842=[Enter]: otwÛrz katalog~~~~~~
+1843=[Enter]: idü do rekordu MFT~~
+1844=[Enter]: dir entry~~
+1845=[Enter]: otwÛrz wolumin FAT  [F7]: typ boot sektora
+1846=[F7]: zobacz kolejny typ boot sektora
+1847=[Enter]: otwÛrz wolumin NTFS  [F7]: typ boot sektora
+1849=[Enter]: idü do  [Ctrl+P]: okno partycji
+1850=wolumin NTFS nie zosta≥ wybrany
+1851=[Enter]: idü do dir entry  [Spacja]: pokaø/ukryj szczegÛ≥y
+1852=[Enter]: link do MFT     [Spacja]: pokaø/ukryj szczegÛ≥y
+1853=~~~~
+1854=[Enter]: otwÛrz atrybut  [Spacja]: pokaø/ukryj szczegÛ≥y
+1855=~~~~~~~~~~~~~~~~~~~~~~~~~[Spacja]: pokaø/ukryj szczegÛ≥y
+1856=[Enter]: otwÛrz katalog  [Spacja]: pokaø/ukryj szczegÛ≥y
+1857=[Enter]: o katalog w gÛrÍ~~
+
+1858=[Enter]: otwÛrz plik danych
+1859=[Enter]: idü do klastra
+
+;NEW:
+1860=[Enter]: idü do
+;NEW:
+1861=[Spacja]: szczegÛ≥y
+;NEW:
+1862=[Enter]: idü do  [Spacja]: szczegÛ≥y
+
+;************** PanelStatuses *************************
+1870=Nie wybrano obiektu
+1871=[Ctrl+U]: Odzyskaj...~~~
+1872=[Enter]: otwÛrz  [Ctrl+U]: odzyskaj...~~
+1873=[Enter]: otwÛrz (Edytor)  [Ctrl+U]: odzyskaj...~~
+1874=[Enter]: do gÛry  [Ctrl+U]: odzyskaj...~~
+1875=[Enter]: skan MFT~~
+
+;************** PanelCommands *************************
+
+1876=OtwÛrz Edytor Hex
+1877=Poziom wyøej
+;CHANGED:
+1878=Odzyskaj pliki...
+1879=OtwÛrz plik MFT (Hex Edytor)
+
+1880=%l%%  %l
+
+;******************* PanelNt **************************
+1881=Odczyt MFT...~#%~l (%l%%) ;__SN_LINKNTFS_STS
+
+;******************* PanelFat *************************
+;CHANGED:CORRECTME
+1882=Wirtualna rekonstrukcja systemu plikÛw
+;CHANGED:CORRECTME
+1883=Uøyj wynik wyszukiwania FAT tylko\0\
+	Przeskanuj ca≥y wolumen\0\
+	Kontynuuj przerwany proces
+1886=%s (%l)
+1887=FAT%l: %l-%l: %l%% OK; %l%% OK, %l%% uszkodzony, %l%% pusty, %l%% nieznany
+
+;******************************************************
+1890=Odzyskaj obiekt...
+;CORRECTME:
+1891=ZaznaczyÊ/odznaczyÊ obiekt
+
+;NEW::CORRECTME:
+1892=Zaznacz/odznacz obiekty panelu
+1893=Zaznacz wszystkie
+1894=Odznacz wszystkie
+1895=Rekonstruuj systemu plikÛw...
+1896=Zatrzymaj wyszukiwanie plikÛw
+1897=Rozwijaj
+1898=Ukryj
+;NEW:
+1899=Zaznacz pliki panelu tylko
+;::NEW
+
+;******************* ScanRangeBox *********************
+1900=Ustaw zakres sektorÛw do skanowania
+1901=Rozmiar bloku:
+
+1902=&Partycje...
+
+1903=ProszÍ zapoznaÊ siÍ z dokumentacjπ dla bardziej skutecznego odzyskiwania.
+
+1904=^Otwarty wolumin zostanie zamkniÍty.\n^KontynuowaÊ?
+;CHANGED:
+1905=Nie znaleziono woluminÛw.
+1906=Wybierz wolumin z listy.
+;NEW::CORRECTME
+1907=Log zosta≥ prawdopodobnie wyprodukowany w innym urzπdzeniu.\n\
+    Wyniki wyszukiwania mogπ byÊ stosowane nieprawid≥owo.
+1908=Zapisz dziennik wyszukiwania?
+1909=£adowanie...
+1910=Za≥aduj dziennik wyszukiwania...
+1911=Zapisz dziennik wyszukiwania...
+1912=Sortuj wed≥ug numeru
+1913=Sortuj wed≥ug jakoúci
+1914=Sortuj wg pozycji startowej
+1917=OtwÛrz parametry woluminu...
+1918=!!Zmieniony:~
+;::NEW
+
+;************************* NTFSSearch **************************
+1921=&Skanuj
+1922=Szukanie NTFS
+1924=Wolumin\0Klaster\0FILE\0INDX\0Mod\0Poczπtek\0Zgodne\0Min. rozmiar
+1932=Min. rozmiar woluminu: %IV
+1933=Poczπtek: %IV
+;CHANGED:
+1934=PlikÛw wol.: %l (%l) z %l, fragmentÛw MFT: %l (%l)
+;CHANGED:
+1935=&Wol#\0CLUS\0FILE\0INDX\0Mod\0&Poczπtek\0&Zgodne\0Min. rozmiar
+1944=&OtwÛrz wolumin
+1945=Za&pisz...
+1946=O&twÛrz...
+1947=Zapisz informacje skanowania NTFS
+1948=OtwÛrz informacje skanowania NTFS
+
+1949=Sektory poczπtkowe:
+1950=Zakres LBA: %~I - %~I (%IV) na %.42s ;CORECTME
+;CHANGED:
+1951=Przeskanowane: %~I (%l%%)
+;CHANGED:
+1952=PlikÛw: %l (%l) z %l, fragmentÛw MFT: %l (%l). INDX: %l (%l)
+1953=&Start/Stop
+1954=Zak&res...
+1956=Sprawdzanie wartoúci poczπtku sektora #%l:#%l  %l%%
+1957=Odczyt fragmentu MFT #%l: %l
+1958=Nie znaleziono fragmentu MFT %~l
+1959=Sprawdzanie katalogÛw #%l %l%%
+1960=Czekaj... 
+;CHANGED:CORRECTME:
+1961=Przetwarzanie woluminÛw...
+1962=^NiektÛre parametry nie zosta≥y jeszcze wykryte.\n\
+	^Zaleca siÍ, aby kontynuowaÊ skanowanie\n\
+	^inaczej przypisane dane bÍdπ niedostÍpne.\n\n\
+	^KontynuowaÊ skanowanie?
+;NEW::CORRECTME:
+1964=Fragmenty MFT woluminu...
+1965=Wszystkie fragmenty MFT...
+1966=Wybierz zakres skanowania...
+;::NEW
+
+;************************* FATSearch ****************************
+1970=Szukanie FAT
+1972=Wolumin\0Klaster\0DATA start\0FS\0Boot\0FAT1\0FAT2\0Root\0Znajdü
+1981=Szukanie tablic FAT...  %l
+1982=Zapisz informacje skanowania FAT
+1983=OtwÛrz informacje skanowania FAT
+;NEW:
+1984=&Wol#\0Klast\0&Poczπtek\0FS\0Boot\0FAT1\0FAT2\0Root\0&Znajdü
+
+;************************* Editor ***************************
+;NEW:CORRECTME:
+1997=~(oczekujπce zmiany)
+;NEW:
+1998=~(zmodyfikowano)
+1999=~(zmiany sπ ukryte)
+2000=Sektor: %~I (%l%%)
+2001=Nie znaleziono ciπgu.
+
+2002=Sektory %~I~-~%~I
+2003=Sectory woluminu %~I~-~%~I
+2004=Plik
+2005=Katalog
+2006=Sektory  ;n/u
+2007=Widok:~
+2008=~LBA:-  rekord: %I
+2009=~LBA:%-10I
+2010=~[Koniec wpisÛw]
+2011=~[PgDn: nastÍpny wpis]
+2012=~Nazwa~~~~Ext~~~~Rozmiar~~~Klaster~Atrybuty~Zmieniony~~~~~~~~~~~Utworzony~~~~~~~~~~~~~~Accessed
+2013=Katalog FAT
+2014=Mapa klastrÛw
+2015=FAT Boot
+2016=FAT32 Boot
+2017=NTFS Boot
+2018=~(Kopia)
+2020=Tablica partycji
+2021=~MFT~No~~Nazwa~~~~~~~~~~~~~~~~~Rozmiar~~~~~Atrybuty~~~~~~~~~~~Zmieniony
+2022=[Koniec z znacznika listy atrybutÛw]
+2023=~~~[Katalog]~
+2024=~~~~~~~~~[koniec listy]
+2025=~~~~~~~~~alokowane %10I klaster(y) poczπtek od %10I
+2026=MFT record
+2027=~/%4l sektory/ MFT No: %l (%l)
+2028=~~~~~[Koniec znacznika atrybutÛw]
+2029=~~~~~[B≥Ídny/Nie wspierany atrybut]
+2030=Rozmiar:%l
+2031=Rozmiar:%I Alok:%I
+2032=~Comp:%I
+2033=wielkoúÊ rekordu: %l sektorÛw   clusno: %l
+2034=~~~~numer katalogu MFT: %l (%l)
+2035=NTFS directory
+
+2036=ID pliku ("FILE")
+2037=offset fixups
+2038=numer fixups
+2039=$LogFile seq. num
+2040=numer sekwencji
+2041=numer twardego linku
+2042=offset atrybutu
+2043=flagi
+2044=uøyta wielkoúÊ
+2045=wielkoúÊ rekordu
+2046=base MFT rec
+2047=next attr id
+2048=0x2A uint16
+2049=this MFT number
+2050=update seq. num
+2051=Czas utworzenia Pliku
+2052=Czas modyfikacji Pliku
+2053=Ostatnia modyfikacja MFT
+2054=Ostatni dostÍp
+2055=uprawnienia pliku MSDOS
+2056=Maksymalna liczba wersji
+2057=Numer wersji
+2058=Id klasy
+2059=Id w≥asciciela
+2060=Id zabezpieczeÒ
+2061=Quota Charged
+2062=Aktualizacja numeru sekwencji
+2063=NazwaPliku
+2064=Katalog
+2065=Czas utworzenia
+2066=Czas ostatniej modyfikacji
+2067=Ostatnia modyfikacja MFT
+2068=Ostatni dostÍp
+2069=Rozmiar alokacji
+2070=Rozmiar
+2071=Atrybuty
+2072=0x3C uint32
+2073=POSIX
+2074=0x00 uint32
+2075=0x04 uint32
+2076=Wersja
+2077=flags
+2078=0x00 uint32
+2079=pierwszy "vcluster"
+2080=ostatni "vcluster"
+2081=compr. unit
+2082=alokowany
+2083=rozmiar danych
+2084=zainicjowany
+2085=Rozmiar kompresji
+
+;NEW:
+2086=[..][+znalezione]
+2087=[Wszystkie znalezione + rekonstrukcja]
+2088=[Ext.attr]
+2089=[Katalog]
+;CHANGED:
+2090=Odczyt %s...~# %~l  %l%%\npliki: %~l, katalogi: %~l
+2091=^PrzerwaÊ operacjÍ?\n^To spowoduje odzyskanie niepe≥nej struktury katalogÛw.
+2093=Nazwa\0Rozmiar\0Modyfikacja\0Numer MFT\0åcieøka
+2099=Nazwa\0Rozmiar\0Modyfikacja\0Klaster\0åcieøka
+2104=%l%% w trakcie %l znaleziono
+2105=%l znaleziono
+
+2106=wol.sek:%I~
+2107=BOOT sek:%l
+2108=FAT%l sec:%l
+2109=ROOT sek:%l
+2110=Klas:%I sek:%l
+2111=Rekord MFT [0..%l]:~
+2112=Idü do rekordu MFT
+
+;NEW::CORRECTME:
+2130=Nie pokazuj tego komunikatu ponownie
+2131=MFT
+2132=znalezione fragmenty MFT
+2133=pozosta≥e fragmenty MFT
+2134=B≥πd odczytu MFT~#%l-%l
+2135=Kontynuuj rekonstrukcjÍ\0\
+	Tylko bazowa MFT woluminu\0\
+	Wyniki wyszukiwania NTFS
+2138=MFT...
+;CHANGED:
+2139=Numery MFT:
+;CHANGED:
+2140=dodatkowe znaleziono
+;CHANGED:
+2141=tech. rekordy
+;CHANGED:
+2142=przesuniÍte
+2143=Wirtualna rekonstrukcja systemu plikÛw
+;::NEW
+
+;CHANGED:
+2191=~LUN#%l LBA:%-10I
+2192=blok: %~I
+
+;**********************************************************
+;CHANGED:
+2200=W edycji bezp≥atnej Free Edition moøna odzyskiwaÊ tylko pliki z bieøπcego panelu (do~4000 na raz).
+;Free Edition odzyskuje do 4000~plikÛw z bieøπcego panelu tylko.
+;2200=Naleøy wybraÊ jeden plik w panelu celem jego odzyskania.\n\
+;	Free Edition (Edycja darmowa) umoøliwia odzyskanie plikÛw jeden po drugim. ;CORRECTME
+;	;Edycja darmowa (freeware) nie obs≥uguje grup plikÛw i nie odzyskuje katalogÛw i ich struktury.
+2201=Umowa licencyjna
+2202=AkceptujÍ umowÍ licencyjnπ
+2203=A&kceptuj
+
+2204=\n~Plik z umowπ licencyjnπ (EULA)\n~%s\n\
+	~nie zosta≥ znaleziony lub jest uszkodzony.\n\n\
+	~Pobierz pe≥ny pakiet na stronie programu.\n\
+	~WyodrÍbnij wszystkie pliki do jednego katalogu.
+
+2205=&O prog.
+
+2206=O prog. DMDE
+2207=&Licencja
+
+;CHANGED:
+2209=Liczba kopii:
+2210=Wsparcie do
+2211=Licencjonowany dla:
+2212=Wsparcie do
+2213=Moøe byÊ stara wersja oprogramowania jest uøywana.\n\
+	ProszÍ sprawdzaÊ aktualizacje na stronie oprogramowania.
+2214=Nieprawid≥owy plik licencji
+;CHANGED:
+2215=Bez aktywacji moøna odzyskaÊ tylko pliki z bieøπcego panelu (do ~ do ~ 4000 na raz).
+;2215=Plik grupy i odzyskiwania katalogÛw nie dzia≥a, jeúli nie aktywowane.
+
+;NEW::
+2216=Admin
+2220=Demo
+2221=Aktywowany
+2222=Nie aktywowany
+2223=NA
+
+2225=Strona www:
+2226=Zakup:
+2227=Kontakt:
+2228=Wsparcie:
+;::NEW
+
+;CHANGED:
+2230=Aktywacja offline
+2234=&Zapisz...
+;CHANGED:
+2235=Zapisz plik "dmdeinst.dat" (or spisz swÛj Prod.ID i Inst.ID).
+;CHANGED:
+2236=Za≥aduj plik "dmdeinst.dat" na stronie aktywacji \
+	(lub wpisz swÛj Prod.ID i Inst.ID) i uzyskaj kod aktywacyjny.
+2237=Strona aktywacji:
+2238=Kod aktywacyjny:
+2239=&OtwÛrz... 
+
+2240=Aktywacja (tylko demonstracja)
+2241=Aktywacja
+;CHANGED:
+2242=Aktywacja o&nline
+;CHANGED:
+2243=Nie moøna aktywowaÊ online.\n\
+	Uøyj aktywacji offline.
+;CHANGED:
+2244=Aktywacja o&ffline...
+;CHANGED:
+2245=Urzπdzenie nie posiada prawid≥owo seryjnego numeru lub go nie dotyczy.
+;CHANGED:
+2246=Wpisz kod aktywacyjny (lub za≥aduj "acode.txt").
+2249=&Wyjdü
+2250=&O programie
+;CHANGED:
+2251=NiektÛre funkcje zostanπ wy≥πczone bez aktywacji.\n\
+	KontynuowaÊ mimo to?
+2252=Dane w schowku nie sπ prawid≥owym kodem aktywacji.
+2253=Plik nie jest prawid≥owym plikiem aktywacyjnym.
+2255=Wczytaj kod aktywacyjny z pliku
+2256=Zapisz ID instalacji do pliku
+2257=Zapisz kod aktywacyjny
+2258=Pobieram adres hosta...  
+2259=Nie moøna uzyskaÊ adresu IP hosta "%s". 
+2260=Nie moøna otworzyÊ portu. 
+2261=Po≥πczanie... 
+2262=Nie moøna po≥πczyÊ siÍ z IP [%lx:%lx:%lx:%lx:%lx:%lx:%lx:%lx]:%s. 
+2263=Nie moøna po≥πczyÊ siÍ z IP %l.%l.%l.%l:%s.
+2264=Wysy≥anie øπdania do serwera... 
+2265=Nie moøna wys≥aÊ øπdania.
+2266=OdbiÛr odpowiedzi z serwera...
+2267=Zamykanie po≥πczenia... 
+2268=Aktywacja po przez Internet
+2269=Ustawienia proxy ;
+2270=Uøyj serwera proxy
+2271=Adres:
+2272=Port:
+2273=Nie moøna za≥adowaÊ %s.
+2274=%s nie znaleziono w %s.
+2275=Uruchomienie WSA nie powiod≥o siÍ. 
+2280=Aktywacja za pomocπ urzπdzenia...
+2281=&Zresetuj
+2282=Wybrano b≥Ídne urzπdzenie do aktywacji 
+2283=Wsparcie zakoÒczone %02h/%h.\n\
+	Moøesz nadal korzystaÊ z tego samego sprzÍtu.\n\
+	ZrobiÊ kopiÍ zapasowπ oprogramowania, w tym kluczy \n\
+	(wszystkie pliki w katalogu roboczym).
+
+;NEW::CORRECTME:
+2290=Lokalna: ten komputer
+2291=Przenoúna: wybrane urzπdzenie
+2292=Przenoúna:~
+2293=Resetowanie aktywacji przenoúnej
+2294=Jednorazowa aktywacja
+
+2297=Kod aktywacji zosta≥ zapisany do pliku
+2298=Tymczasowa aktywacja wersji klienckiej
+2299=Tymczasowo aktywowany, ale nie moøna zapisaÊ koda
+
+2300=Wniosek o jednorazowe has≥o
+2301=Wprowadü has≥o jednorazowe:
+2302=Wniosek kodu zabezpieczajπcego
+2303=Wpisz kod zabezpieczajπcy:
+
+2310=Startup has≥o jest wymagane
+2311=Wprowadü has≥o startowe:
+2312=Zestaw startowy has≥a
+2313=Zestaw startowy has≥a
+2314=Zestaw startowy has≥a:
+2315=Moøesz ustawiÊ has≥o, aby chroniÊ swÛj klucz licencyjny.\n\
+	Prawid≥owe znaki:~
+2316=Nieprawid≥owe znaki
+2317=Has≥o nie jest wystarczajπco silny.\n\
+	Czy na pewno chcesz uøyÊ prostego has≥a?
+2318=Nieprawid≥owe has≥o
+
+2330=Nieprawid≥owy plik licencji lub nieprawid≥owe has≥o
+2331=Klucz licencyjny jest zapisywany do
+2332=Za≥aduj klucz licencyjny
+
+;********************** MFT Runs **************************
+;TRANSLATEME:
+2400=The Default Choice
+2401=Unmark full duplicates
+2402=Unmark intersections
+2403=Unmark base MFT
+2404=Mark all
+2405=Unmark all
+2406=Hide unmarked
+2407=Show unmarked
+2408=Filter...
+2409=Sort by MFT number
+2410=Sort by length
+2411=Sort by disk position
+2412=Sort by volume disk position
+2413=Sort by quality
+2415=Load...
+2416=Save...
+2430=Correct
+2431=Related
+2432=Unknown
+2433=Extraneous
+2434=Small
+2435=Disabled
+2436=Filter
+2440=Loading...
+2441=Load mft runs
+2442=Save MFT Runs
+2443=MFT fragments
+2444=Menu
+2445=Default
+2446=RÛøne parametry woluminu.\n\
+	Czy na pewno chcesz uøyÊ dziwne fragmenty MFT?
+2447=Wolumin:~
+2448=CLUS:%l FILE:%l INDX:%l Mod:%l Start: %~I
+2450=Min. d≥ugoúÊ:
+2451=Low sector:
+2452=High sector:
+2453=Low number:
+2454=High number:
+2460=FILE#\0D≥ugoúÊ\0MFT~poczπtek\0Klaster\0FILE\0INDX\0Mod\0Wol.~poczπtekt~#1\0Zgodne\0Wol.~poczπtek~#2
+2470=&FILE#\0&D≥ugoúÊ\0MFT~&pocz.\0CLUS\0FILE\0INDX\0Mod\0&Wol.poczπtek#1\0&Zgodne\0Wol.poczπtek#2
+
+;*********************** I/O Params ***********************
+2501=Skrypt obs≥ugi We/Wy urzπdzenia nie zosta≥ zapisany.\n\
+	Mimo to kontynuowaÊ?
+2502=Za≥aduj parametry We/Wy
+2503=Zapisz parametry We/Wy
+;CHANGED:
+2504=Interfejs\0B≥Ídy We/Wy\0Dodatkowe
+2510=&Za≥aduj...
+2511=Zapi&sz...
+2520=ATA Reset
+2521=Timeout ATA soft reset, ms
+;CHANGED:
+2522=ATA soft reset, jeúli zajÍty
+
+;******************* Search spec sector *******************
+2550=Szukaj szczegÛlnego sektora
+;CHANGED:
+2551=Boot Signature\0\
+	Partition Table\0\
+	NTFS Boot Sector\0\
+	FAT Boot Sector\0\
+	ExFAT Boot Sector\0\
+	ExtFS Superblock\0\
+	MFT Record\0\
+	INDX Record\0\
+	FAT16 Table\0\
+	FAT32 Table\0\
+	FAT Directory\0\
+	exFAT Directory\0\
+	ExtFS Grp Descriptors\0\
+	ExtFS Dir Entries\0\
+	inny sektor
+
+;*********************** PartMan **************************
+;MOVED 1507-1519=>2607-2619:
+2607=Nie moøna usunπÊ tej tablicy.
+2608=UsunπÊ dodatkowπ tablice?
+2609=UsunπÊ GPTable wraz ze wszystkimi partycjami?
+;CHANGED:
+2610=Partycja nie jest podstawowa. ;CORRECTME 
+2611=UstawiÊ status partycji jako startowa (aktywna)?
+2612=UsunπÊ status partycji jako startowa (aktywna)?
+2613=Ustaw sygnaturÍ boot MBR (MBR On)? 
+2614=UsuÒ sygnaturÍ boot MBR (MBR Off)? 
+;CHANGED:
+2615=Ustaw sygnatury GPT + MBR (GPT On)?
+;CHANGED:
+2616=Ustaw sygnatury GPT + MBR (GPT Off)
+;CHANGED:
+2618=Zapisz kopiÍ partycjonowania do pliku
+2619=&Zastosuj
+
+2620=Partycja podstawowa (MBR)\0\
+	Dysk logiczny (MBR)\0\
+	Partycja rozszerzona (MBR)\0\
+	Partycja GUID (GPT)
+2630=B≥πd odczytu sektora %~I.\nMimo to kontynuowaÊ?
+2631=UsunπÊ istniejπce partycje?
+2632=Nak≥adajπce siÍ partycje.
+2633=Nie moøna utworzyÊ partycji.
+2634=Partycja MBR wykracza poza 2TiB.\nMimo to kontynuowaÊ?
+2635=Wykryto b≥πd partycjonowania.
+2636=Niezgodny typ partycji.
+2637=Partycja jest zbyt duøa dla uk≥adu MBR.
+2638=Hybrydowe partycjonowanie nie jest obs≥ugiwane.
+2639=Nie moøna utworzyÊ partycji w wybranej lokalizacji.
+2641=Sektor jest uøywany przez innπ partycjÍ.\n\
+        Naleøy usunπÊ nak≥adajπce siÍ partycje i sprÛbowaÊ ponownie.
+2642=MBR obs≥uguje tylko do 2TiB.
+2643=Nieobs≥ugiwana wersja GPT.
+;NEW::
+2644=Standardowa partycja FAT/FAT32 wymagana
+2645=Standardowa dyskietka wymagana
+2646=OtwÛrz pliki obrazÛw startowych
+2647=Czy chcesz zastπpiÊ bieøπcy kod startowy MBR?
+;::NEW
+
+2660=Cofnij dzia≥anie
+2661=PrzywrÛÊ dzia≥anie
+2662=Cofnij zmiany partycjonowania
+2663=Wczytaj z pliku...
+2664=Zrzut ekranu do pliku tekstowego...
+2665=Zresetuj sygnatury GPT + MBR  (GPT Off)...
+2666=Ustaw sygnatury GPT + MBR (GPT On)...
+2667=GPT Off
+2668=GPT On
+;NEW:
+2669=Napisz sektorÛw startowych...
+
+;********************* CopySectors ************************
+2700=Dysk\0Partycje\0Plik\0Edytor\0Wybrane
+2708=Partycje...
+2710=èrÛd≥owy i docelowy\0Parametry
+2720=Kopia odwrÛcona 
+2721=W dwÛch wπtkach
+2722=Zablokuj ürÛd≥o podczas kopiowania
+2723=UøyÊ log'a dziennika do kontynuowania\0\
+	Pononawia kopoiwanie uszkodzonych sektorÛw z dziennika
+2725=Plik dziennika:
+2726=WyczyúÊ bufor dziennika gdy skopiowano liczba sektorÛw
+2727=&Parametry
+2728=Parametry We/Wy urzπdzenia ürÛd≥owego
+
+2729=Kontynuuj od sektora
+2730=Kontynuuj od bajtu
+2731=min
+2732=max
+2740=&Menu
+2741=&Za≥aduj...
+2742=Zapi&sz...
+
+2750=Nieprawid≥owe parametry ürÛd≥owe.
+2751=Nieprawid≥owe parametry docelowe.
+2752=Nieprawid≥owa pozycja dla kontynuacji.
+
+2753=èrÛd≥owe i docelowe sektory majπ rÛøne rozmiary.\n\
+	Logiczna struktura ürÛd≥owa nie bÍdzie dostÍpna w miejscu docelowym.\n\
+	Mimo to kontynuowaÊ?
+
+2760=Nie moøna zapisaÊ obiektu ürÛd≥owego
+2761=Nie moøna zapisaÊ obiektu docelowego
+2762=Nie moøna za≥adowaÊ obiektu ürÛd≥owego
+2763=Nie moøna za≥adowaÊ obiektu docelowego
+2764=Zapisz parametry kopiowania
+2765=Za≥aduj parametry kopiowania
+
+;NEW:
+2769=Plik dziennika
+2770=Czytanie dziennika kopiowania...
+2771=Nie moøna za≥adowaÊ skopiowane zakresy
+2772=Napisz nie jest obs≥ugiwany
+2773=B≥πd zapisu do miejsca przeznaczenia
+2774=Przydzielenie miejsca dla pliku...
+
+2780=NapisaÊ bajtÛw\n%~I~- %~I ürÛd≥a
+2781=NapisaÊ ürÛd≥o
+2782=ZapisaÊ plik ürÛd≥owy
+2783=do pliku (kontynuacja)?
+2784=do pliku?
+2785=do miejsca przeznaczenia (zostanie on zastπpiony, kontynuacja)?
+2786=do miejsca przeznaczenia (zostanie on zastπpiony)?
+2787=Zaleca siÍ, aby zablokowaÊ wszystkie woluminy ürÛd≥owe \
+	aby zapobiec modyfikacji podczas kopiowania. \
+	Moøna ignorowaÊ blokowanie jednak integralnoúci danych moøe byÊ zagroøona.\n\
+	Woluminy nieoznaczone nie sπ jeszcze zablokowane.
+
+2790=Ostatnie przechodzπ\0\
+	Skutecznie przeczytane:\0\
+	B≥Ídy odczytu:~~~~~~\0\
+	PominiÍto:~~~~~~~~~~\0\
+	B≥Ídy zapisu:~~~~~\0\
+	OgÛ≥em\0\
+	Pozosta≥e:~~~~~~~~~~~~~\0\
+	Rozmiar ürÛd≥a:~~~~~~
+
+;********************** Recovery *************************
+2900=Operacja nieoczekiwanie przerwane
+2901=Operacja przerwana przez uøytkownika
+2902=%s\n\
+	Wszystkie katalogi: %l\n\
+	Wszystkie pliki: %l\n\
+	Ca≥kowita objÍtoúÊ: %~I (%IV)
+
+2910=Przerwano
+2911=Wszystkie katalogi: %l
+2912=Wszystkie pliki: %l
+2913=Ca≥oúÊ odzyskanego woluminu: %I (%IV)
+
+2920=%s\n\
+	Niekompletne katalogi: %l\n\
+	Katalogi pominiÍte: %l\n\
+	Pliki pominiÍte: %l\n\
+	PominiÍte pliki uszkodzone: %l\n\
+	Odzyskane pliki uszkodzone: %l\n\
+	Wszystkie pliki odzyskane: %l\n\
+	Ca≥oúÊ odzyskanego woluminu: %~I (%IV)
+
+2930=CSV-plik
+2931=Rejestr log. katalogÛw
+2932=Rejestr dzia≥ania
+
+2940=Producent/Model:
+2941=Rewizja:
+2942=Nr seryjny:
+2943=ØrÛd≥o 
+2944=Rozminar paska: %l
+2945=OpÛønienie parzystoúci: %l
+2946=LUN#%l LBA_Offset: %I  LBA_Size: %I
+2947=Wolumin ørÛd≥owy
+2948=LBA Start: %I  LBA Size: %I
+2949=Etykieta:
+2950=Docelowy:
+
+2960=Wszystkie katalogi ürÛd≥owe: %l
+2961=Wszystkie pliki ürÛd≥owe: %l
+2962=Wszystkie woluminy ürÛd≥owe: %I (%IV)
+2963=Niekompletne katalogi: %l
+2964=Katalogi pominiÍte: %l
+2965=Pliki pominiÍte: %l
+2966=PominiÍte pliki uszkodzone: %l
+2967=Odzyskane pliki uszkodzone: %l
+2968=Wszystkie pliki odzyskane: %l
+2969=Ca≥oúÊ odzyskanego woluminu: %I (%IV)
+
+;******************** selectdisk ************************
+3001=Moøliwe øe nie ca≥y wolumin jest dostÍpny.\n ;CORRECTME
+3002=Moøliwe wystπpienia problemÛw z adresowaniem.\n ;CORRECTME
+3003=\nMimo to kontynuowaÊ?
+3004=\nTo moøe byÊ w≥aúciwe, jeúli ten sam adapter USB jest zawsze uøywany.
+3005=OtwÛrz obraz...
+3006=Przenoúna aktywacja
+3007=A&ktywacja
+
+;*********************** RAID ***************************
+3030=Za≥aduj parametry RAID
+3031=Zapisz parametry RAID
+3032=OpÛønienie:
+3033=Menu
+3034=Za≥aduj...
+3035=Zapisz...
+3036=Za≥aduj...
+3037=Zapisz...
+3038=Paskowanie...    ;Striping...
+3040=Paskowanie       ;Striping
+;::NEW

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>DMDE - Языки/Локализация</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">Содержание</a> &middot; <a href="setup.html">Установка и запуск</a>
+<hr />
+<h2>Языки/Локализация</h2>
+<h3>Окно диалога &quot;Select Language&quot;</h3>
+<p><b>Apply Codepages.</b>
+Если параметр отмечен, то используются кодовые страницы ANSI и OEM,
+указанные в языковом файле.
+</p>
+
+<p><b>Translit.</b>
+Принудительная транислитерация интерфейса 
+(в случае проблем сотображением национальных символов).
+</p>
+
+<div class="spec">
+<h3>Кодовые страницы - интерфейс и восстановление данных</h3>
+<p>
+<strong>ANSI code page</strong> - кодовая страница, используемая в интерфейсе 
+DMDE for Windows и DMDE for Linux.
+<strong>OEM code page</strong> - кодовая страница, используемая в интерфейсе 
+DMDE for DOS.
+Символы вне выбранной кодовой страницы интерфейса транслитерируются 
+или заменяются.
+</p>
+<p>
+<strong>OEM code page</strong> также используется при чтении
+коротких имен (формата 8.3) томов FAT во всех версиях программы. 
+DMDE for DOS также использует <strong>OEM code page</strong> 
+для имен файлов при восстановлении. 
+DMDE for Windows и DMDE for Linux используют Юникод (если ОС поддерживает) при восстановлении
+имен файлов, при этом выбранная кодовая страница не имеет значения.
+</p>
+<p>
+По умолчанию используются кодовые страницы операционной системы 
+(если может быть определена).
+Настройки из <a href="inifile.html">ini-файла</a> переопределяют
+кодовые страницы (если указаны).
+Кодовые страницы из выбранного lng-файла (*.lng) переопределяют
+предыдущие настройки, если отмечен параметр <span class="ii">Apply Codepages</span> 
+в окне диалога <b>&quot;Select Language&quot;</b>.
+В строке <span class="tt">107</span> lng-Файла указывается кодовая страница ANSI, 
+в строке <span class="tt">108</span> - OEM. 
+</p>
+</div>
+
+<div class="spec">
+<h3>Параметры INI-файла</h3>
+<p>
+<!--b>loadlngfiles=</b><br />
+<b>loadcptables=</b><br /-->
+<b>usecodepage=</b> ANSI code page<br />
+<b>oemcodepage=</b> OEM code page<br />
+<b>translitenable=</b> (<span class="tt">Translit</span>)<br />
+<b>viewtranslit=</b> (<span class="tt">Translit</span>)<br />
+</p>
+</div>
+</div></div>
+</body>
+</html>

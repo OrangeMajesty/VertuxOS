@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - Zarządzanie zmianami</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">Spis treści</a> &middot; <a href="howto.html">Praca</a> &middot; <a href="menu.html">Menu</a>
+<hr />
+<h3>Zarządzanie zmianami</h3>
+<p>
+Wszystkie zmiany dokonane w <a href="diskeditor.html">edytorze dysku</a> i
+<a href="partitions.html">menedżera partycji</a>
+pozostaje wirtualny dopóki jawnie stosować je na dysk.
+</p>
+<h4>Załaduj dane wycofania/zrzutu z pliku...</h4>
+<p>
+Można załadować dane wycofania (jeśli zapisane przy zastosowaniu wcześniejszych zmian), 
+a tym samym cofnąć ostatnich zmian.
+Możesz również skorzystać z polecenia do załadować zmian, 
+które zostało zatopione do pliku zamiast stosowania na dysku.
+</p>
+<h4>Zrzuć zmiany do pliku...</h4> <!--Dump-->
+<p>
+Możesz zrzucić zmiany w pliku, a nie stosując je bezpośrednio na dysku. 
+Później możesz ponownie otworzyć dysku i załadować wszystkie niestosowania zmian z pliku.
+</p>
+<h4>Cofnij zmiany</h4>
+<p>
+Grupa cofanie ostatniej zmiany. 
+Aby cofnąć poszczególnych działań, użyć odpowiednich poleceń <a href="diskeditor.html">Disk Editor</a> 
+(menu <a href="menu_edit.html">Edycja</a>) lub <a href="partitions.html">Partition Manager</a>.
+</p>
+<h4>Redo zmiany</h4>
+<p>Grupa ponawianie ostatnich zmian.</p>
+<h4>Przywróć wszystkie zmiany</h4>
+<p>Odrzuć wszystkie niestosowane zmiany.</p>
+<h4>Zastosuj zmiany... (<span class="ii">Ctrl+W</span>)</h4>
+<p>Napisz zmian do dysku.
+Aby zmiany odniosły skutek w operacyjnym systemie, mogą prawdopodobnie być ponowne uruchomienie komputera.
+W systemie Windows nie mogą być dopuszczone na piśmie do niektórych miejscach dyskowych wykorzystywanych przez tomów - 
+zobacz <a href="lockvolumes.html">Blokowanie woluminów</a>.
+Niektóre programy antywirusowe mogą blokować bezpośredni zapis na dysk.
+W systemie Windows można również spróbować <a href="devioparams.html">opcji interfejsa</a>
+<span class="ii">IO SCSI</span>, aby obejść pewne ograniczenia.
+</p>
+</div></div>
+</body>
+</html>

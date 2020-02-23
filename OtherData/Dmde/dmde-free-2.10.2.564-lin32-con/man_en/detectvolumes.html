@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMDE - NTFS/FAT Search</title>
+<link rel="stylesheet" href="dmdeman.css" type='text/css' />
+</head>
+<body>
+<div id="bklayer">
+<div id="wrapper">
+<a href="toc.html">TOC</a> &middot; <a href="howto.html">Work</a> &middot; <a href="menu.html">Menu</a> &middot; <a href="menu_tools.html">Tools</a>
+<hr />
+<h2>NTFS/FAT Search</h2>
+<p>
+Comprehensive search method allows you to find and virtually rebuild the directory structure 
+of a damaged file system.
+</p>
+<p>
+If a file system is not seriously damaged then volumes may be opened before the scan completes. 
+In the most complex cases different volume variants may be given.
+You should select and <span class="ii">Open volume</span>,
+<a href="scanvolume.html">reconstruct</a> file system 
+and <a href="datarecovery.html">recover</a> files 
+to estimate the quality of a variant.
+If the selected volume variant does not contain necessary files or files are recovered incorrectly 
+you should continue the search or try another variant.
+There are indicators which allow preliminary estimating the quality of a variant (details are below).
+If data was moved (due to partition move/split/merge/resize operation)
+then some files may be recovered correctly from one volume variant,
+and others from another one, despite that files are visible on both volume variants.
+</p>
+<p>
+It is recommended to scan selected area of a physical device 
+(including old and new location of the volume if it was moved) 
+rather than scanning a logical disk.
+The software may read beyond the selected area if it is necessary.
+</p>
+
+<table><tr>
+<th>Open&nbsp;volume</th><td>Open volume selected in the list.</td></tr>
+<tr><th>Save...</th><td>Save search log to a file.</td></tr>
+<tr><th>Load...</th><td>Load search log from a file
+(to continue previous search or to use previous search results).
+</td></tr>
+<tr><th>Start/Stop</th><td>Start/stop scan. 
+If the scan area is not changed
+the scan will continue from the last point.
+</td></tr>
+<tr><th>Scan&nbsp;range</th><td>
+Select the area to scan. 
+Is is possible to select one of the partitions or any drive extent.
+</td></tr>
+<tr><th>Menu</th><td>Besides, allows changing volume sorting order.</td></tr>
+</table>
+<p class="spec">
+The special search method allows detecting volumes
+without prior complete scan of the selected area. 
+Scan is not continuous but discrete with increasing of the sampling frequency.
+Volumes with the most number of files are being found first.
+</p>
+
+<h3>NTFS Search</h3>
+<p>
+The column <b>Check</b> may be used to estimate the recovery quality of a found volume variant
+(it corresponds to the number of correct directory indexes on the volume).
+When a volume is selected the status lines display
+the estimated percentage of found volume files and probable quality (including removed indexes),
+the number of found files and estimated total number of files.
+</p>
+<p>
+<b>Min. Size</b> is the minimum volume size (in sectors) containing all files in the best MFT fragments of a volume.
+</p>
+<div class="spec">
+<p>
+MFT <b>Volume Start&nbsp;#1</b> and <b>Volume Start&nbsp;#2</b> are possible volume starts 
+for a given MFT fragment.
+</p>
+<p>
+Volume <b>Mod</b> = Volume <b>Start</b> mod <b>Cluster</b> size<br />
+MFT <b>Mod</b> = MFT Cluster Start mod <b>Cluster</b> size
+</p>
+</div>
+
+<h3>FAT Search</h3>
+<p>
+The sign "minus" ("<b>-</b>") in the columns
+<b>Boot&nbsp;FAT1&nbsp;FAT2&nbsp;Root</b>
+indicates the absence (damage) of the corresponding file system structures
+(boot sector, main FAT table, FAT table copy, root directory).
+</p>
+<p>
+The column <b>Found</b> shows the number of directories found
+and allows estimating approximately the recovery quality of a volume variant.
+</p>
+<p class="spec">
+Values in the columns <b>Boot&nbsp;FAT1&nbsp;FAT2&nbsp;Root</b>
+are the sizes (in sectors) of the corresponding structures.
+</p>
+</div></div>
+</body>
+</html>
