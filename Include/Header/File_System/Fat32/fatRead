@@ -1,0 +1,106 @@
+;RootDirSectors (0) = ((RDE * 32) + (fat_sector_to_klaster  – 1)) / fat_sector_to_klaster ;
+;FirstDataSector = fat_reserv_sectors + (fat_copys * fat32_bigsektorpearlfat) + RootDirSectors; Корневой каталог
+;FirstSectorofCluster = ((N – 2) * fat_sector_to_klaster) + FirstDataSector;	содержимое файла по fat
+;DataSec = fat_bigtotalsektors – (fat_reserv_sectors + (fat_copys * fat32_bigsektorpearlfat) + RootDirSectors);
+;CountofClusters = DataSec / fat_sector_to_klaster;
+;ThisFATSecNum = fat_reserv_sectors + (FATOffset / fat_sector_to_klaster );
+;ThisFATEntOffset = REM(FATOffset / fat_sector_to_klaster );
+;CountofClusters = DataSec / BPB_SecPerClus;
+;== Именение значений таблицы видет к нарушению работы программы ==
+; ---------Исправления------------
+; *подправил структуру каталога, теперь видим размер.
+
+virtual at 600h
+			db 3 dup (?)
+fat_OEM 		db 	8 dup (?)
+fat_size_sector 	dw 	?
+fat_sector_to_klaster 	db 	?
+fat_reserv_sectors 	dw	?
+fat_copys 		db 	?
+RDE			dw	?
+fat_bigtotalsektor	dw	?
+fat_diskid 		db 	?
+fat_sektorperfat	dw	?
+fat_sektorpertrack	dw	?
+fat_head		dw	?
+fat_hidesektor		dd	?
+fat_bigtotalsektors	dd	?; размер в секторах
+fat32_bigsektorpearlfat	dd	?
+fat32_flags		dw	?
+fat32_fsver		dw	?
+fat32root_cul		dd	?
+fat32_infosector	dw	?
+fat32_BackBootSector	dw	?
+reserv			db	12 dup (?)
+fat32_Drivenum		db	?
+fat32_reserv1		db	?
+fat32_bootsig		db	?
+fat32_voiid		dd	?
+fat_volumelabel		db	11 dup (?);11
+fat_SysID		db	8 dup (?)
+end virtual
+
+RootDir dw ?
+; Link to file
+
+This_file  dd ?
+virtual at 0xA00
+	db 512 dup (?)
+end virtual
+	
+virtual at 0x700 ;Size: 32
+	Dir_name		db 11 dup (?)
+	Dir_attr		db ?
+	Dir_NTresrv		db 0
+	Dir_CtrTimeTenth	db ?
+	Dir_FstClusHI		dw ?;99 91
+	;db 6 dup(?)
+	Dir_WrtTime		dw ?
+	Dir_wrtDate		dw ?
+	Dir_FstClusLO		dw ?
+
+	Dir_crtTime		dw ?
+	Dir_crtDate		dw ?
+	DIR_LstAccDate dw ?
+
+	Dir_Filesize		dd ?
+end virtual
+virtual at 800h
+	data_t db 512 dup (?)
+end virtual
+
+kluster dw 512*8
+
+LDB:
+	db 10h,0
+num	dw 01h
+	;db 0
+buffer	dw 7e00h
+Offset	dw 0x0
+Ldb_bq	dq 0
+
+Step dw 4
+Step4 dw 200h
+LL dd ?
+LB dd ?
+End_clus dd 0x0FFFFFFF
+			;File attributes:
+			;ATTR_READ_ONLY   	0x01
+			;ATTR_HIDDEN 	0x02
+			;ATTR_SYSTEM 	0x04
+			;ATTR_VOLUME_ID 	0x08
+			;ATTR_DIRECTORY	0x10
+			;ATTR_ARCHIVE  	0x20
+
+
+
+	;Dir_name		db 11 dup (?)
+	;Dir_attr		db ?
+	;Dir_NTresrv		db 0
+	;Dir_CtrTimeTenth	db ?
+	;Dir_FstClusHI		dw ?;99 91
+	;;db 6 dup(?)
+	;Dir_WrtTime		dw ?
+	;Dir_wrtDate		dw ?
+	;Dir_FstClusLO		dw ?
+	;Dir_Filesize		dd ?

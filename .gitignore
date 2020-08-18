@@ -1,0 +1,5 @@
+# temp build file
+build/*
+
+# log file
+log/*

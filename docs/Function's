@@ -1,0 +1,28 @@
+Interrupt(Name){
+    # Код прерывания
+}
+
+IRQ_Interrupt(Name){
+    # Код IRQ прерывания
+}
+
+#порты ввода вывода.
+	ulong InEax/AX/AL(uint address); > IO.h
+	void OutEax/AX/AL(uint address, u(long/int/char) value); > IO.h
+
+#Вызов прерывания.
+	Int(adr);	>	PIC.h
+
+#Остановка процессора, зацикливание.
+	PANIC;		>	PIC.h
+	WaitTick(кол-во тиков);
+	idt_closed(); //__asm("cli\n\t");
+
+	idt_open(); //__asm("sti\n\t");
+
+## Прерывания 
+# Установка\Смена прерывания(Использовать для драйверов) max 0xfe
+	void idt_grade(signed int num, unsigned short selector,uint32_t base, unsigned char flag);
+## Работа с устройствами
+# Чтение\Запись секторов(ATA);
+	char ATA_ReadLBA28(char device,unsigned char size ,unsigned int Sector, unsigned short* Buffer);
